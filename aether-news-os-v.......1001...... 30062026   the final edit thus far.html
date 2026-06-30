@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Aether OS News — Global Intelligence Feed</title>
+<meta name="description" content="Aether OS News: Politics, Cyber, Business, and Global affairs. Real-time intelligence for UK SMEs.">
+<link rel="canonical" href="https://aetherbusinessarchitectsltd.uk/aether-news.html">
+<link rel="icon" type="image/png" href="aether os logo v2.png">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Fira+Code:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root {
+    --bg: #F8F9FC;
+    --white: #FFFFFF;
+    --ink: #0B0E17;
+    --ink2: #3C4260;
+    --muted: #6B7280;
+    --card-bg: #FFFFFF;
+    --border: rgba(0,0,0,0.06);
+    --cyan: #0088A8;
+    --cyan-bright: #00E5FF;
+    --gold: #C8A96E;
+    --gold-warm: #E8CA9A;
+    --red: #C00000;
+    --green: #10B981;
+    --violet: #8B5CF6;
+    --serif: 'Cormorant Garamond', Georgia, serif;
+    --mono: 'Fira Code', monospace;
+    --inter: 'Inter', sans-serif;
+    --orbitron: 'Orbitron', sans-serif;
+    --radius: 14px;
+    --shadow: 0 4px 24px rgba(0,0,0,0.06);
+    --shadow-lg: 0 12px 48px rgba(0,0,0,0.1);
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; overflow-x: hidden; }
+body { background: var(--bg); color: var(--ink); font-family: var(--inter); font-size: 17px; line-height: 1.6; }
+a { text-decoration: none; color: inherit; }
+
+/* ═══ STROBE ═══ */
+@keyframes strobeLeft {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+}
+/* AETHER STROBE — Blue Knight Rider */
+.strobe {
+    background: linear-gradient(90deg, transparent 0%, #00d2ff 25%, #ffffff 50%, #00d2ff 75%, transparent 100%);
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: strobeLeft 2.5s linear infinite;
+}
+.strobe-gold {
+    background: linear-gradient(90deg, transparent 0%, #c8a96e 25%, #ffffff 50%, #c8a96e 75%, transparent 100%);
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: strobeLeft 3s linear infinite;
+}
+.strobe-violet {
+    background: linear-gradient(90deg, transparent 0%, #8B5CF6 25%, #ffffff 50%, #8B5CF6 75%, transparent 100%);
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: strobeLeft 2.8s linear infinite;
+}
+.strobe-green {
+    background: linear-gradient(90deg, transparent 0%, #10B981 25%, #ffffff 50%, #10B981 75%, transparent 100%);
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: strobeLeft 3.2s linear infinite;
+}
+.strobe-red {
+    background: linear-gradient(90deg, transparent 0%, #FF4D6D 25%, #ffffff 50%, #FF4D6D 75%, transparent 100%);
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: strobeLeft 2.6s linear infinite;
+}
+
+/* ═══ HEADER ═══ */
+header {
+    background: var(--white);
+    padding: 14px 24px;
+    border-bottom: 3px solid var(--gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.logo-slot { height: 56px; display: flex; align-items: center; justify-content: center; margin-right: 16px; }
+.logo-slot img { max-height: 56px; max-width: 100%; }
+.masthead { display: flex; align-items: center; }
+.logo-block { display: flex; align-items: center; gap: 3px; }
+.logo-word { display: inline-flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 900; letter-spacing: 1px; padding: 7px 10px; line-height: 1; text-transform: uppercase; border-radius: 4px; }
+.logo-aether { background: var(--ink); color: #fff; }
+.logo-os { background: var(--gold); color: var(--ink); }
+.logo-news { background: linear-gradient(135deg, var(--cyan) 0%, var(--violet) 100%); color: #fff; }
+
+/* ═══ NAV ═══ */
+nav {
+    background: var(--white);
+    border-bottom: 2px solid var(--border);
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+    overflow-y: visible;
+    scrollbar-width: none;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+}
+nav::-webkit-scrollbar { display: none; }
+nav a {
+    color: var(--ink2);
+    text-decoration: none;
+    padding: 14px 24px;
+    font-family: var(--orbitron);
+    font-size: 0.78rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    white-space: nowrap;
+    border-bottom: 3px solid transparent;
+    transition: all 0.2s;
+    display: block;
+}
+nav a:hover { color: var(--gold); border-bottom-color: var(--gold); }
+nav a.active { color: var(--gold); border-bottom-color: var(--gold); }
+
+/* ═══ DROPDOWN ═══ */
+.nav-dropdown { position: relative; }
+.dropdown-menu {
+    position: absolute; top: 100%; left: 0;
+    background: var(--white); border: 1px solid var(--border);
+    box-shadow: var(--shadow-lg); min-width: 200px;
+    display: none; flex-direction: column; z-index: 50;
+    border-radius: 0 0 var(--radius) var(--radius);
+}
+.nav-dropdown:hover .dropdown-menu,
+.nav-dropdown:focus-within .dropdown-menu { display: flex; }
+.dropdown-menu a {
+    padding: 12px 20px; border-bottom: 1px solid var(--border);
+    font-size: 0.72rem; font-family: var(--mono); letter-spacing: 0.08em;
+    text-transform: uppercase; color: var(--ink2); font-weight: 500;
+}
+.dropdown-menu a:hover { background: var(--bg); color: var(--gold); }
+
+/* ═══ TICKER ═══ */
+.ticker-bar {
+    background: var(--red); color: #fff; display: flex;
+    align-items: center; overflow: hidden; height: 36px;
+}
+.ticker-label {
+    background: rgba(0,0,0,0.2); padding: 0 16px; height: 100%;
+    display: flex; align-items: center; font-family: var(--orbitron);
+    font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em;
+    text-transform: uppercase; white-space: nowrap; flex-shrink: 0;
+}
+.ticker-scroll { overflow: hidden; flex: 1; }
+.ticker-inner {
+    display: inline-block; white-space: nowrap;
+    animation: tickerScroll 35s linear infinite; padding-left: 100%;
+}
+.ticker-inner span { margin-right: 60px; font-family: var(--mono); font-size: 0.85rem; font-weight: 500; }
+.ticker-inner span::before { content: '\25CF'; margin-right: 10px; opacity: 0.6; }
+@keyframes tickerScroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-100%); }
+}
+
+/* ═══ SCROLLING CARDS (TABS UNDER TICKER) ═══ */
+.scroll-cards-bar {
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+    padding: 16px 0;
+    overflow: hidden;
+    position: relative;
+}
+.scroll-cards-inner {
+    display: flex;
+    gap: 16px;
+    animation: scrollCards 40s linear infinite;
+    width: max-content;
+    padding: 0 24px;
+}
+.scroll-cards-inner:hover { animation-play-state: paused; }
+@keyframes scrollCards {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+.scroll-card {
+    min-width: 280px;
+    max-width: 300px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 16px;
+    transition: all 0.3s;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+.scroll-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow);
+    border-color: var(--gold);
+}
+.scroll-card .sc-tag {
+    display: inline-block;
+    font-family: var(--mono);
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 3px 10px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+.scroll-card .sc-tag.politics { background: rgba(139,92,246,0.1); color: var(--violet); }
+.scroll-card .sc-tag.cyber { background: rgba(0,136,168,0.1); color: var(--cyan); }
+.scroll-card .sc-tag.business { background: rgba(16,185,129,0.1); color: var(--green); }
+.scroll-card .sc-tag.tech { background: rgba(200,169,110,0.1); color: var(--gold); }
+.scroll-card .sc-tag.defence { background: rgba(255,77,109,0.1); color: var(--red); }
+.scroll-card h3 {
+    font-family: var(--serif);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--ink);
+    margin: 0 0 6px;
+    line-height: 1.3;
+}
+.scroll-card p {
+    font-size: 0.82rem;
+    color: var(--muted);
+    line-height: 1.5;
+    margin: 0;
+}
+.scroll-card .sc-time {
+    font-family: var(--mono);
+    font-size: 0.65rem;
+    color: var(--muted);
+    margin-top: 8px;
+    letter-spacing: 0.05em;
+}
+
+/* ═══ MAIN CONTAINER ═══ */
+.main-container {
+    max-width: 1440px;
+    margin: 28px auto;
+    padding: 0 24px;
+    display: grid;
+    grid-template-columns: 400px 1fr 280px;
+    gap: 28px;
+}
+@media (max-width: 1100px) {
+    .main-container { grid-template-columns: 1fr 1fr; }
+    .right-column { grid-column: span 2; }
+}
+@media (max-width: 680px) {
+    .main-container { grid-template-columns: 1fr; padding: 0 12px; }
+    .right-column { grid-column: span 1; }
+}
+
+/* ═══ COLUMNS ═══ */
+.left-column, .center-column, .right-column {
+    display: flex;
+    flex-direction: column;
+    background: var(--white);
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+}
+/* Left (video) and right (most read) stay pinned + height-capped so they
+   never leave a tall blank gap while the center stories column runs long. */
+.left-column, .right-column {
+    position: sticky;
+    top: 20px;
+    align-self: start;
+    max-height: calc(100vh - 40px);
+    overflow-y: auto;
+    scrollbar-width: thin;
+}
+@media (max-width: 1100px) {
+    .left-column, .right-column { position: static; max-height: none; overflow-y: visible; }
+}
+.col-header {
+    padding: 14px 18px;
+    background: var(--bg);
+    border-bottom: 2px solid var(--gold);
+    font-family: var(--orbitron);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--ink);
+}
+
+/* ═══ VIDEO BLOCK ═══ */
+.video-block { position: relative; }
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    background: var(--ink);
+    overflow: hidden;
+}
+.video-wrapper iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.video-error-fallback {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1a1a2e 0%, #0B0E17 100%);
+}
+.video-error-fallback .play-btn {
+    width: 72px; height: 72px;
+    border-radius: 50%;
+    background: rgba(200, 169, 110, 0.2);
+    border: 3px solid var(--gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 14px;
+    transition: all 0.3s;
+}
+.video-error-fallback .play-btn:hover { background: rgba(200,169,110,0.4); transform: scale(1.1); }
+.video-error-fallback .play-btn::after {
+    content: ''; width: 0; height: 0;
+    border-left: 22px solid var(--gold);
+    border-top: 14px solid transparent;
+    border-bottom: 14px solid transparent;
+    margin-left: 6px;
+}
+.video-error-fallback a {
+    color: var(--gold);
+    font-family: var(--mono);
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+.video-error-fallback a:hover { text-decoration: underline; }
+.video-caption { padding: 14px 18px; border-top: 3px solid var(--gold); background: var(--bg); }
+.video-caption .section-tag { color: var(--gold); }
+.video-caption h2 {
+    font-family: var(--serif);
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin: 6px 0;
+    color: var(--ink);
+    line-height: 1.25;
+}
+.video-caption p { color: var(--muted); font-size: 0.9rem; }
+
+/* ═══ STORY CARDS ═══ */
+.story {
+    padding: 16px 18px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.story:last-child { border-bottom: none; }
+.story.featured { border-left: 4px solid var(--red); background: var(--bg); }
+.story.politics { border-left: 3px solid var(--violet); }
+.story.cyber { border-left: 3px solid var(--cyan); }
+.story.business { border-left: 3px solid var(--green); }
+.story.tech { border-left: 3px solid var(--gold); }
+.story.defence { border-left: 3px solid var(--red); }
+.section-tag {
+    font-family: var(--mono);
+    font-size: 0.68rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+.section-tag.politics { color: var(--violet); }
+.section-tag.cyber { color: var(--cyan); }
+.section-tag.business { color: var(--green); }
+.section-tag.tech { color: var(--gold); }
+.section-tag.feature { color: var(--gold); }
+.section-tag.defence { color: var(--red); }
+.story h2 {
+    font-family: var(--serif);
+    font-size: 1.1rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+.story h2 a { color: var(--ink); transition: color 0.2s; }
+.story h2 a:hover { color: var(--gold); }
+.story p { font-size: 0.9rem; color: var(--muted); line-height: 1.55; }
+.story-meta { font-family: var(--mono); font-size: 0.72rem; color: var(--muted); letter-spacing: 0.03em; }
+
+/* ═══ MOST READ ═══ */
+.most-read-item {
+    padding: 14px 18px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    transition: background 0.2s;
+}
+.most-read-item:last-child { border-bottom: none; }
+.most-read-item:hover { background: var(--bg); }
+.most-read-num {
+    font-family: var(--orbitron);
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--gold);
+    line-height: 1;
+    min-width: 30px;
+}
+.most-read-title {
+    font-family: var(--serif);
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--ink);
+    line-height: 1.35;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+.most-read-title:hover { color: var(--gold); }
+
+/* ═══ SCRAPER SECTIONS ═══ */
+.scraper-section {
+    padding: 16px 18px;
+    border-bottom: 1px solid var(--border);
+    background: var(--bg);
+}
+.scraper-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.scraper-num {
+    font-family: var(--orbitron);
+    font-size: 0.6rem;
+    font-weight: 700;
+    color: #fff;
+    background: var(--gold);
+    padding: 4px 10px;
+    border-radius: 4px;
+    letter-spacing: 0.1em;
+}
+.scraper-title {
+    font-family: var(--serif);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--ink);
+}
+.scraper-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.scraper-content li {
+    padding: 6px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.03);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.85rem;
+    color: var(--ink2);
+}
+.scraper-content li::before {
+    content: '>';
+    color: var(--gold);
+    font-family: var(--mono);
+    font-weight: 700;
+}
+.scraper-content li:last-child { border-bottom: none; }
+
+/* ═══ TESTIMONIAL ═══ */
+.testimonial {
+    background: var(--white);
+    border: 2px solid var(--gold);
+    border-radius: var(--radius);
+    padding: 32px;
+    text-align: center;
+    margin: 28px 24px 0;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.testimonial p {
+    font-family: var(--serif);
+    font-size: 1.2rem;
+    font-style: italic;
+    color: var(--ink);
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+.testimonial cite {
+    font-family: var(--mono);
+    font-size: 0.78rem;
+    color: var(--gold);
+    font-style: normal;
+    letter-spacing: 0.05em;
+}
+
+/* ═══ CTA ═══ */
+.cta-banner {
+    background: var(--ink);
+    padding: 56px 24px;
+    text-align: center;
+    margin-top: 40px;
+}
+.cta-banner h2 { color: var(--white); font-family: var(--serif); font-size: clamp(1.8rem,4vw,2.6rem); }
+.cta-banner h2 span { color: var(--gold); }
+.cta-banner p { color: rgba(255,255,255,0.7); max-width: 500px; margin: 12px auto 28px; }
+.cta-btns { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+.cta-btn-main {
+    background: var(--gold);
+    color: var(--ink);
+    font-family: var(--orbitron);
+    font-size: 0.78rem;
+    font-weight: 700;
+    padding: 14px 32px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transition: all 0.3s;
+}
+.cta-btn-main:hover { box-shadow: 0 0 30px rgba(200,169,110,0.4); transform: translateY(-2px); }
+.cta-btn-alt {
+    border: 2px solid rgba(255,255,255,0.4);
+    color: var(--white);
+    font-family: var(--orbitron);
+    font-size: 0.78rem;
+    font-weight: 700;
+    padding: 14px 32px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transition: all 0.3s;
+}
+.cta-btn-alt:hover { border-color: var(--gold); color: var(--gold); }
+
+/* ═══ FOOTER ═══ */
+footer {
+    background: var(--ink);
+    padding: 36px 24px;
+    text-align: center;
+}
+.footer-logo {
+    font-family: var(--orbitron);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--white);
+    letter-spacing: 0.12em;
+}
+.footer-logo em {
+    font-style: normal;
+    font-size: 0.55rem;
+    font-weight: 400;
+    color: var(--gold);
+    display: block;
+    letter-spacing: 0.3em;
+    margin-top: 3px;
+}
+.footer-links {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 18px 0;
+    flex-wrap: wrap;
+}
+.footer-links a {
+    font-family: var(--mono);
+    font-size: 0.65rem;
+    color: rgba(255,255,255,0.5);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    transition: color 0.2s;
+}
+.footer-links a:hover { color: var(--gold); }
+.footer-copy { font-family: var(--mono); font-size: 0.58rem; color: rgba(255,255,255,0.3); }
+
+/* STORY IMAGES */
+.story-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    background: var(--bg);
+}
+.story-image-sm {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 6px;
+    flex-shrink: 0;
+    background: var(--bg);
+}
+.scraper-image {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    background: var(--bg);
+}
+.use-card-image {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 0;
+    background: var(--bg);
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo-slot">
+        <img src="aether os logo v2.png" alt="AetherOS Logo" onerror="this.style.display='none'">
+    </div>
+    <div class="masthead">
+        <div class="logo-block">
+            <span class="logo-word logo-aether">Aether</span>
+            <span class="logo-word logo-os">OS</span>
+            <span class="logo-word logo-news">News</span>
+        </div>
+    </div>
+</header>
+
+<!-- NAV -->
+<nav>
+    <a href="#politics" class="active">Politics</a>
+    <a href="#cyber">Cyber &amp; Quantum</a>
+    <a href="#business">Business Global</a>
+    <a href="#war-defence">War &amp; Defence</a>
+    <div class="nav-dropdown">
+        <a href="#" class="dropdown-trigger">Community &#9660;</a>
+        <div class="dropdown-menu">
+            <a href="#arts">Arts</a>
+            <a href="#business-community">Business Community</a>
+            <a href="#your-say">Your Say</a>
+            <a href="#articles-blogs">Articles and Blogs</a>
+            <a href="#ceo-blog">CEO Blog Diary</a>
+        </div>
+    </div>
+</nav>
+
+<!-- BREAKING TICKER -->
+<div class="ticker-bar">
+    <span class="ticker-label">&#9889; Breaking</span>
+    <div class="ticker-scroll">
+        <div class="ticker-inner">
+            <span>UK phone ban for under-16s becomes law — Big Tech faces millions in fines</span>
+            <span>7 Prime Ministers in 10 years: Political instability at record high</span>
+            <span>Kexit reshapes UK business landscape — SME confidence dips</span>
+            <span>AI regulation bill passes Commons — SME exemptions confirmed</span>
+            <span>Cyber attack contained across NHS trust network</span>
+            <!-- Duplicate for seamless loop -->
+            <span>UK phone ban for under-16s becomes law — Big Tech faces millions in fines</span>
+            <span>7 Prime Ministers in 10 years: Political instability at record high</span>
+            <span>Kexit reshapes UK business landscape — SME confidence dips</span>
+            <span>AI regulation bill passes Commons — SME exemptions confirmed</span>
+            <span>Cyber attack contained across NHS trust network</span>
+        </div>
+    </div>
+</div>
+
+<!-- SCROLLING CARDS (TABS) UNDER TICKER -->
+<div class="scroll-cards-bar">
+    <div class="scroll-cards-inner">
+        <!-- Card 1 -->
+        <div class="scroll-card">
+            <img src="https://images.unsplash.com/photo-1563986768609-322da13575f2?w=300&h=100&fit=crop" alt="" style="width:100%;height:80px;object-fit:cover;border-radius:8px 8px 0 0;margin-bottom:8px;" onerror="this.style.display='none'">
+            <span class="sc-tag politics">Politics</span>
+            <h3>Phone Ban Under-16s: What It Means</h3>
+            <p>Landmark legislation prohibits smartphone sales to children under 16.</p>
+            <div class="sc-time">45m ago</div>
+        </div>
+        <!-- Card 2 -->
+        <div class="scroll-card">
+            <img src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=300&h=100&fit=crop" alt="" style="width:100%;height:80px;object-fit:cover;border-radius:8px 8px 0 0;margin-bottom:8px;" onerror="this.style.display='none'">
+            <span class="sc-tag politics">Politics</span>
+            <h3>7 PMs in 10 Years: Analysis</h3>
+            <p>Revolving door of British leadership since 2016 and what comes next.</p>
+            <div class="sc-time">2h ago</div>
+        </div>
+        <!-- Card 3 -->
+        <div class="scroll-card">
+            <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=300&h=100&fit=crop" alt="" style="width:100%;height:80px;object-fit:cover;border-radius:8px 8px 0 0;margin-bottom:8px;" onerror="this.style.display='none'">
+            <span class="sc-tag business">Business</span>
+            <h3>Big Tech Braces for Impact</h3>
+            <p>Apple, Google, Meta face revenue hit from landmark UK legislation.</p>
+            <div class="sc-time">3h ago</div>
+        </div>
+        <!-- Card 4 -->
+        <div class="scroll-card">
+            <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=300&h=100&fit=crop" alt="" style="width:100%;height:80px;object-fit:cover;border-radius:8px 8px 0 0;margin-bottom:8px;" onerror="this.style.display='none'">
+            <span class="sc-tag cyber">Cyber</span>
+            <h3>NHS Attack: Lessons for SMEs</h3>
+            <p>AetherOS detects threat pattern — here's what every business should know.</p>
+            <div class="sc-time">1h ago</div>
+        </div>
+        <!-- Card 5 -->
+        <div class="scroll-card">
+            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=300&h=100&fit=crop" alt="" style="width:100%;height:80px;object-fit:cover;border-radius:8px 8px 0 0;margin-bottom:8px;" onerror="this.style.display='none'">
+            <span class="sc-tag tech">Technology</span>
+            <h3>AI Regulation Bill Explained</h3>
+            <p>What the new AI governance framework means for small business.</p>
+            <div class="sc-time">4h ago</div>
+        </div>
+        <!-- Card 6 -->
+        <div class="scroll-card">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=300&h=100&fit=crop" alt="" style="width:100%;height:80px;object-fit:cover;border-radius:8px 8px 0 0;margin-bottom:8px;" onerror="this.style.display='none'">
+            <span class="sc-tag defence">Defence</span>
+            <h3>Kexit: Security Implications</h3>
+            <p>Each political transition creates gaps in national cyber posture.</p>
+            <div class="sc-time">5h ago</div>
+        </div>
+        <!-- Card 7 -->
+        <div class="scroll-card">
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=300&h=100&fit=crop" alt="" style="width:100%;height:80px;object-fit:cover;border-radius:8px 8px 0 0;margin-bottom:8px;" onerror="this.style.display='none'">
+            <span class="sc-tag politics">Politics</span>
+            <h3>Tech Investment Zones Launched</h3>
+            <p>Chancellor announces Midlands and Northern Powerhouse zones.</p>
+            <div class="sc-time">6h ago</div>
+        </div>
+        <!-- Card 8 -->
+        <div class="scroll-card">
+            <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=300&h=100&fit=crop" alt="" style="width:100%;height:80px;object-fit:cover;border-radius:8px 8px 0 0;margin-bottom:8px;" onerror="this.style.display='none'">
+            <span class="sc-tag business">Business</span>
+            <h3>SME Confidence Index Rises</h3>
+            <p>Despite political turbulence, small business optimism grows.</p>
+            <div class="sc-time">8h ago</div>
+        </div>
+        <!-- Duplicate for seamless loop -->
+        <div class="scroll-card">
+            <img src="https://images.unsplash.com/photo-1563986768609-322da13575f2?w=300&h=100&fit=crop" alt="" style="width:100%;height:80px;object-fit:cover;border-radius:8px 8px 0 0;margin-bottom:8px;" onerror="this.style.display='none'">
+            <span class="sc-tag politics">Politics</span>
+            <h3>Phone Ban Under-16s: What It Means</h3>
+            <p>Landmark legislation prohibits smartphone sales to children under 16.</p>
+            <div class="sc-time">45m ago</div>
+        </div>
+        <div class="scroll-card">
+            <img src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=300&h=100&fit=crop" alt="" style="width:100%;height:80px;object-fit:cover;border-radius:8px 8px 0 0;margin-bottom:8px;" onerror="this.style.display='none'">
+            <span class="sc-tag politics">Politics</span>
+            <h3>7 PMs in 10 Years: Analysis</h3>
+            <p>Revolving door of British leadership since 2016 and what comes next.</p>
+            <div class="sc-time">2h ago</div>
+        </div>
+        <div class="scroll-card">
+            <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=300&h=100&fit=crop" alt="" style="width:100%;height:80px;object-fit:cover;border-radius:8px 8px 0 0;margin-bottom:8px;" onerror="this.style.display='none'">
+            <span class="sc-tag business">Business</span>
+            <h3>Big Tech Braces for Impact</h3>
+            <p>Apple, Google, Meta face revenue hit from landmark UK legislation.</p>
+            <div class="sc-time">3h ago</div>
+        </div>
+        <div class="scroll-card">
+            <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=300&h=100&fit=crop" alt="" style="width:100%;height:80px;object-fit:cover;border-radius:8px 8px 0 0;margin-bottom:8px;" onerror="this.style.display='none'">
+            <span class="sc-tag cyber">Cyber</span>
+            <h3>NHS Attack: Lessons for SMEs</h3>
+            <p>AetherOS detects threat pattern — here's what every business should know.</p>
+            <div class="sc-time">1h ago</div>
+        </div>
+        <div class="scroll-card">
+            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=300&h=100&fit=crop" alt="" style="width:100%;height:80px;object-fit:cover;border-radius:8px 8px 0 0;margin-bottom:8px;" onerror="this.style.display='none'">
+            <span class="sc-tag tech">Technology</span>
+            <h3>AI Regulation Bill Explained</h3>
+            <p>What the new AI governance framework means for small business.</p>
+            <div class="sc-time">4h ago</div>
+        </div>
+        <div class="scroll-card">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=300&h=100&fit=crop" alt="" style="width:100%;height:80px;object-fit:cover;border-radius:8px 8px 0 0;margin-bottom:8px;" onerror="this.style.display='none'">
+            <span class="sc-tag defence">Defence</span>
+            <h3>Kexit: Security Implications</h3>
+            <p>Each political transition creates gaps in national cyber posture.</p>
+            <div class="sc-time">5h ago</div>
+        </div>
+        <div class="scroll-card">
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=300&h=100&fit=crop" alt="" style="width:100%;height:80px;object-fit:cover;border-radius:8px 8px 0 0;margin-bottom:8px;" onerror="this.style.display='none'">
+            <span class="sc-tag politics">Politics</span>
+            <h3>Tech Investment Zones Launched</h3>
+            <p>Chancellor announces Midlands and Northern Powerhouse zones.</p>
+            <div class="sc-time">6h ago</div>
+        </div>
+        <div class="scroll-card">
+            <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=300&h=100&fit=crop" alt="" style="width:100%;height:80px;object-fit:cover;border-radius:8px 8px 0 0;margin-bottom:8px;" onerror="this.style.display='none'">
+            <span class="sc-tag business">Business</span>
+            <h3>SME Confidence Index Rises</h3>
+            <p>Despite political turbulence, small business optimism grows.</p>
+            <div class="sc-time">8h ago</div>
+        </div>
+    </div>
+</div>
+
+<!-- MAIN GRID -->
+<div class="main-container">
+
+    <!-- LEFT: VIDEO -->
+    <div class="left-column">
+        <div class="video-block">
+            <div class="video-wrapper">
+                <iframe
+                    src="https://www.youtube.com/embed/Dd0-BPCqTGM"
+                    title="YouTube video player"
+                    style="position:absolute;inset:0;width:100%;height:100%;border:0;"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                </iframe>
+                <div class="video-error-fallback" style="display:none;">
+                    <a href="https://www.youtube.com/watch?v=Dd0-BPCqTGM" target="_blank" class="play-btn"></a>
+                    <a href="https://www.youtube.com/watch?v=Dd0-BPCqTGM" target="_blank">&#9654; Watch on YouTube</a>
+                </div>
+            </div>
+            <div class="video-caption">
+                <span class="section-tag feature">&#9654; Live / Broadcast</span>
+                <h2>AetherOS: The Intelligence Platform in Action</h2>
+                <p>See how AetherOS is transforming business operations across the UK with AI-powered resilience, real-time cyber defense, and automated compliance mapping.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- CENTER: TOP STORIES -->
+    <div class="center-column">
+        <div class="col-header"><span class="strobe">Top Stories</span></div>
+
+        <div class="story featured politics">
+            <img src="https://images.unsplash.com/photo-1563986768609-322da13575f2?w=600&h=300&fit=crop" alt="UK Parliament" class="story-image" onerror="this.style.display='none'">
+            <span class="sc-tag politics">Featured</span>
+            <h2><a href="#">Phone Ban for Under-16s Becomes Law — Big Tech Companies Could Lose Billions</a></h2>
+            <p>Legislation passed through Parliament this week officially bans the sale of smartphones to anyone under 16. Social media platforms must now enforce strict age verification or face fines of up to 4% of global turnover. Apple, Google, and Meta shares dipped sharply following the announcement.</p>
+            <div class="story-meta">Politics &middot; 45m ago</div>
+        </div>
+
+        <div class="story politics">
+            <img src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=600&h=300&fit=crop" alt="Downing Street" class="story-image" onerror="this.style.display='none'">
+            <span class="sc-tag politics">Politics</span>
+            <h2><a href="#">7 Prime Ministers in 10 Years — A Rate of Change That Shakes Every Foundation</a></h2>
+            <p>As we mark another resignation, an entire generation has now lived through seven different occupants of No10. Each one came with big promises and bold plans — few delivered lasting change. Here's our deep dive into what this means for policy stability and SME planning.</p>
+            <div class="story-meta">Politics &middot; 2h ago</div>
+        </div>
+
+        <div class="story politics">
+            <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=600&h=300&fit=crop" alt="Political Analysis" class="story-image" onerror="this.style.display='none'">
+            <span class="sc-tag politics">Politics</span>
+            <h2><a href="#">The Kexit Factor: How Political Exits Reshape the Tech Landscape</a></h2>
+            <p>Each leadership transition creates gaps in cyber posture, policy continuity, and regulatory focus. Our analysis shows a direct correlation between political instability and increased vulnerability windows for UK businesses.</p>
+            <div class="story-meta">Analysis &middot; 3h ago</div>
+        </div>
+
+        <div class="story cyber">
+            <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&h=300&fit=crop" alt="Cyber Security" class="story-image" onerror="this.style.display='none'">
+            <span class="sc-tag cyber">Cyber Security</span>
+            <h2><a href="#">Cyber Attack on NHS Trust Contained — AetherOS Detection Flagged Within Minutes</a></h2>
+            <p>A coordinated ransomware attempt across three NHS trusts was neutralised early after AetherOS heuristic nodes flagged the anomalous pattern. Full incident report now available through our threat intelligence dashboard.</p>
+            <div class="story-meta">Cyber Security &middot; 1h ago</div>
+        </div>
+
+        <div class="story business">
+            <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&h=300&fit=crop" alt="Stock Market" class="story-image" onerror="this.style.display='none'">
+            <span class="sc-tag business">Business Global</span>
+            <h2><a href="#">Big Tech Stocks Brace for Under-16 Ban Impact: Investment Opportunities for SMEs?</a></h2>
+            <p>Market analysts suggest the phone ban could accelerate the shift towards AI-powered platforms that don't rely on traditional app-store dynamics. Smaller tech firms may benefit from reduced competition for younger demographics' attention.</p>
+            <div class="story-meta">Business &middot; 4h ago</div>
+        </div>
+
+        <div class="story tech">
+            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=300&fit=crop" alt="AI Technology" class="story-image" onerror="this.style.display='none'">
+            <span class="sc-tag tech">Technology</span>
+            <h2><a href="#">AI Governance Bill Passes Commons — What SMEs Need to Know About the New Framework</a></h2>
+            <p>The newly passed legislation creates a tiered system for AI regulation, with exemptions for companies under 50 employees. AetherOS compliance tools can help you navigate the requirements with minimal overhead.</p>
+            <div class="story-meta">Technology &middot; 5h ago</div>
+        </div>
+
+        <div class="story defence">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&h=300&fit=crop" alt="Data Security" class="story-image" onerror="this.style.display='none'">
+            <span class="sc-tag defence">Defence</span>
+            <h2><a href="#">Cross-Border Data Treaties: The Next Battleground for UK Business</a></h2>
+            <p>As international negotiations stall over cryptographic key custody, UK firms must prepare for potential data localization requirements. Our guide outlines the practical steps to ensure compliance.</p>
+            <div class="story-meta">Defence &middot; 6h ago</div>
+        </div>
+
+        < !-- SCRAPER SECTION 1: Politics Feed -->
+        <div class="scraper-section" id="scraper-section-1" style="border-left:4px solid var(--violet);">
+            <div class="scraper-header">
+                <span class="scraper-title strobe-violet">Politics Feed</span>
+                <span class="scraper-num" style="background:var(--violet);font-size:0.55rem;padding:2px 8px;">LIVE</span>
+            </div>
+            <img src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=600&h=200&fit=crop" alt="Politics" class="scraper-image" style="height:120px;" onerror="this.style.display='none'">
+            <div class="scraper-content">
+                <ul>
+                    <li><strong>Breaking:</strong> Phone ban for under-16s passes Commons with 387-vote majority</li>
+                    <li><strong>Analysis:</strong> 7 Prime Ministers in 10 years — policy whiplash quantified</li>
+                    <li><strong>Tech Impact:</strong> Kexit creates regulatory gap in AI governance framework</li>
+                    <li><strong>Funding:</strong> &pound;2.4B tech investment zone announced for Midlands</li>
+                    <li><strong>Opinion:</strong> Political instability is the new normal — adapt or fail</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- SCRAPER SECTION 2: Cyber & Quantum Feed -->
+        <div class="scraper-section" id="scraper-section-2" style="border-left:4px solid var(--cyan);">
+            <div class="scraper-header">
+                <span class="scraper-title strobe">Cyber &amp; Quantum Feed</span>
+                <span class="scraper-num" style="background:var(--cyan);font-size:0.55rem;padding:2px 8px;">LIVE</span>
+            </div>
+            <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600&h=200&fit=crop" alt="Cyber Security" class="scraper-image" style="height:120px;" onerror="this.style.display='none'">
+            <div class="scraper-content">
+                <ul>
+                    <li><strong>Alert:</strong> Ransomware attempt on NHS trusts neutralised — AetherOS flagged in 3 minutes</li>
+                    <li><strong>Guidance:</strong> Post-quantum cryptography migration — 5-step roadmap for SMEs</li>
+                    <li><strong>Threat Intel:</strong> New zero-day signatures detected in the wild — patch now</li>
+                    <li><strong>NCSC:</strong> Updated Cyber Essentials guidelines published for small business</li>
+                    <li><strong>Analysis:</strong> 68% of UK SMEs still running vulnerable legacy systems</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- SCRAPER SECTION 3: Business & Markets Feed -->
+        <div class="scraper-section" id="scraper-section-3" style="border-left:4px solid var(--green);">
+            <div class="scraper-header">
+                <span class="scraper-title strobe-green">Business &amp; Markets</span>
+                <span class="scraper-num" style="background:var(--green);font-size:0.55rem;padding:2px 8px;">LIVE</span>
+            </div>
+            <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&h=200&fit=crop" alt="Markets" class="scraper-image" style="height:120px;" onerror="this.style.display='none'">
+            <div class="scraper-content">
+                <ul>
+                    <li><strong>Markets:</strong> Big Tech shares dip 4.2% on phone ban announcement</li>
+                    <li><strong>Startups:</strong> Tech investment zones offer 10-year tax relief for qualifying firms</li>
+                    <li><strong>Forecast:</strong> AI SOP market projected to reach &pound;4.2B by end of 2026</li>
+                    <li><strong>Supply:</strong> Semiconductor shortages easing — TSMC increases UK allocation</li>
+                    <li><strong>SME Confidence:</strong> Index rises 3 points despite political headwinds</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- SCRAPER SECTION 4: War & Defence Feed -->
+        <div class="scraper-section" id="scraper-section-4" style="border-left:4px solid var(--red);">
+            <div class="scraper-header">
+                <span class="scraper-title strobe-red">War &amp; Defence</span>
+                <span class="scraper-num" style="background:var(--red);font-size:0.55rem;padding:2px 8px;">LIVE</span>
+            </div>
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&h=200&fit=crop" alt="Defence" class="scraper-image" style="height:120px;" onerror="this.style.display='none'">
+            <div class="scraper-content">
+                <ul>
+                    <li><strong>Sovereign:</strong> UK mandates domestic silicon for critical infrastructure by 2027</li>
+                    <li><strong>Treaties:</strong> Cross-border data treaty talks stall over key custody dispute</li>
+                    <li><strong>Regulation:</strong> Autonomous infrastructure oversight committee established</li>
+                    <li><strong>Dual-Use:</strong> AI defence applications face new export control restrictions</li>
+                    <li><strong>Threat Level:</strong> UK cyber threat level remains at SUBSTANTIAL</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- SCRAPER SECTION 5: Community & Innovation Feed -->
+        <div class="scraper-section" id="scraper-section-5" style="border-left:4px solid var(--gold);">
+            <div class="scraper-header">
+                <span class="scraper-title strobe-gold">Community &amp; Innovation</span>
+                <span class="scraper-num" style="background:var(--gold);font-size:0.55rem;padding:2px 8px;">LIVE</span>
+            </div>
+            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=200&fit=crop" alt="Community" class="scraper-image" style="height:120px;" onerror="this.style.display='none'">
+            <div class="scraper-content">
+                <ul>
+                    <li><strong>Release:</strong> AetherOS v2.5 — scraper feeds, strobe animations, video fix</li>
+                    <li><strong>Case Study:</strong> Manufacturing firm saves &pound;40K in hidden inefficiencies</li>
+                    <li><strong>API:</strong> New threat intelligence endpoints now available for developers</li>
+                    <li><strong>Spotlight:</strong> How one UK startup scaled 300% using AetherOS automation</li>
+                    <li><strong>Community:</strong> Join 2,400+ SMEs on the Aether Business Community</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- RIGHT: MOST READ -->
+    <div class="right-column">
+        <div class="col-header">Most Read</div>
+        <div class="most-read-item">
+            <span class="most-read-num">1</span>
+            <img src="https://images.unsplash.com/photo-1563986768609-322da13575f2?w=80&h=80&fit=crop" alt="" style="width:60px;height:60px;object-fit:cover;border-radius:6px;flex-shrink:0;" onerror="this.style.display='none'">
+            <span class="most-read-title">Phone Ban for Under-16s: What It Means for Your Business</span>
+        </div>
+        <div class="most-read-item">
+            <span class="most-read-num">2</span>
+            <img src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=80&h=80&fit=crop" alt="" style="width:60px;height:60px;object-fit:cover;border-radius:6px;flex-shrink:0;" onerror="this.style.display='none'">
+            <span class="most-read-title">7 Prime Ministers in 10 Years: The Impact on SME Policy</span>
+        </div>
+        <div class="most-read-item">
+            <span class="most-read-num">3</span>
+            <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=80&h=80&fit=crop" alt="" style="width:60px;height:60px;object-fit:cover;border-radius:6px;flex-shrink:0;" onerror="this.style.display='none'">
+            <span class="most-read-title">Kexit: How Political Instability Affects Cyber Security</span>
+        </div>
+        <div class="most-read-item">
+            <span class="most-read-num">4</span>
+            <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=80&h=80&fit=crop" alt="" style="width:60px;height:60px;object-fit:cover;border-radius:6px;flex-shrink:0;" onerror="this.style.display='none'">
+            <span class="most-read-title">NHS Cyber Attack: 5 Lessons Every SME Should Learn</span>
+        </div>
+        <div class="most-read-item">
+            <span class="most-read-num">5</span>
+            <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=80&h=80&fit=crop" alt="" style="width:60px;height:60px;object-fit:cover;border-radius:6px;flex-shrink:0;" onerror="this.style.display='none'">
+            <span class="most-read-title">Big Tech Stock Dip: Buying Opportunity for Smaller Firms?</span>
+        </div>
+        <div class="most-read-item">
+            <span class="most-read-num">6</span>
+            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=80&h=80&fit=crop" alt="" style="width:60px;height:60px;object-fit:cover;border-radius:6px;flex-shrink:0;" onerror="this.style.display='none'">
+            <span class="most-read-title">AI Regulation Bill: SME Exemptions Explained</span>
+        </div>
+        <div class="most-read-item">
+            <span class="most-read-num">7</span>
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=80&h=80&fit=crop" alt="" style="width:60px;height:60px;object-fit:cover;border-radius:6px;flex-shrink:0;" onerror="this.style.display='none'">
+            <span class="most-read-title">Tech Investment Zones: Where to Set Up in 2026</span>
+        </div>
+        <div class="most-read-item">
+            <span class="most-read-num">8</span>
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=80&h=80&fit=crop" alt="" style="width:60px;height:60px;object-fit:cover;border-radius:6px;flex-shrink:0;" onerror="this.style.display='none'">
+            <span class="most-read-title">Post-Quantum Cryptography: Is Your Business Ready?</span>
+        </div>
+    </div>
+
+</div>
+
+<!-- TESTIMONIAL -->
+<div class="testimonial">
+    <p>"Aether mapped our entire operational structure in two weeks. We found &pound;40K in hidden inefficiencies and our audit prep went from 6 weeks to 4 days."</p>
+    <cite>&mdash; UK Manufacturing SME, 2025</cite>
+</div>
+
+<!-- CTA -->
+<section class="cta-banner">
+    <h2>Ready to Operate<br><span>Smarter?</span></h2>
+    <p>Join UK SMEs using AetherOS to automate operations, protect assets, and scale without the hiring spike.</p>
+    <div class="cta-btns">
+        <a href="/sme.html#promo" class="cta-btn-main">Get Free Consultation</a>
+        <a href="/aether-os-promo-pricing.html" class="cta-btn-alt">View Pricing</a>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-logo">AETHER<em>OS</em></div>
+    <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/sme.html">SME</a>
+        <a href="/aether-os-promo-pricing.html">Pricing</a>
+        <a href="/aether-news.html">News</a>
+        <a href="/community.html">Community</a>
+        <a href="/gold.html">Gold</a>
+    </div>
+    <div class="footer-copy">&copy; 2026 Aether Business Architects Ltd &middot; jay@aetherbusinessarchitectsltd.uk</div>
+</footer>
+
+</body>
+</html>
