@@ -244,171 +244,32 @@ footer{padding:28px 0;text-align:center;border-top:1px solid rgba(255,255,255,0.
 
 <div class="neon-wave"></div>
 
-/* ═══ HEADER ═══ */
-header {
-    background: var(--white);
-    padding: 14px 24px;
-    border-bottom: 3px solid var(--gold);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-.logo-slot { height: 56px; display: flex; align-items: center; justify-content: center; margin-right: 16px; }
-.logo-slot img { max-height: 56px; max-width: 100%; }
-.masthead { display: flex; align-items: center; }
-.logo-block { display: flex; align-items: center; gap: 3px; }
-.logo-word { display: inline-flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 900; letter-spacing: 1px; padding: 7px 10px; line-height: 1; text-transform: uppercase; border-radius: 4px; }
-.logo-aether { background: var(--ink); color: #fff; }
-.logo-os { background: var(--gold); color: var(--ink); }
-.logo-news { background: linear-gradient(135deg, var(--cyan) 0%, var(--violet) 100%); color: #fff; }
+<!-- NAVIGATION PANEL -->
+<nav id="nav">
+  <a href="/" class="nav-brand">
+    <img src="aether os logo v2.png" alt="AetherOS" class="nav-logo" onerror="this.style.display='none'"> 
+    <div class="nav-brand-text">AETHER<em>OS</em></div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="/">Home</a></li>
+    <li><a href="/sme.html" style="color:#00E5FF;text-shadow:0 0 10px rgba(0,229,255,0.4)">SME</a></li>
+    <li><a href="/aether-os-promo-pricing.html">Pricing</a></li>
+    <li><a href="/aether-news.html">News</a></li>
+    <li class="dropdown">
+      <a href="/community.html">Community &#9660;</a>
+      <div class="dropdown-content">
+        <a href="/ceo-blog-diary.html">CEO Blog Diary</a>
+        <a href="/community.html#cyber-news">Cyber News</a>
+        <a href="/community.html#war-defence">War &amp; Defence</a>
+        <a href="/community.html#arts">Arts</a>
+        <a href="/community.html#business">Business Community</a>
+      </div>
+    </li>
+    <li><a href="/gold.html" style="color:var(--gold)">Gold</a></li>
+  </ul>
+  <a href="#promo" class="nav-cta">Free Consultation</a>
+</nav>
 
-/* ═══ NAV ═══ */
-nav {
-    background: var(--white);
-    border-bottom: 2px solid var(--border);
-    display: flex;
-    justify-content: center;
-    overflow-x: auto;
-    overflow-y: visible;
-    scrollbar-width: none;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
-}
-nav::-webkit-scrollbar { display: none; }
-nav a {
-    color: var(--ink2);
-    text-decoration: none;
-    padding: 14px 24px;
-    font-family: var(--orbitron);
-    font-size: 0.78rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    white-space: nowrap;
-    border-bottom: 3px solid transparent;
-    transition: all 0.2s;
-    display: block;
-}
-nav a:hover { color: var(--gold); border-bottom-color: var(--gold); }
-nav a.active { color: var(--gold); border-bottom-color: var(--gold); }
-
-/* ═══ DROPDOWN ═══ */
-.nav-dropdown { position: relative; }
-.dropdown-menu {
-    position: absolute; top: 100%; left: 0;
-    background: var(--white); border: 1px solid var(--border);
-    box-shadow: var(--shadow-lg); min-width: 200px;
-    display: none; flex-direction: column; z-index: 50;
-    border-radius: 0 0 var(--radius) var(--radius);
-}
-.nav-dropdown:hover .dropdown-menu,
-.nav-dropdown:focus-within .dropdown-menu { display: flex; }
-.dropdown-menu a {
-    padding: 12px 20px; border-bottom: 1px solid var(--border);
-    font-size: 0.72rem; font-family: var(--mono); letter-spacing: 0.08em;
-    text-transform: uppercase; color: var(--ink2); font-weight: 500;
-}
-.dropdown-menu a:hover { background: var(--bg); color: var(--gold); }
-
-/* ═══ TICKER ═══ */
-.ticker-bar {
-    background: var(--red); color: #fff; display: flex;
-    align-items: center; overflow: hidden; height: 36px;
-}
-.ticker-label {
-    background: rgba(0,0,0,0.2); padding: 0 16px; height: 100%;
-    display: flex; align-items: center; font-family: var(--orbitron);
-    font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em;
-    text-transform: uppercase; white-space: nowrap; flex-shrink: 0;
-}
-.ticker-scroll { overflow: hidden; flex: 1; }
-.ticker-inner {
-    display: inline-block; white-space: nowrap;
-    animation: tickerScroll 35s linear infinite; padding-left: 100%;
-}
-.ticker-inner span { margin-right: 60px; font-family: var(--mono); font-size: 0.85rem; font-weight: 500; }
-.ticker-inner span::before { content: '\25CF'; margin-right: 10px; opacity: 0.6; }
-@keyframes tickerScroll {
-    from { transform: translateX(0); }
-    to { transform: translateX(-100%); }
-}
-
-/* ═══ SCROLLING CARDS (TABS UNDER TICKER) ═══ */
-.scroll-cards-bar {
-    background: var(--white);
-    border-bottom: 1px solid var(--border);
-    padding: 16px 0;
-    overflow: hidden;
-    position: relative;
-}
-.scroll-cards-inner {
-    display: flex;
-    gap: 16px;
-    animation: scrollCards 40s linear infinite;
-    width: max-content;
-    padding: 0 24px;
-}
-.scroll-cards-inner:hover { animation-play-state: paused; }
-@keyframes scrollCards {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
-}
-.scroll-card {
-    min-width: 280px;
-    max-width: 300px;
-    background: var(--bg);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 16px;
-    transition: all 0.3s;
-    cursor: pointer;
-    flex-shrink: 0;
-}
-.scroll-card:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow);
-    border-color: var(--gold);
-}
-.scroll-card .sc-tag {
-    display: inline-block;
-    font-family: var(--mono);
-    font-size: 0.6rem;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    padding: 3px 10px;
-    border-radius: 4px;
-    margin-bottom: 8px;
-}
-.scroll-card .sc-tag.politics { background: rgba(139,92,246,0.1); color: var(--violet); }
-.scroll-card .sc-tag.cyber { background: rgba(0,136,168,0.1); color: var(--cyan); }
-.scroll-card .sc-tag.business { background: rgba(16,185,129,0.1); color: var(--green); }
-.scroll-card .sc-tag.tech { background: rgba(200,169,110,0.1); color: var(--gold); }
-.scroll-card .sc-tag.defence { background: rgba(255,77,109,0.1); color: var(--red); }
-.scroll-card h3 {
-    font-family: var(--serif);
-    font-size: 1rem;
-    font-weight: 700;
-    color: var(--ink);
-    margin: 0 0 6px;
-    line-height: 1.3;
-}
-.scroll-card p {
-    font-size: 0.82rem;
-    color: var(--muted);
-    line-height: 1.5;
-    margin: 0;
-}
-.scroll-card .sc-time {
-    font-family: var(--mono);
-    font-size: 0.65rem;
-    color: var(--muted);
-    margin-top: 8px;
-    letter-spacing: 0.05em;
-}
 <!-- HERO SPLIT LAYOUT PANEL -->
 <section class="hero">
 <div class="container">
