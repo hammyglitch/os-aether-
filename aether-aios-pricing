@@ -444,7 +444,7 @@ footer{padding:40px 0;text-align:center;border-top:1px solid rgba(0,0.04);backgr
     <p>Join UK SMEs using AetherOS to automate operations, protect assets, and scale without the hiring spike.</p>
     <div class="cta-btns">
       <a href="#pricing" class="cta-btn-main">Get 50% Off Today</a>
-      <a href="/sme.html" class="cta-btn-alt">Learn More</a>
+      <a href="/aether-aios-sme-v4.5.2.html" class="cta-btn-alt">Learn More</a>
     </div>
   </div>
 </section>
