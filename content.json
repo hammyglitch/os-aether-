@@ -1,0 +1,66 @@
+{
+  "news": [
+    {
+      "headline": "Phone Ban for Under-16s Becomes Law",
+      "summary": "Legislation banning smartphone sales to under-16s passed this week, with Big Tech facing fines up to 4% of global turnover for non-compliance.",
+      "source": "Aether Intel",
+      "url": "Aether-news-os.html",
+      "timestamp": "2026-07-10T09:00:00Z"
+    },
+    {
+      "headline": "7 Prime Ministers in 10 Years: Policy Whiplash",
+      "summary": "UK political instability continues to reshape SME planning cycles, with regulatory focus shifting on each transition.",
+      "source": "Aether Intel",
+      "url": "Aether-news-os.html",
+      "timestamp": "2026-07-10T07:30:00Z"
+    }
+  ],
+  "cyber": [
+    {
+      "headline": "NHS Trust Ransomware Attempt Neutralised",
+      "summary": "A coordinated ransomware attempt across three NHS trusts was flagged and contained within minutes by heuristic detection.",
+      "source": "Aether Intel",
+      "url": "Aether-news-os.html",
+      "timestamp": "2026-07-10T08:15:00Z"
+    },
+    {
+      "headline": "68% of UK SMEs Running Vulnerable Legacy Systems",
+      "summary": "New analysis shows the majority of small businesses have not migrated off unsupported software, widening the attack surface.",
+      "source": "Aether Intel",
+      "url": "Aether-news-os.html",
+      "timestamp": "2026-07-09T16:00:00Z"
+    }
+  ],
+  "defence": [
+    {
+      "headline": "UK Mandates Domestic Silicon for Critical Infrastructure",
+      "summary": "New sovereign requirements will require critical infrastructure providers to use domestically-produced chips by 2027.",
+      "source": "Aether Intel",
+      "url": "Aether-news-os.html",
+      "timestamp": "2026-07-10T06:45:00Z"
+    },
+    {
+      "headline": "UK Cyber Threat Level Remains at SUBSTANTIAL",
+      "summary": "NCSC guidance unchanged this week, but flags an uptick in supply-chain targeted attempts against SMEs.",
+      "source": "Aether Intel",
+      "url": "Aether-news-os.html",
+      "timestamp": "2026-07-09T12:00:00Z"
+    }
+  ],
+  "business": [
+    {
+      "headline": "Big Tech Shares Dip 4.2% on Phone Ban Announcement",
+      "summary": "Markets reacted quickly to the new legislation, with analysts pointing to opportunities for smaller AI-native platforms.",
+      "source": "Aether Intel",
+      "url": "Aether-news-os.html",
+      "timestamp": "2026-07-10T10:00:00Z"
+    },
+    {
+      "headline": "Tech Investment Zones: £2.4B for the Midlands",
+      "summary": "New tax relief zones announced, offering a 10-year window for qualifying digital and cyber businesses to scale.",
+      "source": "Aether Intel",
+      "url": "Aether-news-os.html",
+      "timestamp": "2026-07-09T14:20:00Z"
+    }
+  ]
+}
