@@ -1052,57 +1052,7 @@ function quizEmailSubmit(e){
   var nav=document.getElementById('nav');
   window.addEventListener('scroll',function(){nav.classList.toggle('scrolled',window.scrollY>20)});
 
-  // Live Intelligence tab switching
-  document.querySelectorAll('.intel-tab').forEach(function(btn){
-    btn.addEventListener('click',function(){
-      document.querySelectorAll('.intel-tab').forEach(function(b){b.classList.remove('active')});
-      document.querySelectorAll('.intel-panel').forEach(function(p){p.classList.remove('active')});
-      this.classList.add('active');
-      document.querySelector('.intel-panel[data-panel="'+this.dataset.tab+'"]').classList.add('active');
-    });
-  });
-
-  document.querySelectorAll('a[href^="#"]').forEach(function(a){
-    a.addEventListener('click',function(e){
-      var target=document.querySelector(this.getAttribute('href'));
-      if(target){e.preventDefault();target.scrollIntoView({behavior:'smooth',block:'start'})}
-    });
-  });
-})();
-
-function toggleFaq(el){el.classList.toggle('active');var answer=el.nextElementSibling;if(answer){answer.classList.toggle('open')}}
-
- ============================================================
-   AUTOMATED SCRAPER INPUT — DISABLED ON PURPOSE
-   ------------------------------------------------------------
-   Each .intel-card above is tagged with an HTML comment:
-     <!-- SCRAPER_INPUT category="news|cyber|defence|business" slot="1|2" -->
-   Two slots exist per tab, ready to be filled by an automated
-   scraping/ingest job. When that job is ready to go live, point
-   it at an endpoint returning JSON shaped like:
-   [{ category:'news', slot:1, headline:'', summary:'', source:'', url:'', timestamp:'' }, ...]
-   then uncomment loadLiveIntel() below and call it on page load.
-
-async function loadLiveIntel(){
-  try{
-    const res = await fetch('/api/intel-feed');
-    const items = await res.json();
-    items.forEach(function(item){
-      const panel = document.querySelector('.intel-panel[data-panel="'+item.category+'"]');
-      if(!panel) return;
-      const card = panel.querySelectorAll('.intel-card')[item.slot-1];
-      if(!card) return;
-      card.querySelector('h3').textContent = item.headline;
-      card.querySelector('p').textContent = item.summary;
-      card.querySelector('.intel-meta').textContent = 'Source: ' + item.source;
-    });
-  }catch(e){
-    console.warn('Live intel feed unavailable', e);
-  }
-}
- loadLiveIntel();
-============================================================ */
-
+ 
 /* ── QUIZ ── */
 var quizQuestions=[
   {
