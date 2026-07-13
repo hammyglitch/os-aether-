@@ -187,7 +187,7 @@ nav a.active { color: var(--gold); border-bottom-color: var(--gold); }
 .nav-dropdown { position: relative; }
 .dropdown-menu {
     position: absolute; top: 100%; left: 0;
-    background: var(--white); border: 1px solid var(--border);
+    background: var(--black); border: 1px solid var(--border);
     box-shadow: var(--shadow-lg); min-width: 200px;
     display: none; flex-direction: column; z-index: 50;
     border-radius: 0 0 var(--radius) var(--radius);
@@ -199,7 +199,7 @@ nav a.active { color: var(--gold); border-bottom-color: var(--gold); }
     font-size: 0.72rem; font-family: var(--mono); letter-spacing: 0.08em;
     text-transform: uppercase; color: var(--ink2); font-weight: 500;
 }
-.dropdown-menu a:hover { background: var(--bg); color: var(--gold); }
+.dropdown-menu a:hover { background: var(--bg); color: var(--black); }
 
 
 
