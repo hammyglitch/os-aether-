@@ -11,7 +11,7 @@
 <style>
 :root {
     --bg: #F8F9FC;
-    --white: #FFFFFF;
+    --white: black;
     --ink: #0B0E17;
     --ink2: #3C4260;
     --muted: #6B7280;
