@@ -201,6 +201,8 @@ nav a.active { color: var(--gold); border-bottom-color: var(--gold); }
 }
 .dropdown-menu a:hover { background: var(--bg); color: var(--gold); }
 
+
+
 /* ═══ TICKER ═══ */
 .ticker-bar {
     background: var(--red); color: #fff; display: flex;
