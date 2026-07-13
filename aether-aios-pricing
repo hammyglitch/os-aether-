@@ -252,7 +252,7 @@ footer{padding:40px 0;text-align:center;border-top:1px solid rgba(0,0.04);backgr
           <li><span class="pricing-check">&#10003;</span> Predictive Risk Scoring</li>
           <li><span class="pricing-check">&#10003;</span> Priority support</li>
         </ul>
-        <a href="https://buy.stripe.com/fZu7sLbdh03t2hn8BB8IU02" class="card-cta primary">Start Free Trial &#8594;</a>
+        <a href="https://buy.stripe.com/fZu7sLbdh03t2hn8BB8IU02" class="card-cta primary">Most Popular &#8594;</a>
       </div>
 
       <!-- ENTERPRISE -->
@@ -269,7 +269,7 @@ footer{padding:40px 0;text-align:center;border-top:1px solid rgba(0,0.04);backgr
           <li><span class="pricing-check">&#10003;</span> Full API access</li>
           <li><span class="pricing-check">&#10003;</span> 24/7 phone support</li>
         </ul>
-        <a href="https://buy.stripe.com/dRm00ja9dg2r1djbNN8IU03" class="card-cta secondary">Contact Sales &#8594;</a>
+        <a href="https://buy.stripe.com/dRm00ja9dg2r1djbNN8IU03" class="card-cta secondary"> go Big &#8594;</a>
       </div>
 
     </div>
