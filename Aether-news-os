@@ -105,6 +105,7 @@ header {
 
 /* ═══ NAV ═══ */
 nav {
+
     background: var(--white);
     border-bottom: 2px solid var(--border);
     display: flex;
