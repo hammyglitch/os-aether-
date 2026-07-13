@@ -733,23 +733,29 @@ function toggleFaq(el){el.classList.toggle('active');var answer=el.nextElementSi
 
 async function loadLiveIntel(){
   try{
-    const res = await fetch('/api/intel-feed');
-    const items = await res.json();
-    items.forEach(function(item){
-      const panel = document.querySelector('.intel-panel[data-panel="'+item.category+'"]');
+    const res = await fetch('content.json', { cache: 'no-store' });
+    const data = await res.json();
+
+    Object.keys(data).forEach(function(category){
+      const panel = document.querySelector('.intel-panel[data-panel="'+category+'"]');
       if(!panel) return;
-      const card = panel.querySelectorAll('.intel-card')[item.slot-1];
-      if(!card) return;
-      card.querySelector('h3').textContent = item.headline;
-      card.querySelector('p').textContent = item.summary;
-      card.querySelector('.intel-meta').textContent = 'Source: ' + item.source;
+      const cards = panel.querySelectorAll('.intel-card');
+
+      data[category].forEach(function(item, i){
+        const card = cards[i];
+        if(!card) return;
+        card.querySelector('h3').textContent = item.headline;
+        card.querySelector('p').textContent = item.summary;
+        card.querySelector('.intel-meta').textContent = 'Source: ' + item.source;
+        const link = card.querySelector('a');
+        if(link) link.href = item.url;
+      });
     });
   }catch(e){
     console.warn('Live intel feed unavailable', e);
   }
 }
-// loadLiveIntel();
-============================================================ */
+loadLiveIntel();
 
 /* ── QUIZ ── */
 var quizQuestions=[
