@@ -671,10 +671,11 @@ footer {
 <body>
 
 <header>
-    <div class="logo-slot">
-        <img src="aether os logo v2.png" alt="AetherOS Logo" onerror="this.style.display='none'">
-    </div>
-    <div class="masthead">
+   .logo-os {
+    background: var(--gold); color: var(--ink);
+    animation: dropInTop 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.55s forwards,
+               pulseGlow 2.4s ease-in-out 1.3s 2;
+}
         <div class="logo-block">
             <span class="logo-word logo-aether">Aether</span>
             <span class="logo-word logo-os">OS</span>
