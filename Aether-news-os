@@ -100,7 +100,7 @@ header {
 .logo-block { display: flex; align-items: center; gap: 3px; }
 .logo-word { display: inline-flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 900; letter-spacing: 1px; padding: 7px 10px; line-height: 1; text-transform: uppercase; border-radius: 4px; opacity: 0; }
 .logo-aether {
-    background: var(--ink); color: #fff;
+    background: var(--ink); color: #000;
     animation: slideInLeft 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.15s forwards;
 }
 .logo-os {
@@ -109,7 +109,7 @@ header {
                pulseGlow 2.4s ease-in-out 1.3s 2;
 }
 .logo-news {
-    background: linear-gradient(135deg, var(--cyan) 0%, var(--violet) 100%); color: #fff;
+    background: linear-gradient(135deg, var(--cyan) 0%, var(--violet) 100%); color: #000;
     animation: slideInRight 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.15s forwards;
 }
 @keyframes slideInLeft {
@@ -135,7 +135,7 @@ header {
 /* ═══ NAV ═══ */
 nav {
 
-    background: var(--white);
+    background: var(--black);
     border-bottom: 2px solid var(--border);
     display: flex;
     justify-content: center;
