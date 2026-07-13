@@ -219,7 +219,7 @@ nav a.active { color: var(--gold); border-bottom-color: var(--gold); }
 
 /* ═══ SCROLLING CARDS (TABS UNDER TICKER) ═══ */
 .scroll-cards-bar {
-    background: var(--white);
+    background: var(--black);
     border-bottom: 1px solid var(--border);
     padding: 16px 0;
     overflow: hidden;
