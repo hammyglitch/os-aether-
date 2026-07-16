@@ -193,7 +193,7 @@ footer { background: var(--bg-dark); color: var(--text-light); padding: 50px 0; 
       </div>
     </li>
   </ul>
-  <a href="/sme.html#promo" class="btn-nav">Free Consultation</a>
+
 </nav>
 
 <!-- HERO SECTION -->
