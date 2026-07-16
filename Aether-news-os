@@ -713,7 +713,7 @@ footer {
     <span class="nav-brand-text" style="color:#000;">AETHER<em>AIOS.</em></span>
   <ul class="nav-links">
    <li>
-    <a href="/aether-aios-sme-v4.5.2.html" style="position:relative; top:-45px;">SME</a>
+    <a href="/aether-aios-sme-v4.5.2.html" style="position:relative; top:-25px;">SME</a>
 </li>
     <li><a href="/aether-aios-Pricing">Pricing</a></li>
     <li><a href="/index.html">Home</a></li>
