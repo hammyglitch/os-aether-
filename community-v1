@@ -342,7 +342,7 @@ footer { background: var(--bg-dark); color: var(--text-light); padding: 50px 0; 
 </section>
 
 <!-- CALL TO ACTION PANEL -->
-<section class="section animation-trigger" style="text-align: center; background: linear-gradient(180deg, var(--bg-dark) 0%, #050a18 100%); color: var(--text-light); cursor: pointer;" onclick="window.location.href='gold-button.html';">
+<section class="section animation-trigger" style="text-align: center; background: linear-gradient(180deg, var(--bg-dark) 0%, #050a18 100%); color: var(--text-light); cursor: pointer;" onclick="window.location.href='gold button.html';">
   <div class="container">
     <!-- Wrap interior content in a block to ensure hover effects work if desired -->
     <span class="section-label">Join AetherOS Network</span>
