@@ -349,7 +349,7 @@ footer { background: var(--bg-dark); color: var(--text-light); padding: 50px 0; 
     <p class="section-sub" style="margin: 0 auto 36px; color: var(--muted-light);">Ready to deploy architectural logic or broadcast your firm's scaling journey across the enterprise landscape?</p>
     <div class="audio-section-wrap">
     <div class="speaker-glow">
-        <img src="loudspeaker.png" alt="Loudspeaker" class="loudspeaker-img">
+        <img src="loud speaker.png" alt="Loudspeaker" class="loudspeaker-img">
     </div>
     <p class="speaker-label">Broadcast Active</p>
 </div>
