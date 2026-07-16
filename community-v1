@@ -186,9 +186,9 @@ footer { background: var(--bg-dark); color: var(--text-light); padding: 50px 0; 
         <a href="#cyber-news">Cyber News</a>
         <a href="#war-defence">War &amp; Defence</a>
         <a href="#arts">Arts</a>
-        <a href="#business">Business Community</a>
-        <a href="#your-say">Your Say</a>
         <a href="#ceo-blog">CEO Blog Diary</a>
+        <a href="#your-say">Your Say</a>
+       
       </div>
     </li>
   </ul>
