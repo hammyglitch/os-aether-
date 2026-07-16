@@ -277,8 +277,7 @@ footer { background: var(--bg-dark); color: var(--text-light); padding: 50px 0; 
       </div>
       <div style="margin-top: 28px; display: flex; flex-direction: column; gap: 12px; align-items: center; width: 100%;">
         <a href="/ceo-blog-diary.html" class="btn-primary" style="background: var(--gold); font-size: 1rem; padding: 16px 36px; width: 100%; text-align: center;">&#9654; Read CEO Blog Diary</a>
-        <a href="/ceo-blog-diary.html#latest" class="btn-secondary" style="width: 100%; text-align: center;">Latest Posts</a>
-        <a href="/ceo-blog-diary.html#archive" class="btn-secondary" style="width: 100%; text-align: center;">Blog Archive</a>
+      
          </div>
     </div>
     <!-- RIGHT: Articles, Blogs & Community -->
