@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aether AIOS - FreeGold Campaign</title>
+    <style>
+        /* --- CSS VARIABLES & RESETS --- */
+        :root {
+            /* Your Custom CSS Variables */
+            --gold: #C8A96E; 
+            --cyan: #00C8DC;
+            --dark: #0B0E17;
+            --white: #ffffff;
+            --ink2: #333333;
+            --serif: 'Georgia', serif;
+            --mono: 'Courier New', monospace;
+            --origin: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            
+            /* Campaign specific (Superman & Gold) */
+            --bg-white: #ffffff;
+            --superman-blue: #0047BB;
+            --superman-red: #ED2939;
+            --gold-box: #FFD700;
+            --gold-dark: #daa520;
+            --text-light: #666666;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: var(--origin);
+        }
+
+        body {
+            background-color: var(--dark);
+            color: var(--white);
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 5vw;
+        }
+
+        /* --- USER NAV CSS --- */
+        nav {position:fixed;top:0;left:0;width:100%;height:70px;max-height:70px;display:flex;align-items:center;justify-content:space-between;padding:0 5vw;background:rgba(11,14,23,0.95);backdrop-filter:blur(10px);z-index:9999;border-bottom:1px solid rgba(200,169,110,0.1);transition:all .4s}
+        nav.scrolled {height:60px;max-height:60px;background:rgba(11,14,23,0.98);backdrop-filter:blur(20px);border-bottom:1px solid rgba(200,169,110,.15)}
+        .nav-brand {display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff;height:100%}
+        .header-logo {width:38px;height:38px;aspect-ratio:1/1;object-fit:contain;display:block;border-radius:8px;flex-shrink:0;transition:all .3s}
+        nav.scrolled .header-logo {width:32px;height:32px}
+        .nav-brand-text {font-family:var(--serif);font-style:italic;font-size:1.05rem;color:#fff;letter-spacing:.02em;white-space:nowrap}
+        .nav-brand-text em {font-style:normal;color:var(--gold)}
+        .nav-links {display:flex;gap:24px;list-style:none;align-items:center}
+        .nav-links li {position:relative}
+        .nav-links>li>a {font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:#fff;text-decoration:none;transition:color .3s;white-space:nowrap}
+        .nav-links>li>a:hover {color:var(--gold)}
+        .dropdown {position:relative;display:inline-block}
+        .dropdown-content {display:none;position:absolute;background:var(--white);min-width:220px;box-shadow:0 8px 16px rgba(0,0,0,0.1);z-index:1;top:100%;left:0;border:1px solid rgba(200,169,110,0.3)}
+        .dropdown-content a {color:var(--ink2);padding:12px 16px;text-decoration:none;display:block;font-size:10px;letter-spacing:1.5px;border-bottom:1px solid rgba(0,0,0,0.05)}
+        .dropdown-content a:hover {background:rgba(200,169,110,0.06);color:var(--gold)}
+        .dropdown:hover .dropdown-content {display:block}
+        .btn {display:inline-block;padding:14px 28px;font-family:var(--origin);font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;text-decoration:none;border:2px solid rgba(255,255,255,0.6);color:#fff;background:transparent;transition:all .4s;cursor:pointer;border-radius:8px;font-weight:600}
+        .btn:hover {background:#fff;color:var(--dark)}
+        .btn-cyan {display:inline-block;padding:14px 28px;font-family:var(--mono);font-size:.64rem;letter-spacing:.28em;text-transform:uppercase;text-decoration:none;border:1px solid var(--cyan);color:var(--cyan);background:transparent;transition:.35s ease;position:relative;overflow:hidden;animation:ctaBorderPulse 3.5s ease-in-out infinite}
+        .btn-cyan:hover {background:var(--cyan);color:var(--dark);transform:translateY(-2px)}
+        @keyframes ctaBorderPulse {0%,100%{box-shadow:0 0 0 rgba(0,200,220,0)}50%{box-shadow:0 0 20px rgba(0,200,220,.32)}}
+
+        /* --- USER HERO CSS --- */
+        .hero {min-height:96vh;display:flex;align-items:center;padding-top:70px;position:relative;overflow:hidden;background:radial-gradient(circle at 80% 20%,rgba(0,200,220,.18),transparent 28%),linear-gradient(135deg,#060810 0%,#0B0E17 50%,#101827 100%);color:white}
+        .hero-bg-grid {position:absolute;inset:0;background-image:linear-gradient(rgba(0,200,220,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(0,200,220,.08) 1px,transparent 1px);background-size:60px 60px;animation:gridMove 20s linear infinite;opacity:.45}
+        .hero::after {content:"";position:absolute;inset:auto -20% -35% -20%;height:55%;background:radial-gradient(circle,rgba(139,92,246,.18),transparent 60%)}
+        @keyframes gridMove {0%{transform:translateY(0)}100%{transform:translateY(60px)}}
+        .scanline {position:absolute;left:0;right:0;top:-20%;height:28%;background:linear-gradient(to bottom,transparent,rgba(0,200,220,.08),transparent);animation:scan 9s ease-in-out infinite;pointer-events:none;z-index:1}
+        @keyframes scan {50%{top:95%}}
+        .hero-cols {display:grid;grid-template-columns:1.2fr 0.8fr;gap:48px;align-items:center;padding:60px 0; position: relative; z-index: 2;}
+        
+        @media (max-width: 900px) {
+            .hero-cols { grid-template-columns: 1fr; text-align: center; }
+            .hero-copy>p { margin: 0 auto 28px auto; }
+            .hero-btns { justify-content: center; }
+        }
+
+        .hero-copy h1 {font-family:var(--serif);font-size:clamp(2.6rem,5vw,4.2rem);font-weight:600;line-height:1.05;margin-bottom:18px;color:#fff}
+        .hero-copy h1 span {color:var(--cyan);font-style:italic;text-shadow:0 0 24px rgba(0,200,220,.25)}
+        .hero-copy>p {font-size:1.05rem;color:rgba(255,255,255,.8);margin-bottom:20px;max-width:560px;line-height:1.75}
+        .hero-btns {display:flex;gap:14px;flex-wrap:wrap;margin-bottom:30px}
+        .section-label {font-family: var(--mono); font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 15px; display: block;}
+
+        /* --- GOLD SUBSCRIPTION FORM --- */
+        .gold-form {
+            background-color: var(--gold-box);
+            padding: 3rem 2rem;
+            border-radius: 12px;
+            width: 100%;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+            border: 2px solid var(--gold-dark);
+            text-align: center;
+            position: relative;
+            z-index: 3;
+            animation: goldPulse 6s ease-in-out infinite;
+        }
+
+        @keyframes goldPulse {
+            0%,100%{box-shadow:0 0 0 rgba(200,169,110,0)}
+            50%{box-shadow:0 0 45px rgba(255,215,0,.35)}
+        }
+
+        .gold-form h2 {
+            color: var(--ink2);
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+            font-family: var(--serif);
+            font-style: italic;
+        }
+
+        .gold-form p.tagline {
+            color: #444;
+            margin-bottom: 2rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.85rem;
+        }
+
+        .gold-form input {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 15px;
+            border: 2px solid var(--white);
+            border-radius: 6px;
+            font-size: 1rem;
+            background: rgba(255,255,255,0.9);
+            color: var(--ink2);
+        }
+
+        .gold-form input:focus {
+            outline: none;
+            border-color: var(--ink2);
+        }
+
+        .gold-form button {
+            width: 100%;
+            padding: 16px;
+            background-color: var(--ink2);
+            color: var(--gold-box);
+            border: none;
+            border-radius: 6px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-top: 10px;
+        }
+
+        .gold-form button:hover {
+            background-color: #000;
+            transform: translateY(-2px);
+        }
+
+        /* --- BONUS SLIDING CARDS SECTION (Superman Colors) --- */
+        .bonus-section {
+            padding: 6rem 5vw;
+            background-color: var(--bg-white);
+            position: relative;
+            z-index: 5;
+            border-top: 4px solid var(--superman-red);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-header h2 {
+            font-size: 2.8rem;
+            color: var(--superman-blue);
+            font-family: var(--serif);
+            font-style: italic;
+        }
+
+        .section-header span {
+            color: var(--superman-red);
+        }
+
+        .slider-wrapper {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .slider-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: var(--superman-blue);
+            color: white;
+            border: none;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            cursor: pointer;
+            z-index: 10;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            transition: background 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .slider-btn:hover {
+            background-color: var(--superman-red);
+        }
+
+        .prev-btn { left: -20px; }
+        .next-btn { right: -20px; }
+
+        .cards-container {
+            display: flex;
+            gap: 2rem;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            scroll-snap-type: x mandatory;
+            padding: 1rem 0.5rem;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        .cards-container::-webkit-scrollbar {
+            display: none;
+        }
+
+        .card {
+            min-width: 320px;
+            background: var(--bg-white);
+            border: 2px solid #eaeaea;
+            border-top: 5px solid var(--superman-blue);
+            border-radius: 8px;
+            padding: 2.5rem 2rem;
+            scroll-snap-align: start;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s, border-color 0.3s;
+            color: var(--ink2);
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            border-top-color: var(--superman-red);
+        }
+
+        .card h3 {
+            color: var(--superman-blue);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .card p {
+            color: var(--text-light);
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .card-tag {
+            display: inline-block;
+            background: #eef4fc;
+            color: var(--superman-blue);
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- NAV -->
+    <nav id="nav">
+        <a href="/" class="nav-brand">
+            <!-- Ensure the logo path is correct for your asset directory -->
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect width=%22100%22 height=%22100%22 rx=%2216%22 fill=%22%230B0E17%22/%3E%3Ctext x=%2250%25%22 y=%2264%25%22 text-anchor=%22middle%22 font-family=%22Georgia,serif%22 font-size=%2258%22 font-style=%22italic%22 fill=%22%23C8A96E%22%3EA%3C/text%3E%3C/svg%3E" alt="AetherOS" class="header-logo">
+            <span class="nav-brand-text">AETHER<em>AIOS.</em></span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="/aether-aios-sme-v4.5.2.html">SME</a></li>
+            <li><a href="/aether-aios-pricing">Pricing</a></li>
+            <li><a href="/Aether-news-os">News</a></li>
+            <li class="dropdown">
+                <a href="/community-v1">Community ▾</a>
+                <div class="dropdown-content">
+                    <a href="/ceo-blog-diary.html">CEO Blog Diary</a>
+                    <a href="/community-v1">Cyber News</a>
+                    <a href="/community-v1">War &amp; Defence</a>
+                    <a href="/community-v1">Arts</a>
+                    <a href="/community-v1">Business Community</a>
+                </div>
+            
+        </ul>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-bg-grid"></div>
+        <div class="scanline"></div>
+        
+        <div class="container hero-cols">
+            
+            <!-- Left Copy Column (UPDATED TEXT) -->
+            <div class="hero-copy">
+                <span class="section-label" style="color:var(--gold)">Aether AIOS — Operational Resilience Platform</span>
+                <h1>Stay 1 Step Ahead.<br><span>Aether AIOS News & Community.</span></h1>
+                <p>Enjoy free dashboard updates, from document apps and bespoke free agent tests to the Aether document decipher. Stay up to date with tech trends and applications.</p>
+                <p style="color: var(--cyan);"><strong>GET the news that matters to you and your business.</strong></p>
+                
+               
+            </div>
+
+<div class="gold-form-wrapper">
+    <div class="gold-form">
+        <h2>FreeGold Subscription</h2>
+        <p class="tagline">Exclusive Access. Zero Cost.</p>
+        
+        <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Secure Email Address" required>
+            <input type="text" name="business_name" placeholder="Business Name" required>
+            
+            <select name="interest" required>
+                <option value="" disabled selected>Select Your Primary Interest...</option>
+                <option value="Get Free Consultation">Get Free Consultation</option>
+                <option value="View Pricing">View Pricing</option>
+                <option value="Politics">Politics</option>
+                <option value="Cyber & Quantum">Cyber & Quantum</option>
+                <option value="Business Global">Business Global</option>
+                <option value="War & Defence">War & Defence</option>
+                <option value="Community Arts and Tech">Community Arts & Tech</option>
+                <option value="Software and Applications">Software & Applications</option>
+            </select>
+            
+            <button type="submit">Claim FreeGold</button>
+        </form>
+    </div>
+</div>
+    </section>
+
+    <!-- AIOS RANGE SLIDING CARDS (White Background, Red/Blue Accents) -->
+    <section class="bonus-section">
+        <div class="section-header">
+            <h2>Bonus: <span>AIOS</span> Range</h2>
+            <p style="color: var(--text-light); margin-top: 10px; font-size: 1.1rem;">Free tools and applications included with your FreeGold tier.</p>
+        </div>
+
+        <div class="slider-wrapper">
+            <button class="slider-btn prev-btn" onclick="slideLeft()">&#10094;</button>
+            
+            <div class="cards-container" id="cardSlider">
+                <!-- Card 1 -->
+                <div class="card">
+                    <h3>V64-Alpha Monitor</h3>
+                    <p>Real-time analytics and predictive engine dashboard for monitoring environmental layers and system health.</p>
+                    <span class="card-tag">Included Free</span>
+                </div>
+                <!-- Card 2 -->
+                <div class="card">
+                    <h3>Network Mapper</h3>
+                    <p>Visual OSI Layer 3 layout tool. Instantly configure static IPs and visualize MAC addresses across the board.</p>
+                    <span class="card-tag">Included Free</span>
+                </div>
+                <!-- Card 3 -->
+                <div class="card">
+                    <h3>Defense Scanner</h3>
+                    <p>Automated endpoint scanning utility. Integrates seamlessly with Nmap protocols for rapid vulnerability checks.</p>
+                    <span class="card-tag">Included Free</span>
+                </div>
+                <!-- Card 4 -->
+                <div class="card">
+                    <h3>Bashcrawl Terminal</h3>
+                    <p>Interactive command-line learning environment and script runner tailored for system architects.</p>
+                    <span class="card-tag">Included Free</span>
+                </div>
+                <!-- Card 5 -->
+                <div class="card">
+                    <h3>Community Bridge</h3>
+                    <p>Direct read/write pipeline to the Business Community and Cyber News servers from your desktop.</p>
+                    <span class="card-tag">Included Free</span>
+                </div>
+            </div>
+            
+            <button class="slider-btn next-btn" onclick="slideRight()">&#10095;</button>
+        </div>
+    </section>
+
+    <!-- SLIDER & NAV JAVASCRIPT -->
+    <script>
+        // Navigation Scroll Effect
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        // Sliding Cards Logic
+        const slider = document.getElementById('cardSlider');
+        const scrollAmount = 350; // Adjust based on card width + gap
+
+        function slideLeft() {
+            slider.scrollBy({
+                left: -scrollAmount,
+                behavior: 'smooth'
+            });
+        }
+
+        function slideRight() {
+            slider.scrollBy({
+                left: scrollAmount,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+
+</body>
+</html>
