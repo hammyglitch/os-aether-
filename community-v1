@@ -727,7 +727,7 @@ footer { background: var(--bg-dark); color: var(--text-light); padding: 50px 0; 
         <p style="font-size: 0.88rem; color: var(--muted); line-height: 1.6; margin: 0;">Throughout civilisation, technology has always influenced man. The hidden cost of global convenience. Discover why we demand 6% revenue commitment and how Gods Share powers community wealth.</p>
       </div>
       <div style="margin-top: 28px; display: flex; flex-direction: column; gap: 12px; align-items: center; width: 100%;">
-        <a href="/ceo-blog-diary.html" class="btn-primary" style="background: var(--gold); font-size: 1rem; padding: 16px 36px; width: 100%; text-align: center;">&#9654; Read CEO Blog Diary</a>
+        <a href="gold button.html" class="btn-primary" style="background: var(--gold); font-size: 1rem; padding: 16px 36px; width: 100%; text-align: center;">&#9654; Read CEO Blog Diary</a>
       
          </div>
     </div>
