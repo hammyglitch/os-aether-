@@ -630,7 +630,7 @@ footer { background: var(--bg-dark); color: var(--text-light); padding: 50px 0; 
     <li><a href="/">Home</a></li>
     <li><a href="/sme.html">SME</a></li>
     <li><a href="/aether-os-promo-pricing.html">Pricing</a></li>
-    <li><a href="/aether-news.html">News</a></li>
+    <li><a href="/aether-news-os">News</a></li>
     <li class="dropdown">
       <a href="/community.html" style="color:var(--cyan);">Community &#9660;</a>
       <div class="dropdown-content">
