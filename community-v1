@@ -816,8 +816,8 @@ footer { background: var(--bg-dark); color: var(--text-light); padding: 50px 0; 
         <p id="hero-line"><span class="cursor">|</span></p>
       </div>
 
-      <a href="/signup.html" class="community-btn">Join Free Today →</a>
-      <a href="/gold.html" class="community-btn gold">Upgrade to Aether Gold ★</a>
+      <a href="/gold button.html" class="community-btn">Join Free Today →</a>
+      <a href="/gold button.html" class="community-btn gold">Upgrade to Aether Gold ★</a>
     </div>
 
     <article class="community-card" id="card-global" itemscope itemtype="https://schema.org/Thing">
