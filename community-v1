@@ -348,7 +348,7 @@
   .community-centre h2{
     font-family:'Cormorant Garamond', serif;
     font-weight:600;
-    font-size:clamp(1.4rem, 2.1vw, 1.8rem);
+    font-size:clamp(1.9rem, 2.1vw, 1.8rem);
     margin:0 0 1rem;
     color:var(--ink);
   }
@@ -367,7 +367,7 @@
     margin:0;
     font-size:.85rem;
     line-height:1.6;
-    color:var(--gold);
+    color: black;
     font-family:'Fira Code', monospace;
   }
   .hero-typebox .cursor{ display:inline-block; width:.5em; animation:blink 1s step-end infinite; color:var(--cyan); }
