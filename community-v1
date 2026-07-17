@@ -928,7 +928,373 @@ footer { background: var(--bg-dark); color: var(--text-light); padding: 50px 0; 
     tick();
   })();
 </script>
+<!-- =========================================
+     AETHER ARTICLES SECTION
+========================================= -->
+<section class="aether-articles">
 
+<div class="articles-title">
+    <h2>AETHER ARTICLES</h2>
+    <p>Current thinking. Popular debates. Real perspectives.</p>
+</div>
+
+<div class="article-grid">
+
+    <!-- ARTICLE 1 -->
+    <article class="article-left">
+
+        <span class="breaking">● TRENDING NOW</span>
+
+        <h3 class="flash-headline">
+            Is Artificial Intelligence Making Businesses More Efficient...
+            Or More Dependent?
+        </h3>
+
+        <p>
+            AI is transforming organisations at unprecedented speed.
+            While automation delivers remarkable gains in productivity,
+            many experts question whether businesses are becoming
+            dangerously dependent upon systems they no longer fully
+            understand.
+        </p>
+
+        <a href="#" class="article-btn">
+            Read Article →
+        </a>
+
+    </article>
+
+    <!-- ARTICLE 2 -->
+    <article class="article-right">
+
+        <span class="breaking">● HOT DEBATE</span>
+
+        <h3 class="flash-headline">
+            Should Cyber Security Become Mandatory For Every SME?
+        </h3>
+
+        <p>
+            Cyber attacks are increasing against small businesses every
+            year. Should governments introduce mandatory cyber standards,
+            or would regulation simply create another burden for growing
+            companies?
+        </p>
+
+        <a href="#" class="article-btn">
+            Read Article →
+        </a>
+
+    </article>
+
+</div>
+
+<div class="article-footer">
+
+<h3>
+Get More Articles & Have Your Say About Popular Debates Today
+</h3>
+
+<p>
+Join the Aether community and explore new ideas, emerging technology,
+business strategy and the conversations shaping tomorrow.
+</p>
+
+<a href="#" class="community-btn">
+Join The Discussion →
+</a>
+
+</div>
+
+</section>
+
+<style>
+
+.aether-articles{
+
+padding:90px 8%;
+background:#fff;
+
+font-family:Arial,Helvetica,sans-serif;
+
+}
+
+.articles-title{
+
+text-align:center;
+margin-bottom:60px;
+
+}
+
+.articles-title h2{
+
+font-size:3rem;
+font-weight:900;
+letter-spacing:3px;
+color:#111;
+
+}
+
+.articles-title p{
+
+font-size:1.15rem;
+color:#555;
+
+}
+
+.article-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:40px;
+
+}
+
+.article-left{
+
+padding:45px;
+border-radius:24px;
+
+background:linear-gradient(
+135deg,
+#7a0000 0%,
+#d41d63 45%,
+#ffffff 100%
+);
+
+box-shadow:0 20px 45px rgba(0,0,0,.18);
+
+}
+
+.article-right{
+
+padding:45px;
+border-radius:24px;
+
+background:linear-gradient(
+135deg,
+#00173a 0%,
+#00d9ff 55%,
+#dffbff 100%
+);
+
+box-shadow:0 20px 45px rgba(0,0,0,.18);
+
+}
+
+.breaking{
+
+display:inline-block;
+
+background:#111;
+color:#fff;
+
+padding:8px 18px;
+
+border-radius:40px;
+
+font-size:.85rem;
+
+font-weight:bold;
+
+margin-bottom:22px;
+
+}
+
+.flash-headline{
+
+font-size:2rem;
+
+font-weight:900;
+
+margin-bottom:25px;
+
+line-height:1.2;
+
+animation:flashText 1.6s infinite;
+
+}
+
+@keyframes flashText{
+
+0%{
+
+opacity:1;
+
+}
+
+50%{
+
+opacity:.45;
+
+}
+
+100%{
+
+opacity:1;
+
+}
+
+}
+
+.article-left h3{
+
+color:#fff;
+
+}
+
+.article-right h3{
+
+color:#001d47;
+
+}
+
+.article-left p{
+
+font-size:1.05rem;
+
+line-height:1.8;
+
+color:#111;
+
+}
+
+.article-right p{
+
+font-size:1.05rem;
+
+line-height:1.8;
+
+color:#003050;
+
+}
+
+.article-btn{
+
+display:inline-block;
+
+margin-top:30px;
+
+padding:14px 34px;
+
+background:#111;
+
+color:#fff;
+
+font-weight:700;
+
+text-decoration:none;
+
+border-radius:40px;
+
+transition:.35s;
+
+}
+
+.article-btn:hover{
+
+transform:translateY(-4px);
+
+background:#ffd200;
+
+color:#111;
+
+}
+
+.article-footer{
+
+margin-top:70px;
+
+padding:60px;
+
+background:#081d3c;
+
+border-radius:26px;
+
+text-align:center;
+
+color:white;
+
+}
+
+.article-footer h3{
+
+font-size:2rem;
+
+margin-bottom:20px;
+
+font-weight:900;
+
+}
+
+.article-footer p{
+
+font-size:1.1rem;
+
+max-width:900px;
+
+margin:auto auto 35px;
+
+line-height:1.7;
+
+opacity:.9;
+
+}
+
+.community-btn{
+
+display:inline-block;
+
+padding:18px 45px;
+
+background:linear-gradient(
+90deg,
+#ffd200,
+#ffffff
+);
+
+color:#111;
+
+font-weight:800;
+
+text-decoration:none;
+
+border-radius:50px;
+
+transition:.3s;
+
+}
+
+.community-btn:hover{
+
+transform:scale(1.05);
+
+box-shadow:0 10px 30px rgba(255,210,0,.45);
+
+}
+
+@media(max-width:768px){
+
+.articles-title h2{
+
+font-size:2.2rem;
+
+}
+
+.flash-headline{
+
+font-size:1.5rem;
+
+}
+
+.article-footer{
+
+padding:40px 25px;
+
+}
+
+}
+
+</style>
 <!-- FOOTER LAYER PANEL -->
 <footer>
   <div class="container">
