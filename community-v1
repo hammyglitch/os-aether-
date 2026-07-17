@@ -979,9 +979,9 @@ footer { background: var(--bg-dark); color: var(--text-light); padding: 50px 0; 
             or would regulation simply create another burden for growing
             companies?
         </p>
-<a href="gold button.html" class="article-btn">
-            Read Article →
-        </a>
+<a href="" class="article-btn" style="display: inline-block; transform: translateY(35px);">
+    Read Article →
+</a>
 
 
     </article>
