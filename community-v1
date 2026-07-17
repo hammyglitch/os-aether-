@@ -749,7 +749,7 @@ footer { background: var(--bg-dark); color: var(--text-light); padding: 50px 0; 
         </div>
       </div>
       <div style="margin-top: 28px; display: flex; flex-direction: column; gap: 12px; align-items: center; width: 100%;">
-    <a href="/community.html#business" class="btn-primary" style="font-size: 1rem; padding: 16px 36px; width: 100%; text-align: center; display: inline-block; margin-top: 55px;">&#9654; Enter Business Community</a>    </div>
+    <a href="/gold button.html" class="btn-primary" style="font-size: 1rem; padding: 16px 36px; width: 100%; text-align: center; display: inline-block; margin-top: 55px;">&#9654; Enter Business Community</a>    </div>
     </div>
   </div>
 </section>
