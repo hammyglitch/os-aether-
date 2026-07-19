@@ -204,7 +204,7 @@ footer{padding:40px 0;text-align:center;border-top:1px solid rgba(0,0.04);backgr
         <a href="/community-v1">Business Community</a>
       </div>
     </li>
-    <li><a href="/goid button.html" style="color:var(--gold)">Gold</a></li>
+    <li><a href="gold button.html" style="color:var(--gold)">Gold</a></li>
   </ul>
 </nav>
 
