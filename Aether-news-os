@@ -976,7 +976,7 @@ footer {
             <div class="story-meta">Defence &middot; 6h ago</div>
         </div>
 
-        < !-- SCRAPER SECTION 1: Politics Feed -->
+   
         <div class="scraper-section" id="scraper-section-1" style="border-left:4px solid var(--violet);">
             <div class="scraper-header">
                 <span class="scraper-title strobe-violet">Politics Feed</span>
