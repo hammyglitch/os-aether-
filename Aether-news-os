@@ -734,7 +734,15 @@ footer {
 
 <!-- BREAKING TICKER -->
 <div class="ticker-bar">
-    <span class="ticker-label">&#9889; Breaking</span>
+  .ticker-label {
+    animation: blueRedWhiteOnce 2s forwards; /* 'forwards' keeps the final color */
+}
+
+@keyframes blueRedWhiteOnce {
+    0% { color: blue; }
+    50% { color: red; }
+    100% { color: white; } 
+}
     <div class="ticker-scroll">
         <div class="ticker-inner">
             <span>UK phone ban for under-16s becomes law — Big Tech faces millions in fines</span>
