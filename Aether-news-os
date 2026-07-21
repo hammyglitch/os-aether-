@@ -172,6 +172,9 @@ nav a {
     border-bottom: 3px solid transparent;
     transition: all 0.2s;
     display: block;
+    
+    /* New Blue to White Linear Gradient */
+    background: linear-gradient(to right, #007BFF, #FFFFFF);
 }
 nav a:hover { color: var(--gold); border-bottom-color: var(--gold); }
 nav a.active { color: var(--gold); border-bottom-color: var(--gold); }
