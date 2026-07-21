@@ -934,45 +934,6 @@ Unprecedented Scale: This technology allows the U.S. military to make tens of th
         </div>
  
     </div>
-  <div class="video-wrapper">
-                <iframe
-                    src="https://www.youtube.com/embed/Dd0-BPCqTGM"
-                    title="YouTube video player"
-                    style="position:absolute;inset:0;width:100%;height:100%;border:0;"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen>
-                </iframe>
-                <div class="video-error-fallback" style="display:none;">
-                    <a href="https://www.youtube.com/watch?v=Dd0-BPCqTGM" target="_blank" class="play-btn"></a>
-                    <a href="https://www.youtube.com/watch?v=Dd0-BPCqTGM" target="_blank">&#9654; Watch on YouTube</a>
-                </div>
-            </div>
-            <div class="video-caption">
-                <span class="section-tag feature">&#9654; Live / Broadcast</span>
-                <h2>AetherOS:Anthropic's powerful new cybersecurity-focused AI, Claude Mythos</h2>
-                <p>Claude Mythos is a frontier AI model developed by Anthropic, purpose-built for deep code comprehension and system-level reasoning. It marks a deliberate shift away from general-purpose conversational models toward highly specialized, autonomous architecture.</p>
-           <br><p>What is Mythos?
-Mythos is a highly advanced AI capability developed by Anthropic that represents a massive leap in artificial intelligence. Moving beyond simply chatting or writing software, Mythos can act autonomously to find bugs in computer code, exploit those vulnerabilities, and execute cyberattacks across the entire "cyber kill chain." Its capabilities are described as being comparable to those of the National Security Agency (NSA).
-
-The Cybersecurity Impact
-A Double-Edged Sword: While Mythos is a potent offensive weapon, Anthropic is currently restricting its access to help secure critical infrastructure. It acts as a powerful defensive tool, effectively stress-testing new software to find and patch bugs much faster than human hackers.
-
-The "Messy Middle": Anthropic currently holds an estimated 6-to-8-month lead over adversaries and other AI labs. This creates a critical but difficult transition window where banks, energy providers, and governments must race to overhaul and patch their systems before bad actors gain access to similar autonomous hacking tools.
-
-Government Reliance and Tension
-The Capability Gap: The U.S. government is vastly behind the private sector in developing frontier AI models and must rely on companies like Anthropic for national security.
-
-Contracting Disputes: Despite depending on Anthropic to secure financial arteries and assist in active war zones, the Pentagon recently labeled the company a "supply chain risk" over a contract dispute. This has created a contradictory environment where the government is simultaneously relying on and fighting with its top AI provider.
-
-AI on the Battlefield (Project Maven)
-From Vision to Intelligence: Project Maven originally used AI to simply identify objects (like warships) in drone surveillance feeds to combat a shortage of human analysts.
-
-Accelerated Workflows: By integrating large language models like Anthropic's, the AI can now track enemy movements, note daily changes, and write the first drafts of intelligence reports.
-
-Unprecedented Scale: This technology allows the U.S. military to make tens of thousands of high-quality targeting decisions rapidly, scaling their capability from striking 50 targets a day to over 1,000 mobile or disguised targets within a 24-hour period.<p> </div>
-        </div>
     <!-- CENTER: TOP STORIES -->
     <div class="center-column">
         <div class="col-header"><span class="strobe">Top Stories</span></div>
