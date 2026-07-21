@@ -86,7 +86,7 @@ a { text-decoration: none; color: inherit; }
 
 /* ═══ HEADER ═══ */
 header {
-    background: var(--white);
+    background: var( blue);
     padding: 14px 24px;
     border-bottom: 3px solid var(--gold);
     display: flex;
@@ -146,6 +146,8 @@ nav {
     top: 0;
     z-index: 1000;
     box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  /* New Blue to White Linear Gradient */
+    background: linear-gradient(to right, #007BFF, #FFFFFF);
 }
 nav.scrolled{height:60px;max-height:60px;background:rgba(11,14,23,0.98);backdrop-filter:blur(20px);border-bottom:1px solid rgba(200,169,110,.15)}
 .nav-brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff;height:100%}
@@ -172,9 +174,6 @@ nav a {
     border-bottom: 3px solid transparent;
     transition: all 0.2s;
     display: block;
-    
-    /* New Blue to White Linear Gradient */
-    background: linear-gradient(to right, #007BFF, #FFFFFF);
 }
 nav a:hover { color: var(--gold); border-bottom-color: var(--gold); }
 nav a.active { color: var(--gold); border-bottom-color: var(--gold); }
