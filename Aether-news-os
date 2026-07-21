@@ -202,7 +202,7 @@ nav a.active { color: var(--gold); border-bottom-color: var(--gold); }
     align-items: center; overflow: hidden; height: 36px;
 }
 .ticker-label {
-    background: rgba(0,0,0,0.2); padding: 0 16px; height: 100%;
+    background: rgba(0,0,0,0.2); padding: 0 26px; height: 100%;
     display: flex; align-items: center; font-family: var(--orbitron);
     font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em;
     text-transform: uppercase; white-space: nowrap; flex-shrink: 0;
@@ -734,10 +734,8 @@ footer {
 
 <!-- BREAKING TICKER -->
 <div class="ticker-bar">
-  .ticker-label {
-    animation: blueRedWhiteOnce 2s forwards; /* 'forwards' keeps the final color */
-}
-<span class="ticker-label" style="color: blue;">&#9889; Breaking</span>
+
+<span class="ticker-label" style="color: linear-gradient(to right, #007BFF, #FFFFFF); Breaking</span>
     <div class="ticker-scroll">
         <div class="ticker-inner">
             <span>UK phone ban for under-16s becomes law — Big Tech faces millions in fines</span>
