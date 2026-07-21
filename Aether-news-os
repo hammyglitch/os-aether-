@@ -734,8 +734,8 @@ footer {
 
 <!-- BREAKING TICKER -->
 <div class="ticker-bar">
-
-<span class="ticker-label" style="color: linear-gradient(to right, #007BFF, #FFFFFF); Breaking</span>
+.ticker-label {
+<span class="ticker-label" style="color: linear-gradient(to right, #007BFF, #FFFFFF); Breaking</span>}
     <div class="ticker-scroll">
         <div class="ticker-inner">
             <span>UK phone ban for under-16s becomes law — Big Tech faces millions in fines</span>
