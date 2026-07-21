@@ -931,7 +931,59 @@ From Vision to Intelligence: Project Maven originally used AI to simply identify
 Accelerated Workflows: By integrating large language models like Anthropic's, the AI can now track enemy movements, note daily changes, and write the first drafts of intelligence reports.
 
 Unprecedented Scale: This technology allows the U.S. military to make tens of thousands of high-quality targeting decisions rapidly, scaling their capability from striking 50 targets a day to over 1,000 mobile or disguised targets within a 24-hour period.<p> </div>
+        </div>    <!-- SECOND VIDEO -->
+    <div class="video-block">
+
+        <div class="video-wrapper">
+
+            <iframe
+                src="https://www.youtube.com/embed/tM7YesB2MpI"
+                title="YouTube video player"
+                style="position:absolute;inset:0;width:100%;height:100%;border:0;"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+            </iframe>
+
+            <div class="video-error-fallback" style="display:none;">
+
+                <a href="https://www.youtube.com/watch?v=tM7YesB2MpI"
+                   target="_blank"
+                   class="play-btn"></a>
+
+                <a href="https://www.youtube.com/watch?v=tM7YesB2MpI"
+                   target="_blank">
+                    &#9654; Watch on YouTube
+                </a>
+
+            </div>
+
         </div>
+
+        <div class="video-caption">
+
+            <span class="section-tag feature">
+                &#9654; Live / Broadcast
+            </span>
+
+            <h2>
+                Your Video Title Here
+            </h2>
+
+            <p>
+                Add your introductory paragraph here.
+            </p>
+
+            <br>
+
+            <p>
+                Add the remainder of your article here.
+            </p>
+
+        </div>
+
+    </div>
     </div>
 
     <!-- CENTER: TOP STORIES -->
