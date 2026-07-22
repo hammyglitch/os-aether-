@@ -990,6 +990,67 @@ nav a.active { color: var(--gold); border-bottom-color: var(--gold); }
     color:#000;
 
 }
+/* ==========================================
+   AETHER Intelligence Embed Container
+========================================== */
+
+.aether-intelligence-container {
+
+    width:100%;
+    max-width:1400px;
+
+    margin:40px auto;
+
+    padding:0;
+
+    overflow:hidden;
+
+    border-radius:24px;
+
+    background:transparent;
+
+    box-sizing:border-box;
+
+}
+
+
+/* Dashboard iframe */
+
+.aether-dashboard-frame {
+
+    display:block;
+
+    width:100%;
+
+    height:850px;
+
+    border:none;
+
+    overflow:hidden;
+
+}
+
+
+/* Mobile sizing */
+
+@media(max-width:900px){
+
+    .aether-intelligence-container{
+
+        margin:20px auto;
+
+        border-radius:15px;
+
+    }
+
+
+    .aether-dashboard-frame{
+
+        height:700px;
+
+    }
+
+}
 
 /* ═══ FOOTER ═══ */
 footer {
@@ -1692,10 +1753,8 @@ This shifting ecosystem presents both new opportunities and strategic challenges
 
     <iframe
         src="http://localhost:8000/output/dashboard.html"
-        width="100%"
-        height="900"
-        frameborder="0"
-        scrolling="no">
+        class="aether-dashboard-frame"
+        frameborder="0">
     </iframe>
 
 </section>
