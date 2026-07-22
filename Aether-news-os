@@ -23,7 +23,7 @@
     --ink: #0B0E17;
     --ink2: #3C4260;
     --muted: #6B7280;
-    --card-bg: #FFFFFF;
+    
     --border: rgba(0,0,0,0.06);
     --cyan: #0088A8;
     --cyan-bright: #00E5FF;
