@@ -86,13 +86,15 @@ a { text-decoration: none; color: inherit; }
 
 /* ═══ HEADER ═══ */
 header {
-    background: var( blue);
+    background: var(--blue);
     padding: 14px 24px;
     border-bottom: 3px solid var(--gold);
     display: flex;
     align-items: center;
     justify-content: center;
     position: sticky;
+    top: 40px; /* Adjust this to 0 if the header is above the ticker */
+    z-index: 999; /* Keeps it above the scrolling content */
 }
 .logo-slot { height: 56px; display: flex; align-items: center; justify-content: center; margin-right: 16px; }
 .logo-slot img { max-height: 56px; max-width: 100%; }
