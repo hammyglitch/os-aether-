@@ -954,9 +954,11 @@ footer {
                     <a href="https://www.youtube.com/watch?v=Dd0-BPCqTGM" target="_blank" class="play-btn"></a>
                     <a href="https://www.youtube.com/watch?v=Dd0-BPCqTGM" target="_blank">&#9654; Watch on YouTube</a>
                 </div>
+
             </div>
             <div class="video-caption">
                 <span class="section-tag feature">&#9654; Live / Broadcast</span>
+   <div class="col-header"><span class="strobe">Top Stories</span></div>
                 <h2>AetherOS:Anthropic's powerful new cybersecurity-focused AI, Claude Mythos</h2>
                 <p>Claude Mythos is a frontier AI model developed by Anthropic, purpose-built for deep code comprehension and system-level reasoning. It marks a deliberate shift away from general-purpose conversational models toward highly specialized, autonomous architecture.</p>
            <br><p>What is Mythos?
@@ -978,7 +980,11 @@ From Vision to Intelligence: Project Maven originally used AI to simply identify
 Accelerated Workflows: By integrating large language models like Anthropic's, the AI can now track enemy movements, note daily changes, and write the first drafts of intelligence reports.
 
 Unprecedented Scale: This technology allows the U.S. military to make tens of thousands of high-quality targeting decisions rapidly, scaling their capability from striking 50 targets a day to over 1,000 mobile or disguised targets within a 24-hour period.<p> </div>
-        </div>    <!-- SECOND VIDEO -->
+
+   <div class="col-header"><span class="strobe">Top Stories</span></div>
+
+</div>    <!-- SECOND VIDEO -->
+
     <div class="video-block">
 
         <div class="video-wrapper">
@@ -1035,7 +1041,7 @@ The question is whether subscription-based AI can survive it.
 
 This shifting ecosystem presents both new opportunities and strategic challenges for users navigating the expanding availability of high-performing AI.<br> As cost-free platforms gain traction, the traditional AI market faces increasing disruption. Ultimately, the broader accessibility of these tools is expected to reshape market competition, influence global technological development, and alter the economic dynamics of the creative industry.
             </p>
-
+   <div class="col-header"><span class="strobe">Top Stories</span></div>
         </div>
 
     </div>
