@@ -92,8 +92,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: sticky;
-    top: 30px; /* Adjust this to 0 if the header is above the ticker */
+    position: relative;
+    top: 0px; /* Adjust this to 0 if the header is above the ticker */
     z-index: 999; /* Keeps it above the scrolling content */
 }
 .logo-slot { height: 56px; display: flex; align-items: center; justify-content: center; margin-right: 16px; }
@@ -205,7 +205,7 @@ nav a.active { color: var(--gold); border-bottom-color: var(--gold); }
     display: flex;
     align-items: center; 
     overflow: hidden; 
-    height: 40px; 
+    height: 60px; 
     position: sticky;
     top: 60; /* Tells it to stick to the top */
     z-index: 1000; /* Keeps it above other scrolling content */
