@@ -8,6 +8,12 @@
 <link rel="canonical" href="https://aetherbusinessarchitectsltd.uk/aether-news.html">
 <link rel="icon" type="image/png" href="aether os logo v2.png">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Fira+Code:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/output/style.css">
+
+<script src="https://unpkg.com/three"></script>
+<script src="https://unpkg.com/globe.gl"></script>
+
+
 <style>
 :root {
 
@@ -1782,18 +1788,174 @@ This shifting ecosystem presents both new opportunities and strategic challenges
             </div>
 
         </div>
-<section class="aether-intelligence-container">
- </div>
-    <iframe
-        src="http://localhost:8000/output/dashboard.html"
-        class="aether-dashboard-frame"
-        frameborder="0">
-    </iframe>
 
-</section>
    
 
 </section>
+
+<section class="aether-dash" data-news-src="aether_news.json">
+
+    <div class="aether-header">
+        <div class="aether-header-titles">
+            <h2>AETHER Intelligence</h2>
+            <p>Command Centre — Live Operational Exposure</p>
+        </div>
+        <div class="aether-live-pill">
+            <span class="aether-live-dot"></span>
+            <span class="aether-live-label">LIVE</span>
+            <span class="aether-live-updated" data-aether="live-updated">Updated just now</span>
+        </div>
+    </div>
+
+    <div class="aether-kpi-grid">
+
+        <div class="aether-kpi-card">
+            <div class="aether-kpi-top">
+                <span class="aether-kpi-icon">🛰️</span>
+                <div class="aether-kpi-caption">
+                    <div class="aether-kpi-label">Status</div>
+                </div>
+            </div>
+            <div class="aether-kpi-value" data-aether="status">Loading...</div>
+            <p class="aether-kpi-desc">Confirms the intelligence pipeline is live and actively scanning sources.</p>
+        </div>
+
+        <div class="aether-kpi-card">
+            <div class="aether-kpi-top">
+                <span class="aether-kpi-icon">⚠️</span>
+                <div class="aether-kpi-caption">
+                    <div class="aether-kpi-label">Threat Level</div>
+                </div>
+            </div>
+            <div class="aether-kpi-value" data-aether="threat">-</div>
+            <p class="aether-kpi-desc">Aggregate risk rating calculated from today's highest-scoring intelligence.</p>
+        </div>
+
+        <div class="aether-kpi-card">
+            <div class="aether-kpi-top">
+                <span class="aether-kpi-icon">🤖</span>
+                <div class="aether-kpi-caption">
+                    <div class="aether-kpi-label">AI Confidence</div>
+                </div>
+            </div>
+            <div class="aether-kpi-value" data-aether="confidence">-</div>
+            <p class="aether-kpi-desc">How confident the scoring model is in today's threat assessment.</p>
+        </div>
+
+        <div class="aether-kpi-card">
+            <div class="aether-kpi-top">
+                <span class="aether-kpi-icon">⭐</span>
+                <div class="aether-kpi-caption">
+                    <div class="aether-kpi-label">Top Story Score</div>
+                </div>
+            </div>
+            <div class="aether-kpi-value" data-aether="score">-</div>
+            <p class="aether-kpi-desc">The single highest-scoring item in today's feed — your top priority read.</p>
+        </div>
+
+    </div>
+
+    <div class="aether-panel-grid">
+
+        <div class="aether-panel">
+            <div class="aether-panel-header">
+                <h3>Sector Intelligence Index</h3>
+                <p>Ranked by total intelligence score, scaled to the top sector</p>
+            </div>
+            <div class="aether-sector-list" data-aether="sector-index">Loading sectors...</div>
+        </div>
+
+        <div class="aether-panel">
+            <div class="aether-panel-header">
+                <h3>Sector Distribution</h3>
+                <p>Share of total intelligence volume</p>
+            </div>
+            <div class="aether-donut-wrap">
+                <div class="aether-donut" data-aether="sector-donut"></div>
+                <div class="aether-legend" data-aether="sector-donut-legend"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="aether-summary-strip">
+
+        <div class="aether-summary-item">
+            <div class="aether-summary-label">Overall Pressure</div>
+            <div class="aether-summary-value" data-aether="summary-pressure">-</div>
+            <p class="aether-summary-desc">How concentrated risk is across sectors today.</p>
+        </div>
+
+        <div class="aether-summary-item">
+            <div class="aether-summary-label">Dominant Sector</div>
+            <div class="aether-summary-value" data-aether="summary-dominant">-</div>
+            <p class="aether-summary-desc">The sector generating the most intelligence volume.</p>
+        </div>
+
+        <div class="aether-summary-item">
+            <div class="aether-summary-label">Sector Coverage</div>
+            <div class="aether-summary-value" data-aether="summary-coverage">-</div>
+            <p class="aether-summary-desc">Number of distinct sectors represented in today's feed.</p>
+        </div>
+
+        <div class="aether-summary-item">
+            <div class="aether-summary-label">Average Score</div>
+            <div class="aether-summary-value" data-aether="summary-average">-</div>
+            <p class="aether-summary-desc">Mean intelligence score across all monitored sectors.</p>
+        </div>
+
+    </div>
+
+    <div class="aether-trend-strip">
+
+        <div class="aether-trend-item">
+            <div class="aether-trend-label">Current Score</div>
+            <div class="aether-trend-value" data-aether="current">-</div>
+            <p class="aether-trend-desc">Today's top story intelligence score.</p>
+        </div>
+
+        <div class="aether-trend-item">
+            <div class="aether-trend-label">Previous Score</div>
+            <div class="aether-trend-value" data-aether="previous">-</div>
+            <p class="aether-trend-desc">Score recorded in the last update cycle.</p>
+        </div>
+
+        <div class="aether-trend-item">
+            <div class="aether-trend-label">Movement</div>
+            <div class="aether-trend-value" data-aether="direction">-</div>
+            <p class="aether-trend-desc">Direction of change between the two readings.</p>
+        </div>
+
+    </div>
+
+    <!-- Global Risk Map: secondary/deprioritized panel, isolated so it
+         can never block the core data panels above from rendering -->
+    <div class="aether-secondary-panel">
+    <div class="aether-panel-header">
+        <h3>Global Risk Map (Live)</h3>
+        <p>Regional threat exposure — powered by AETHER geo-analytics</p>
+    </div>
+    
+   <!-- THE GLOBE CONTAINER -->
+    <div class="aether-global-risk-list" data-aether="global-risk">
+        Loading regions...
+    </div>
+</div> <!-- This closes the .aether-secondary-panel -->
+
+<div class="aether-reports-header-row">
+    <div class="aether-panel-header">
+        <h3>Top Intelligence Reports</h3>
+    </div>
+    <div class="aether-reports-nav">
+        <button type="button" class="aether-nav-btn" data-aether="reports-prev" aria-label="Previous reports">‹</button>
+        <button type="button" class="aether-nav-btn" data-aether="reports-next" aria-label="Next reports">›</button>
+    </div>
+</div>
+
+<div class="aether-reports-viewport" data-aether="articles">Loading intelligence...</div>
+
+</section>
+
 
 <!-- FOOTER -->
 
@@ -2052,6 +2214,6 @@ document.addEventListener('DOMContentLoaded', function(){
     </div>
     <div class="footer-copy">&copy; 2026 Aether Business Architects Ltd &middot; jay@aetherbusinessarchitectsltd.uk</div>
 </footer>
-
+<script src="/output/dashboard.js"></script>
 </body>
 </html>
