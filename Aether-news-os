@@ -93,7 +93,7 @@ header {
     align-items: center;
     justify-content: center;
     position: sticky;
-    top: 10px; /* Adjust this to 0 if the header is above the ticker */
+    top: 30px; /* Adjust this to 0 if the header is above the ticker */
     z-index: 999; /* Keeps it above the scrolling content */
 }
 .logo-slot { height: 56px; display: flex; align-items: center; justify-content: center; margin-right: 16px; }
