@@ -212,7 +212,7 @@ nav a.active { color: var(--gold); border-bottom-color: var(--gold); }
     display: inline-block; white-space: nowrap;
     animation: tickerScroll 35s linear infinite; padding-left: 100%;
 }
-.ticker-inner span { margin-right: 60px; font-family: var(--mono); font-size: 0.85rem; font-weight: 500; }
+.ticker-inner span { margin-right: 60px; font-family: var(--mono); font-size: 1.15rem; font-weight: 900; }
 .ticker-inner span::before { content: '\25CF'; margin-right: 10px; opacity: 0.6; }
 @keyframes tickerScroll {
     from { transform: translateX(0); }
