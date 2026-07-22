@@ -1,1 +1,164 @@
-
+{
+    "engine": "AETHER NEWS OS",
+    "version": "3.1",
+    "status": "ONLINE",
+    "last_updated": "2026-07-20 18:28 UTC",
+    "intelligence": {
+        "sources_checked": 29,
+        "articles_scanned": 1510,
+        "classified_articles": 148,
+        "top_story_score": 78,
+        "threat_level": "ELEVATED",
+        "ai_confidence": 86
+    },
+    "top_articles": [
+        {
+            "rank": 1,
+            "source": "Dark Reading",
+            "category": "Cyber Security",
+            "title": "Cybersecurity Keeps Events 'Uneventful'",
+            "score": 78,
+            "threat_level": "HIGH",
+            "business_impact": "HIGH",
+            "sme_risk": 0,
+            "confidence": 80,
+            "trend": "STABLE",
+            "risk_domains": [
+                "Cyber Security"
+            ],
+            "market_impact": 85,
+            "business_advice": [
+                "Review MFA coverage",
+                "Check supplier security",
+                "Verify backups"
+            ],
+            "risk_profile": {
+                "cyber_risk": 85,
+                "geopolitical_risk": 0,
+                "supply_chain_risk": 0,
+                "technology_risk": 0,
+                "sme_exposure": 75,
+                "overall_risk": 32
+            }
+        },
+        {
+            "rank": 2,
+            "source": "BBC UK",
+            "category": "War & Defence",
+            "title": "Ryanair profits drop as Iran war puts off passengers and lifts fuel costs",
+            "score": 75,
+            "threat_level": "HIGH",
+            "business_impact": "MEDIUM",
+            "sme_risk": 0,
+            "confidence": 80,
+            "trend": "STABLE",
+            "risk_domains": [
+                "Technology Risk",
+                "Geopolitical Risk"
+            ],
+            "market_impact": 100,
+            "business_advice": [
+                "Monitor geopolitical exposure"
+            ],
+            "risk_profile": {
+                "cyber_risk": 0,
+                "geopolitical_risk": 80,
+                "supply_chain_risk": 0,
+                "technology_risk": 60,
+                "sme_exposure": 0,
+                "overall_risk": 28
+            }
+        },
+        {
+            "rank": 3,
+            "source": "UK Ministry of Defence",
+            "category": "War & Defence",
+            "title": "Prime Minister commits €300 million to fund fighter jets for Ukraine - backing British jobs and bolstering Ukraine’s defence",
+            "score": 75,
+            "threat_level": "HIGH",
+            "business_impact": "MEDIUM",
+            "sme_risk": 0,
+            "confidence": 80,
+            "trend": "STABLE",
+            "risk_domains": [
+                "Technology Risk",
+                "Geopolitical Risk"
+            ],
+            "market_impact": 100,
+            "business_advice": [
+                "Monitor geopolitical exposure"
+            ],
+            "risk_profile": {
+                "cyber_risk": 0,
+                "geopolitical_risk": 80,
+                "supply_chain_risk": 0,
+                "technology_risk": 60,
+                "sme_exposure": 0,
+                "overall_risk": 28
+            }
+        },
+        {
+            "rank": 4,
+            "source": "BleepingComputer",
+            "category": "Cyber Security",
+            "title": "New HollowGraph malware uses Microsoft Graph for stealthy C2 comms",
+            "score": 73,
+            "threat_level": "HIGH",
+            "business_impact": "HIGH",
+            "sme_risk": 0,
+            "confidence": 80,
+            "trend": "STABLE",
+            "risk_domains": [
+                "Geopolitical Risk",
+                "Cyber Security"
+            ],
+            "market_impact": 100,
+            "business_advice": [
+                "Monitor geopolitical exposure",
+                "Review MFA coverage",
+                "Check supplier security",
+                "Verify backups"
+            ],
+            "risk_profile": {
+                "cyber_risk": 85,
+                "geopolitical_risk": 80,
+                "supply_chain_risk": 0,
+                "technology_risk": 0,
+                "sme_exposure": 75,
+                "overall_risk": 48
+            }
+        },
+        {
+            "rank": 5,
+            "source": "BleepingComputer",
+            "category": "Cyber Security",
+            "title": "Hugging Face warns an autonomous AI agent hacked its network",
+            "score": 73,
+            "threat_level": "HIGH",
+            "business_impact": "HIGH",
+            "sme_risk": 0,
+            "confidence": 80,
+            "trend": "STABLE",
+            "risk_domains": [
+                "Geopolitical Risk",
+                "Cyber Security",
+                "Technology Risk"
+            ],
+            "market_impact": 100,
+            "business_advice": [
+                "Monitor geopolitical exposure",
+                "Review MFA coverage",
+                "Check supplier security",
+                "Verify backups"
+            ],
+            "risk_profile": {
+                "cyber_risk": 85,
+                "geopolitical_risk": 80,
+                "supply_chain_risk": 0,
+                "technology_risk": 60,
+                "sme_exposure": 75,
+                "overall_risk": 60
+            }
+        }
+    ]
+}
