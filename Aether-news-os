@@ -937,6 +937,8 @@ footer {
 <div class="main-container">
 
     <!-- LEFT: VIDEO -->
+
+   <div class="col-header"><span class="strobe">Top Stories</span></div>
     <div class="left-column">
         <div class="video-block">
             <div class="video-wrapper">
