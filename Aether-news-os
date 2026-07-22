@@ -12,6 +12,8 @@
 :root {
     --bg: #F8F9FC;
     --white: #FFFFFF;
+    --blue:#0078FF;
+    --blue:#0078FF;
     --ink: #0B0E17;
     --ink2: #3C4260;
     --muted: #6B7280;
@@ -290,92 +292,22 @@ nav a.active { color: var(--gold); border-bottom-color: var(--gold); }
     100% { transform: translateX(-50%); }
 }
 
-.scroll-card {
-    min-width: 280px;
-    max-width: 300px;
-    
-    /* BACKGROUND: Base color, plus a horizontal gradient restricted to the top 20% */
-    background-color: var(--bg);
-    background-image: linear-gradient(to right, var(--blue) 0%, #ffffff 20%, transparent 20%);
-    background-size: 100% 20%;
-    background-repeat: no-repeat;
-    
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 16px;
-    
-    /* Base subtle shadow */
-    box-shadow: 0 4px 10px rgba(0, 0, 30, 0.3);
-    
-    /* Smooth transition for the 3D pop, size increase, and shadows */
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-    cursor: pointer;
-    flex-shrink: 0;
-    position: relative; /* Ensures the z-index bump on hover works */
-}
+.scroll-card{
 
-/* 3D LEVITATION HOVER EFFECT */
-.scroll-card:hover {
-    transform: translateY(-8px) scale(1.05); /* Lifts and enlarges the card */
-    /* Layered shadow: Deep dark blue underneath + Gold glow */
-    box-shadow: 0 15px 30px rgba(0, 0, 50, 0.8), 0 0 15px var(--gold);
-    border-color: var(--gold);
-    z-index: 10; /* Forces the hovered card to sit on top of its neighbors */
-}
+    background:
+    linear-gradient(
+        135deg,
+        rgba(0,110,255,.18) 0%,
+        rgba(0,110,255,.08) 18%,
+        #ffffff 42%,
+        #ffffff 100%
+    );
 
-.scroll-card .sc-tag {
-    display: inline-block;
-    font-family: var(--mono);
-    font-size: 0.6rem;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    padding: 3px 10px;
-    border-radius: 4px;
-    margin-bottom: 8px;
-    position: relative; /* Keeps it above the gradient background */
-}
+    border:1px solid rgba(0,110,255,.15);
 
-.scroll-card .sc-tag.politics { background: rgba(139,92,246,0.1); color: var(--violet); }
-.scroll-card .sc-tag.cyber { background: rgba(0,136,168,0.1); color: var(--cyan); }
-.scroll-card .sc-tag.business { background: rgba(16,185,129,0.1); color: var(--green); }
-.scroll-card .sc-tag.tech { background: rgba(200,169,110,0.1); color: var(--gold); }
-.scroll-card .sc-tag.defence { background: rgba(255,77,109,0.1); color: var(--red); }
+    box-shadow:
+        0 6px 18px rgba(0,20,60,.12);
 
-/* TEXT SIZES & HOVER READABILITY */
-.scroll-card h3 {
-    font-family: var(--serif);
-    font-size: 1rem;
-    font-weight: 700;
-    color: var(--ink);
-    margin: 0 0 6px;
-    line-height: 1.3;
-    transition: font-size 0.3s ease; /* Smooth text scaling */
-}
-
-.scroll-card:hover h3 {
-    font-size: 1.15rem; /* Enlarges heading on hover */
-}
-
-.scroll-card p {
-    font-size: 0.82rem;
-    color: var(--muted);
-    line-height: 1.5;
-    margin: 0;
-    transition: font-size 0.3s ease, color 0.3s ease;
-}
-
-.scroll-card:hover p {
-    font-size: 0.95rem; /* Enlarges paragraph text on hover */
-    color: var(--ink); /* Makes the muted text darker for easier reading */
-}
-
-.scroll-card .sc-time {
-    font-family: var(--mono);
-    font-size: 0.65rem;
-    color: var(--muted);
-    margin-top: 8px;
-    letter-spacing: 0.05em;
 }
 /* ═══ MAIN CONTAINER ═══ */
 .main-container {
