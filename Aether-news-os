@@ -593,6 +593,39 @@ nav a.active { color: var(--gold); border-bottom-color: var(--gold); }
     color: var(--ink);
 }
 
+.aether-intelligence-container {
+
+    width:100%;
+
+    max-width:1400px;
+
+    margin:40px auto;
+
+    overflow:hidden;
+
+    height:850px;
+
+}
+
+
+.aether-dashboard-frame {
+
+    width:100%;
+
+    height:100%;
+
+    border:none;
+
+    display:block;
+
+    overflow:hidden;
+
+}
+
+
+
+
+
 /* ═══ VIDEO BLOCK ═══ */
 .video-block { position: relative; }
 .video-wrapper {
