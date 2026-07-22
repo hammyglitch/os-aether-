@@ -997,7 +997,7 @@ nav a.active { color: var(--gold); border-bottom-color: var(--gold); }
 .aether-intelligence-container {
 
     width:100%;
-    max-width:1400px;
+    max-width:100%;
 
     margin:40px auto;
 
