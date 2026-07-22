@@ -1047,7 +1047,7 @@ nav a.active { color: var(--gold); border-bottom-color: var(--gold); }
     .aether-dashboard-frame{
 
         height:700px;
-
+        width:100%
     }
 
 }
