@@ -255,12 +255,21 @@ nav a.active { color: var(--gold); border-bottom-color: var(--gold); }
     from { transform: translateX(0); }
     to { transform: translateX(-100%); }
 }
-/* ═══ SCROLLING CARDS (TABS UNDER TICKER) ═══ */
-.scroll-cards-bar {
-    background: var(--black);
-    border-bottom: 1px solid var(--border);
-    padding: 16px 0;
-    overflow: hidden;
+.scroll-card {
+    min-width: 280px;
+    max-width: 300px;
+    
+    /* BULLETPROOF BACKGROUND */
+    /* Fades left-to-right (blue to white), but restricted to the top 20% of the card height. The bottom 80% stays your base background color */
+    background: linear-gradient(to right, var(--blue, dodgerblue), #ffffff) top left / 100% 20% no-repeat, var(--bg, #ffffff);
+    
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 30, 0.3);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    cursor: pointer;
+    flex-shrink: 0;
     position: relative;
 }
 
