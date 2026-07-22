@@ -733,8 +733,18 @@ footer {
 
 
 <!-- BREAKING TICKER -->
+<style>
+    @keyframes flashAlert {
+        0%, 100% { color: dodgerblue; opacity: 1; }
+        50% { color: white; opacity: 0.7; }
+    }
+    .flash-breaking {
+        animation: flashAlert 1.5s infinite; /* Change 1.5s to make it flash faster or slower */
+    }
+</style>
+
 <div class="ticker-bar">
-<span class="ticker-label" style="color: dodgerblue; font-weight: bold; font-size: 1.5rem;">&#9889; Breaking</span>
+    <span class="ticker-label flash-breaking" style="color: dodgerblue; font-weight: bold; font-size: 1.5rem;">&#9889; Breaking</span>
     <div class="ticker-scroll">
         <div class="ticker-inner">
             <span>UK phone ban for under-16s becomes law — Big Tech faces millions in fines</span>
@@ -751,7 +761,6 @@ footer {
         </div>
     </div>
 </div>
-
 
 <!-- CATEGORY TABS -->
 <div class="category-tabs">
