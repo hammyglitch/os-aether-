@@ -993,6 +993,7 @@ nav a.active { color: var(--gold); border-bottom-color: var(--gold); }
 /* ==========================================
    AETHER Intelligence Embed Container
 ========================================== */
+
 .aether-intelligence-container {
 
     width:100%;
@@ -1042,7 +1043,7 @@ nav a.active { color: var(--gold); border-bottom-color: var(--gold); }
         width:100%
     }
 
-
+}
 
 /* ═══ FOOTER ═══ */
 footer {
@@ -1742,15 +1743,17 @@ This shifting ecosystem presents both new opportunities and strategic challenges
 
         </div>
 <section class="aether-intelligence-container">
-
+ </div>
     <iframe
         src="http://localhost:8000/output/dashboard.html"
-        class="aether-dashboard-frame">
+        class="aether-dashboard-frame"
+        frameborder="0">
     </iframe>
 
 </section>
+   
 
-
+</section>
 
 <!-- FOOTER -->
 
