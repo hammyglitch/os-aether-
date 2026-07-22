@@ -207,8 +207,8 @@ nav a.active { color: var(--gold); border-bottom-color: var(--gold); }
     overflow: hidden; 
     height: 60px; 
     position: sticky;
-    top: 60; /* Tells it to stick to the top */
-    z-index: 1000; /* Keeps it above other scrolling content */
+    top: 60px; /* Added 'px' here */
+    z-index: 1000; 
 }
 
 .ticker-label {
