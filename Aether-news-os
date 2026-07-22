@@ -96,7 +96,7 @@ header {
 }
 .logo-slot { height: 56px; display: flex; align-items: center; justify-content: center; margin-right: 16px; }
 .logo-slot img { max-height: 56px; max-width: 100%; }
-.masthead { display: flex; align-items: center; justify-content: center; overflow: hidden; }
+.masthead { display: flex; align-items: center; justify-content: center; overflow: hidden; position: sticky; }
 .logo-block { display: flex; align-items: center; gap: 3px; }
 .logo-word { display: inline-flex; align-items: center; justify-content: center; font-size: 24px; font-weight: 900; letter-spacing: 1px; padding: 7px 10px; line-height: 1; text-transform: uppercase; border-radius: 4px; opacity: 0; }
 .logo-aether {
@@ -198,27 +198,61 @@ nav a.active { color: var(--gold); border-bottom-color: var(--gold); }
 
 /* ═══ TICKER ═══ */
 .ticker-bar {
-    background: var(--red); color: #fff; display: flex;
-    align-items: center; overflow: hidden; height: 40px; position: sticky;
+    background: var(--red); 
+    color: #fff; 
+    display: flex;
+    align-items: center; 
+    overflow: hidden; 
+    height: 40px; 
+    position: sticky;
+    top: 0; /* Tells it to stick to the top */
+    z-index: 1000; /* Keeps it above other scrolling content */
 }
+
 .ticker-label {
-    background: rgba(0,0,0,0.2); padding: 0 16px; height: 100%;
-    display: flex; align-items: center; font-family: var(--orbitron);
-    font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em;
-    text-transform: uppercase; white-space: nowrap; flex-shrink: 0;
+    background: rgba(0,0,0,0.2); 
+    padding: 0 16px; 
+    height: 100%;
+    display: flex; 
+    align-items: center; 
+    font-family: var(--orbitron);
+    font-size: 0.7rem; 
+    font-weight: 700; 
+    letter-spacing: 0.1em;
+    text-transform: uppercase; 
+    white-space: nowrap; 
+    flex-shrink: 0;
 }
-.ticker-scroll { overflow: hidden; flex: 1; }
+
+.ticker-scroll { 
+    overflow: hidden; 
+    flex: 1; 
+}
+
 .ticker-inner {
-    display: inline-block; white-space: nowrap;
-    animation: tickerScroll 35s linear infinite; padding-left: 100%;
+    display: inline-block; 
+    white-space: nowrap;
+    animation: tickerScroll 35s linear infinite; 
+    padding-left: 100%;
 }
-.ticker-inner span { margin-right: 60px; font-family: var(--mono); font-size: 1.15rem; font-weight: 900; }
-.ticker-inner span::before { content: '\25CF'; margin-right: 10px; opacity: 0.6; }
+
+.ticker-inner span { 
+    margin-right: 60px; 
+    font-family: var(--mono); 
+    font-size: 1.15rem; 
+    font-weight: 900; 
+}
+
+.ticker-inner span::before { 
+    content: '\25CF'; 
+    margin-right: 10px; 
+    opacity: 0.6; 
+}
+
 @keyframes tickerScroll {
     from { transform: translateX(0); }
     to { transform: translateX(-100%); }
 }
-
 /* ═══ SCROLLING CARD, position: sticky;S (TABS UNDER TICKER) ═══ */
 .scroll-cards-bar {
     background: var(--black);
