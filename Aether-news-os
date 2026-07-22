@@ -804,43 +804,192 @@ nav a.active { color: var(--gold); border-bottom-color: var(--gold); }
     letter-spacing: 0.05em;
 }
 
-/* ═══ CTA ═══ */
-.cta-banner {
-    background: var(--ink);
-    padding: 56px 24px;
-    text-align: center;
-    margin-top: 40px;
+/*=========================================
+ AETHER NEWS OS INTRO
+=========================================*/
+
+.newsos-intro{
+
+    padding:90px 8%;
+
+    background:
+    linear-gradient(
+        90deg,
+        #ffffff 0%,
+        #f8fbff 45%,
+        #edf5ff 100%
+    );
+
 }
-.cta-banner h2 { color: var(--white); font-family: var(--serif); font-size: clamp(1.8rem,4vw,2.6rem); }
-.cta-banner h2 span { color: var(--gold); }
-.cta-banner p { color: rgba(255,255,255,0.7); max-width: 500px; margin: 12px auto 28px; }
-.cta-btns { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
-.cta-btn-main {
-    background: var(--gold);
-    color: var(--ink);
-    font-family: var(--orbitron);
-    font-size: 0.78rem;
-    font-weight: 700;
-    padding: 14px 32px;
-    border-radius: 8px;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    transition: all 0.3s;
+
+
+.newsos-grid{
+
+    display:grid;
+
+    grid-template-columns:1.6fr 1fr;
+
+    gap:70px;
+
+    align-items:center;
+
 }
-.cta-btn-main:hover { box-shadow: 0 0 30px rgba(200,169,110,0.4); transform: translateY(-2px); }
-.cta-btn-alt {
-    border: 2px solid rgba(255,255,255,0.4);
-    color: var(--white);
-    font-family: var(--orbitron);
-    font-size: 0.78rem;
-    font-weight: 700;
-    padding: 14px 32px;
-    border-radius: 8px;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    transition: all 0.3s;
+
+
+.newsos-content h2{
+
+    color:var(--gold);
+
+    text-transform:uppercase;
+
+    letter-spacing:.18em;
+
+    font-size:.9rem;
+
+    margin-bottom:10px;
+
 }
-.cta-btn-alt:hover { border-color: var(--gold); color: var(--gold); }
+
+
+.newsos-content h1{
+
+    color:var(--gold);
+
+    font-size:3rem;
+
+    margin-bottom:25px;
+
+    line-height:1.15;
+
+}
+
+
+.newsos-content p{
+
+    color:var(--ink);
+
+    line-height:1.9;
+
+    margin-bottom:22px;
+
+    font-size:1rem;
+
+}
+
+
+/*==========================
+ CTA CARD
+==========================*/
+
+.cta-card{
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    border:1px solid rgba(0,110,255,.15);
+
+    box-shadow:
+        0 25px 60px rgba(0,30,80,.10);
+
+    transition:.35s;
+
+}
+
+
+.cta-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:
+        0 35px 80px rgba(0,30,80,.18),
+        0 0 25px rgba(0,110,255,.18);
+
+}
+
+
+.cta-badge{
+
+    display:inline-block;
+
+    padding:8px 18px;
+
+    background:rgba(0,110,255,.08);
+
+    color:var(--blue);
+
+    border-radius:30px;
+
+    font-weight:700;
+
+    margin-bottom:18px;
+
+}
+
+
+.cta-card h3{
+
+    color:var(--gold);
+
+    font-size:1.8rem;
+
+    margin-bottom:25px;
+
+}
+
+
+.cta-card ul{
+
+    list-style:none;
+
+    padding:0;
+
+    margin:0 0 30px;
+
+}
+
+
+.cta-card li{
+
+    margin:14px 0;
+
+    color:var(--ink);
+
+    font-size:.95rem;
+
+}
+
+
+.cta-button{
+
+    display:inline-block;
+
+    padding:14px 32px;
+
+    background:var(--blue);
+
+    color:white;
+
+    border-radius:8px;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+    transition:.3s;
+
+}
+
+
+.cta-button:hover{
+
+    background:var(--gold);
+
+    color:#000;
+
+}
 
 /* ═══ FOOTER ═══ */
 footer {
@@ -1462,15 +1611,86 @@ This shifting ecosystem presents both new opportunities and strategic challenges
     <p>"Aether mapped our entire operational structure in two weeks. We found &pound;40K in hidden inefficiencies and our audit prep went from 6 weeks to 4 days."</p>
     <cite>&mdash; UK Manufacturing SME, 2025</cite>
 </div>
+<section class="newsos-intro">
 
-<!-- CTA -->
-<section class="cta-banner">
-    <h2>Ready to Operate<br><span>Smarter?</span></h2>
-    <p>Join UK SMEs using AetherOS to automate operations, protect assets, and scale without the hiring spike.</p>
-    <div class="cta-btns">
-        <a href="/sme.html#promo" class="cta-btn-main">Get Free Consultation</a>
-        <a href="/aether-os-promo-pricing.html" class="cta-btn-alt">View Pricing</a>
+    <div class="newsos-grid">
+
+        <!-- LEFT -->
+
+        <div class="newsos-content">
+
+            <h2>AETHER News OS</h2>
+
+            <h1>AI Intelligence Operating System</h1>
+
+            <p>
+                <strong>AETHER News OS</strong> is an AI-powered intelligence
+                operating system designed to transform thousands of global
+                news articles into actionable business and strategic
+                intelligence. Rather than functioning as a traditional news
+                reader, it continuously collects, analyses, categorises,
+                and scores information to identify emerging risks,
+                opportunities and significant events across multiple sectors.
+            </p>
+
+            <p>
+                The platform uses intelligent scoring models to assess cyber
+                threats, geopolitical developments, defence activity,
+                economic change, technology breakthroughs and business
+                impact. Every story is ranked, scored and prioritised
+                through AI to deliver meaningful intelligence instead of
+                information overload.
+            </p>
+
+            <p>
+                Designed for business leaders, cybersecurity professionals,
+                SMEs and decision-makers, AETHER News OS provides a live
+                intelligence command centre that helps organisations
+                understand what matters most, why it matters and how it
+                could affect operations.
+            </p>
+
+        </div>
+
+        <!-- RIGHT -->
+
+        <div class="newsos-cta">
+
+            <div class="cta-card">
+
+                <span class="cta-badge">
+                    AI Intelligence Platform
+                </span>
+
+                <h3>Business Intelligence.<br>
+                Operational Awareness.</h3>
+
+                <ul>
+
+                    <li>✓ AI Ranked News</li>
+
+                    <li>✓ Cyber Threat Monitoring</li>
+
+                    <li>✓ Defence Intelligence</li>
+
+                    <li>✓ Business Risk Analysis</li>
+
+                    <li>✓ Executive Dashboard</li>
+
+                    <li>✓ Real-Time Strategic Alerts</li>
+
+                </ul>
+
+                <a href="#contact" class="cta-button">
+                    Book a Consultation
+                </a>
+
+            </div>
+
+        </div>
+
     </div>
+
 </section>
 
 <!-- FOOTER -->
