@@ -92,7 +92,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
+    position: sticky;
 }
 .logo-slot { height: 56px; display: flex; align-items: center; justify-content: center; margin-right: 16px; }
 .logo-slot img { max-height: 56px; max-width: 100%; }
@@ -142,7 +142,7 @@ nav {
     overflow-x: auto;
     overflow-y: visible;
     scrollbar-width: none;
-    position: sticky;
+    position: relative;
     top: 0;
     z-index: 1000;
     box-shadow: 0 2px 12px rgba(0,0,0,0.04);
@@ -199,7 +199,7 @@ nav a.active { color: var(--gold); border-bottom-color: var(--gold); }
 /* ═══ TICKER ═══ */
 .ticker-bar {
     background: var(--red); color: #fff; display: flex;
-    align-items: center; overflow: hidden; height: 40px;
+    align-items: center; overflow: hidden; height: 40px; position: sticky;
 }
 .ticker-label {
     background: rgba(0,0,0,0.2); padding: 0 16px; height: 100%;
@@ -219,7 +219,7 @@ nav a.active { color: var(--gold); border-bottom-color: var(--gold); }
     to { transform: translateX(-100%); }
 }
 
-/* ═══ SCROLLING CARDS (TABS UNDER TICKER) ═══ */
+/* ═══ SCROLLING CARD, position: sticky;S (TABS UNDER TICKER) ═══ */
 .scroll-cards-bar {
     background: var(--black);
     border-bottom: 1px solid var(--border);
