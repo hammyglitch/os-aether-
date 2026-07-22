@@ -1750,7 +1750,7 @@ This shifting ecosystem presents both new opportunities and strategic challenges
 
         </div>
 <section class="aether-intelligence-container">
-
+ </div>
     <iframe
         src="http://localhost:8000/output/dashboard.html"
         class="aether-dashboard-frame"
@@ -1758,7 +1758,7 @@ This shifting ecosystem presents both new opportunities and strategic challenges
     </iframe>
 
 </section>
-    </div>
+   
 
 </section>
 
