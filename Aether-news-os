@@ -207,7 +207,7 @@ nav a.active { color: var(--gold); border-bottom-color: var(--gold); }
     overflow: hidden; 
     height: 40px; 
     position: sticky;
-    top: 60px; /* Added 'px' here */
+    top: 35px; /* Added 'px' here */
     z-index: 1000; 
 }
 
@@ -797,7 +797,6 @@ footer {
         </div>
     </div>
 </div>
-
 <!-- CATEGORY TABS -->
 <div class="category-tabs">
     <a href="#politics">Politics</a>
