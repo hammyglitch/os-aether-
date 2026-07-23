@@ -93,7 +93,7 @@ body{
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background: var(--a-surface);
+    background: background: linear-gradient(to right, #007BFF, #FFFFFF);
     border: 1px solid var(--a-border);
     padding: 8px 16px;
     border-radius: 30px;
