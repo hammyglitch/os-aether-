@@ -581,7 +581,7 @@ async function loadAetherDashboard() {
 
         return;
 
-    }
+    
 }
     // From here on, every panel loads independently — one bad field
     // or missing property can no longer take the whole dashboard down.
