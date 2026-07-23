@@ -98,7 +98,7 @@ a { text-decoration: none; color: inherit; }
 
 /* ═══ HEADER ═══ */
 header {
-    background: var(--blue);
+    background: var(--white);
     padding: 14px 24px;
     border-bottom: 3px solid var(--gold);
     display: flex;
