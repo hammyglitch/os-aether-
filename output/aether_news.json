@@ -2,11 +2,11 @@
     "engine": "AETHER NEWS OS",
     "version": "3.1",
     "status": "ONLINE",
-    "last_updated": "2026-07-23 04:16 UTC",
+    "last_updated": "2026-07-23 05:21 UTC",
     "intelligence": {
         "sources_checked": 29,
-        "articles_scanned": 1496,
-        "classified_articles": 161,
+        "articles_scanned": 1497,
+        "classified_articles": 162,
         "top_story_score": 83,
         "threat_level": "ELEVATED",
         "ai_confidence": 86
@@ -24,15 +24,15 @@
             "confidence": 80,
             "trend": "STABLE",
             "risk_domains": [
-                "Cyber Security",
                 "Technology Risk",
+                "Cyber Security",
                 "Geopolitical Risk"
             ],
             "market_impact": 100,
             "business_advice": [
                 "Check supplier security",
-                "Monitor geopolitical exposure",
                 "Review MFA coverage",
+                "Monitor geopolitical exposure",
                 "Verify backups"
             ],
             "risk_profile": {
@@ -46,33 +46,6 @@
         },
         {
             "rank": 2,
-            "source": "BBC UK",
-            "category": "War & Defence",
-            "title": "Scottish Labour leader Anas Sarwar 'delighted' to accept trade minister job",
-            "score": 80,
-            "threat_level": "HIGH",
-            "business_impact": "MEDIUM",
-            "sme_risk": 0,
-            "confidence": 80,
-            "trend": "STABLE",
-            "risk_domains": [
-                "Geopolitical Risk"
-            ],
-            "market_impact": 80,
-            "business_advice": [
-                "Monitor geopolitical exposure"
-            ],
-            "risk_profile": {
-                "cyber_risk": 0,
-                "geopolitical_risk": 80,
-                "supply_chain_risk": 0,
-                "technology_risk": 0,
-                "sme_exposure": 0,
-                "overall_risk": 16
-            }
-        },
-        {
-            "rank": 3,
             "source": "BleepingComputer",
             "category": "Cyber Security",
             "title": "How enterprise GenAI can amplify ransomware risk — and how to contain it",
@@ -83,15 +56,15 @@
             "confidence": 80,
             "trend": "STABLE",
             "risk_domains": [
-                "Cyber Security",
                 "Technology Risk",
+                "Cyber Security",
                 "Geopolitical Risk"
             ],
             "market_impact": 100,
             "business_advice": [
                 "Check supplier security",
-                "Monitor geopolitical exposure",
                 "Review MFA coverage",
+                "Monitor geopolitical exposure",
                 "Verify backups"
             ],
             "risk_profile": {
@@ -104,7 +77,7 @@
             }
         },
         {
-            "rank": 4,
+            "rank": 3,
             "source": "BBC Politics",
             "category": "War & Defence",
             "title": "Former defence minister Al Carns turns down ministerial offer",
@@ -131,10 +104,37 @@
             }
         },
         {
-            "rank": 5,
+            "rank": 4,
             "source": "BBC Politics",
             "category": "War & Defence",
             "title": "Chris Mason: Sarwar ministerial role sees promotion of another Starmer critic",
+            "score": 75,
+            "threat_level": "HIGH",
+            "business_impact": "MEDIUM",
+            "sme_risk": 0,
+            "confidence": 80,
+            "trend": "STABLE",
+            "risk_domains": [
+                "Geopolitical Risk"
+            ],
+            "market_impact": 80,
+            "business_advice": [
+                "Monitor geopolitical exposure"
+            ],
+            "risk_profile": {
+                "cyber_risk": 0,
+                "geopolitical_risk": 80,
+                "supply_chain_risk": 0,
+                "technology_risk": 0,
+                "sme_exposure": 0,
+                "overall_risk": 16
+            }
+        },
+        {
+            "rank": 5,
+            "source": "BBC Politics",
+            "category": "War & Defence",
+            "title": "Scottish Labour leader Anas Sarwar set to become a minister in Burnham's government",
             "score": 75,
             "threat_level": "HIGH",
             "business_impact": "MEDIUM",
