@@ -1937,9 +1937,9 @@ This shifting ecosystem presents both new opportunities and strategic challenges
     </div>
     
    <!-- THE GLOBE CONTAINER -->
-    <div class="aether-global-risk-list" data-aether="global-risk">
-        Loading regions...
-    </div>
+    <div id="globeVis" class="aether-global-risk-list" data-aether="global-risk" style="width: 100%; height: 450px; min-height: 400px; position: relative; overflow: hidden;">
+    Loading regions...
+</div>
 </div> <!-- This closes the .aether-secondary-panel -->
 
 <div class="aether-reports-header-row">
