@@ -549,30 +549,39 @@ function wireReportsCarousel(root) {
 
 async function loadAetherDashboard() {
 
+    const root = getDashRoot();
+
+    if (!root) {
+        console.error("AETHER dashboard: .aether-dash root not found on this page — is the section markup present?");
+        return;
+    }
+
+    let data;
+
     try {
 
-    const source =
-        root.dataset.newsSrc || "/output/aether_news.json";
+        const source = root.dataset.newsSrc || "/output/aether_news.json";
 
-    const response = await fetch(source);
+        const response = await fetch(source);
 
-    if (!response.ok) {
-        throw new Error(`Fetch failed with status ${response.status}`);
+        if (!response.ok) {
+            throw new Error(`Fetch failed with status ${response.status}`);
+        }
+
+        data = await response.json();
+
+    } catch (error) {
+
+        console.error("AETHER dashboard: failed to load aether_news.json —", error);
+
+        const articles = q(root, "articles");
+        if (articles) {
+            articles.innerHTML = '<p class="aether-empty-note">Unable to load AETHER intelligence feed.</p>';
+        }
+
+        return;
+
     }
-
-    data = await response.json();
-
-} catch (error) {
-
-    console.error("AETHER dashboard: failed to load aether_news.json —", error);
-
-    const articles = q(root, "articles");
-    if (articles) {
-        articles.innerHTML =
-            '<p class="aether-empty-note">Unable to load AETHER intelligence feed.</p>';
-    }
-
-    return;
 }
     // From here on, every panel loads independently — one bad field
     // or missing property can no longer take the whole dashboard down.
