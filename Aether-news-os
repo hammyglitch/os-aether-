@@ -1209,7 +1209,7 @@ footer {
    
   <ul class="nav-links">
    <li>
-   <section id="aether-dashboard" class="aether-dash" data-news-src="/output/aether_news.json" data-aether-dash>
+   
 </li>
     <li><a href="/aether-aios-Pricing">Pricing</a></li>
     <li><a href="/index.html">Home</a></li>
