@@ -29,9 +29,8 @@ body{
     --a-red: #e8334a;
 
     font-family: -apple-system, "Segoe UI", Inter, Arial, sans-serif;
-    background: linear-gradient(135deg, #07121f 0%, #0a241d 28%, #0f3a2c 52%, #0a241d 76%, #07121f 100%);
-    background-size: 220% 220%;
-    animation: aether-bg-shift 24s ease infinite;
+    /* New Blue to White Linear Gradient */
+    background: linear-gradient(to right, #007BFF, #FFFFFF);
     color: var(--a-text);
     padding: 32px;
     border-radius: 24px;
@@ -93,7 +92,7 @@ body{
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background: background: linear-gradient(to right, #007BFF, #FFFFFF);
+    background: linear-gradient(to right, #007BFF, #FFFFFF);
     border: 1px solid var(--a-border);
     padding: 8px 16px;
     border-radius: 30px;
@@ -729,4 +728,3 @@ body{
     border-radius: 50%;
     display: inline-block;
 }
-
