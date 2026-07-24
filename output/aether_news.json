@@ -2,7 +2,7 @@
     "engine": "AETHER NEWS OS",
     "version": "3.1",
     "status": "ONLINE",
-    "last_updated": "2026-07-24 14:51 UTC",
+    "last_updated": "2026-07-24 14:52 UTC",
     "intelligence": {
         "sources_checked": 29,
         "articles_scanned": 1507,
@@ -56,9 +56,9 @@
             ],
             "market_impact": 85,
             "business_advice": [
-                "Check supplier security",
                 "Verify backups",
-                "Review MFA coverage"
+                "Review MFA coverage",
+                "Check supplier security"
             ],
             "risk_profile": {
                 "cyber_risk": 85,
@@ -86,10 +86,10 @@
             ],
             "market_impact": 100,
             "business_advice": [
-                "Check supplier security",
-                "Monitor geopolitical exposure",
                 "Verify backups",
-                "Review MFA coverage"
+                "Monitor geopolitical exposure",
+                "Review MFA coverage",
+                "Check supplier security"
             ],
             "risk_profile": {
                 "cyber_risk": 85,
@@ -118,10 +118,10 @@
             ],
             "market_impact": 100,
             "business_advice": [
-                "Check supplier security",
-                "Monitor geopolitical exposure",
                 "Verify backups",
-                "Review MFA coverage"
+                "Monitor geopolitical exposure",
+                "Review MFA coverage",
+                "Check supplier security"
             ],
             "risk_profile": {
                 "cyber_risk": 85,
@@ -150,10 +150,10 @@
             ],
             "market_impact": 100,
             "business_advice": [
-                "Check supplier security",
-                "Monitor geopolitical exposure",
                 "Verify backups",
-                "Review MFA coverage"
+                "Monitor geopolitical exposure",
+                "Review MFA coverage",
+                "Check supplier security"
             ],
             "risk_profile": {
                 "cyber_risk": 85,
