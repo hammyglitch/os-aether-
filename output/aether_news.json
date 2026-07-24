@@ -2,86 +2,22 @@
     "engine": "AETHER NEWS OS",
     "version": "3.1",
     "status": "ONLINE",
-    "last_updated": "2026-07-23 05:21 UTC",
+    "last_updated": "2026-07-24 00:44 UTC",
     "intelligence": {
         "sources_checked": 29,
-        "articles_scanned": 1497,
-        "classified_articles": 162,
-        "top_story_score": 83,
+        "articles_scanned": 1500,
+        "classified_articles": 153,
+        "top_story_score": 80,
         "threat_level": "ELEVATED",
         "ai_confidence": 86
     },
     "top_articles": [
         {
             "rank": 1,
-            "source": "Dark Reading",
-            "category": "Cyber Security",
-            "title": "Ransomware Attack Puts a Chill On Japanese Frozen-Food Chain",
-            "score": 83,
-            "threat_level": "HIGH",
-            "business_impact": "HIGH",
-            "sme_risk": 0,
-            "confidence": 80,
-            "trend": "STABLE",
-            "risk_domains": [
-                "Technology Risk",
-                "Cyber Security",
-                "Geopolitical Risk"
-            ],
-            "market_impact": 100,
-            "business_advice": [
-                "Check supplier security",
-                "Review MFA coverage",
-                "Monitor geopolitical exposure",
-                "Verify backups"
-            ],
-            "risk_profile": {
-                "cyber_risk": 85,
-                "geopolitical_risk": 80,
-                "supply_chain_risk": 0,
-                "technology_risk": 60,
-                "sme_exposure": 75,
-                "overall_risk": 60
-            }
-        },
-        {
-            "rank": 2,
-            "source": "BleepingComputer",
-            "category": "Cyber Security",
-            "title": "How enterprise GenAI can amplify ransomware risk — and how to contain it",
-            "score": 78,
-            "threat_level": "HIGH",
-            "business_impact": "HIGH",
-            "sme_risk": 0,
-            "confidence": 80,
-            "trend": "STABLE",
-            "risk_domains": [
-                "Technology Risk",
-                "Cyber Security",
-                "Geopolitical Risk"
-            ],
-            "market_impact": 100,
-            "business_advice": [
-                "Check supplier security",
-                "Review MFA coverage",
-                "Monitor geopolitical exposure",
-                "Verify backups"
-            ],
-            "risk_profile": {
-                "cyber_risk": 85,
-                "geopolitical_risk": 80,
-                "supply_chain_risk": 0,
-                "technology_risk": 60,
-                "sme_exposure": 75,
-                "overall_risk": 60
-            }
-        },
-        {
-            "rank": 3,
-            "source": "BBC Politics",
+            "source": "BBC Business",
             "category": "War & Defence",
-            "title": "Former defence minister Al Carns turns down ministerial offer",
-            "score": 75,
+            "title": "UK complacent about war threat, warns defence boss",
+            "score": 80,
             "threat_level": "HIGH",
             "business_impact": "MEDIUM",
             "sme_risk": 0,
@@ -104,10 +40,74 @@
             }
         },
         {
+            "rank": 2,
+            "source": "Dark Reading",
+            "category": "Cyber Security",
+            "title": "Russian Hackers Exploit Zimbra Zero-Day Against US, Ukraine Targets",
+            "score": 78,
+            "threat_level": "HIGH",
+            "business_impact": "HIGH",
+            "sme_risk": 0,
+            "confidence": 80,
+            "trend": "STABLE",
+            "risk_domains": [
+                "Cyber Security",
+                "Geopolitical Risk",
+                "Technology Risk"
+            ],
+            "market_impact": 100,
+            "business_advice": [
+                "Review MFA coverage",
+                "Verify backups",
+                "Check supplier security",
+                "Monitor geopolitical exposure"
+            ],
+            "risk_profile": {
+                "cyber_risk": 85,
+                "geopolitical_risk": 80,
+                "supply_chain_risk": 0,
+                "technology_risk": 60,
+                "sme_exposure": 75,
+                "overall_risk": 60
+            }
+        },
+        {
+            "rank": 3,
+            "source": "Dark Reading",
+            "category": "Cyber Security",
+            "title": "Ransomware Attack Puts a Chill on Japanese Frozen-Food Chain",
+            "score": 78,
+            "threat_level": "HIGH",
+            "business_impact": "HIGH",
+            "sme_risk": 0,
+            "confidence": 80,
+            "trend": "STABLE",
+            "risk_domains": [
+                "Cyber Security",
+                "Geopolitical Risk",
+                "Technology Risk"
+            ],
+            "market_impact": 100,
+            "business_advice": [
+                "Review MFA coverage",
+                "Verify backups",
+                "Check supplier security",
+                "Monitor geopolitical exposure"
+            ],
+            "risk_profile": {
+                "cyber_risk": 85,
+                "geopolitical_risk": 80,
+                "supply_chain_risk": 0,
+                "technology_risk": 60,
+                "sme_exposure": 75,
+                "overall_risk": 60
+            }
+        },
+        {
             "rank": 4,
             "source": "BBC Politics",
             "category": "War & Defence",
-            "title": "Chris Mason: Sarwar ministerial role sees promotion of another Starmer critic",
+            "title": "Scottish Labour leader Anas Sarwar 'delighted' to accept trade minister job",
             "score": 75,
             "threat_level": "HIGH",
             "business_impact": "MEDIUM",
@@ -134,7 +134,7 @@
             "rank": 5,
             "source": "BBC Politics",
             "category": "War & Defence",
-            "title": "Scottish Labour leader Anas Sarwar set to become a minister in Burnham's government",
+            "title": "Sarwar to become minister in Burnham's government",
             "score": 75,
             "threat_level": "HIGH",
             "business_impact": "MEDIUM",
