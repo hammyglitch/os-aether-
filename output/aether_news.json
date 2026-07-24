@@ -2,10 +2,10 @@
     "engine": "AETHER NEWS OS",
     "version": "3.1",
     "status": "ONLINE",
-    "last_updated": "2026-07-24 14:37 UTC",
+    "last_updated": "2026-07-24 14:51 UTC",
     "intelligence": {
         "sources_checked": 29,
-        "articles_scanned": 1506,
+        "articles_scanned": 1507,
         "classified_articles": 151,
         "top_story_score": 75,
         "threat_level": "ELEVATED",
@@ -24,8 +24,8 @@
             "confidence": 80,
             "trend": "STABLE",
             "risk_domains": [
-                "Technology Risk",
-                "Geopolitical Risk"
+                "Geopolitical Risk",
+                "Technology Risk"
             ],
             "market_impact": 100,
             "business_advice": [
@@ -56,9 +56,9 @@
             ],
             "market_impact": 85,
             "business_advice": [
-                "Review MFA coverage",
+                "Check supplier security",
                 "Verify backups",
-                "Check supplier security"
+                "Review MFA coverage"
             ],
             "risk_profile": {
                 "cyber_risk": 85,
@@ -81,15 +81,15 @@
             "confidence": 80,
             "trend": "STABLE",
             "risk_domains": [
-                "Cyber Security",
-                "Geopolitical Risk"
+                "Geopolitical Risk",
+                "Cyber Security"
             ],
             "market_impact": 100,
             "business_advice": [
-                "Review MFA coverage",
-                "Verify backups",
+                "Check supplier security",
                 "Monitor geopolitical exposure",
-                "Check supplier security"
+                "Verify backups",
+                "Review MFA coverage"
             ],
             "risk_profile": {
                 "cyber_risk": 85,
@@ -112,16 +112,16 @@
             "confidence": 80,
             "trend": "STABLE",
             "risk_domains": [
+                "Geopolitical Risk",
                 "Cyber Security",
-                "Technology Risk",
-                "Geopolitical Risk"
+                "Technology Risk"
             ],
             "market_impact": 100,
             "business_advice": [
-                "Review MFA coverage",
-                "Verify backups",
+                "Check supplier security",
                 "Monitor geopolitical exposure",
-                "Check supplier security"
+                "Verify backups",
+                "Review MFA coverage"
             ],
             "risk_profile": {
                 "cyber_risk": 85,
@@ -144,16 +144,16 @@
             "confidence": 80,
             "trend": "STABLE",
             "risk_domains": [
+                "Geopolitical Risk",
                 "Cyber Security",
-                "Technology Risk",
-                "Geopolitical Risk"
+                "Technology Risk"
             ],
             "market_impact": 100,
             "business_advice": [
-                "Review MFA coverage",
-                "Verify backups",
+                "Check supplier security",
                 "Monitor geopolitical exposure",
-                "Check supplier security"
+                "Verify backups",
+                "Review MFA coverage"
             ],
             "risk_profile": {
                 "cyber_risk": 85,
