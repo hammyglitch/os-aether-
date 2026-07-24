@@ -106,6 +106,7 @@ body{
     gap: 16px;
 }
 
+/* Top Left Logo Square */
 .aether-brand-logo {
     width: 54px;
     height: 54px;
@@ -118,7 +119,7 @@ body{
 }
 
 .aether-header-titles h2 {
-    font-size: 32px;
+    font-size: 32px; /* Made Larger */
     font-weight: 800;
     letter-spacing: .5px;
     color: #ffffff;
@@ -127,7 +128,7 @@ body{
 
 .aether-header-titles p {
     margin-top: 6px;
-    font-size: 15px;
+    font-size: 15px; /* Made Larger */
     color: var(--a-gold);
     font-weight: 600;
 }
@@ -192,6 +193,11 @@ body{
     box-shadow: 0 14px 30px rgba(0, 0, 0, .35);
     border-color: var(--a-cyan);
 }
+
+.aether-kpi-grid .aether-kpi-card:nth-child(1) { animation-delay: .05s; }
+.aether-kpi-grid .aether-kpi-card:nth-child(2) { animation-delay: .12s; }
+.aether-kpi-grid .aether-kpi-card:nth-child(3) { animation-delay: .19s; }
+.aether-kpi-grid .aether-kpi-card:nth-child(4) { animation-delay: .26s; }
 
 .aether-kpi-top {
     display: flex;
@@ -425,7 +431,7 @@ body{
     color: var(--a-text);
 }
 
-/* ═══ GLOBAL RISK MAP (ENLARGED + GOLD/RED/BLUE GRADIENT) ═══ */
+/* GLOBAL RISK MAP */
 
 .aether-secondary-panel {
     background: transparent;
@@ -433,32 +439,20 @@ body{
     border-radius: 18px;
     padding: 18px 24px;
     margin-bottom: 18px;
-    opacity: 1;
+    opacity: .9;
     display: flex;
     flex-direction: column;
 }
 
-.aether-secondary-panel .aether-panel-header h3 {
-    font-size: 26px; /* Bigger Title */
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    /* Gold, Red, Blue Linear Gradient */
-    background: linear-gradient(90deg, var(--a-gold) 0%, var(--a-red) 50%, #007BFF 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));
+.aether-secondary-panel .aether-panel-header {
+    margin-bottom: 16px;
+    flex-shrink: 0;
 }
 
-.aether-secondary-panel .aether-panel-header p {
-    font-size: 15px; /* Bigger Subtitle */
-    font-weight: 700;
-    margin-top: 6px;
-    background: linear-gradient(90deg, #007BFF 0%, var(--a-gold) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+.aether-secondary-panel .aether-panel-header h3 {
+    font-size: 13px;
+    color: var(--a-text-dim);
+    margin: 0;
 }
 
 .aether-global-risk-list {
@@ -470,9 +464,10 @@ body{
     margin: 0;
 }
 
-/* ═══ TELEMETRY ARCHITECTURE OVERVIEW (GOLD/RED/BLUE STYLING) ═══ */
+/* EXECUTIVE SUMMARY & TREND STRIPS */
 
-.aether-summary-strip {
+.aether-summary-strip,
+.aether-trend-strip {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
     gap: 16px;
@@ -480,82 +475,24 @@ body{
     background: var(--a-surface);
     border: 1px solid var(--a-border);
     border-radius: 18px;
-    padding: 24px;
+    padding: 20px 24px;
 }
 
-.aether-telemetry-header {
-    grid-column: 1 / -1;
-    margin-bottom: 12px;
-}
-
-.aether-telemetry-header h3 {
-    font-size: 24px; /* Bigger Title */
-    font-weight: 800;
-    letter-spacing: 0.5px;
-    /* Gold, Red, Blue Linear Gradient */
-    background: linear-gradient(90deg, var(--a-gold) 0%, var(--a-red) 50%, #007BFF 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    margin-bottom: 8px;
-}
-
-.aether-telemetry-header p {
-    font-size: 13px;
-    color: var(--a-text-dim);
-    line-height: 1.6;
-}
-
-.aether-summary-item {
+.aether-summary-item,
+.aether-trend-item {
     text-align: left;
 }
 
-.aether-summary-label {
-    font-size: 11px;
-    letter-spacing: .5px;
-    color: var(--a-gold);
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-bottom: 6px;
-}
-
-.aether-summary-value {
-    font-family: "Fira Code", monospace;
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 6px;
-}
-
-.aether-summary-desc {
-    font-size: 11px;
-    color: var(--a-text-dim);
-    line-height: 1.5;
-}
-
-/* TREND STRIP */
-
-.aether-trend-strip {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    gap: 16px;
-    margin-bottom: 24px;
-}
-
-.aether-trend-item {
-    background: var(--a-surface);
-    border: 1px solid var(--a-border);
-    border-radius: 16px;
-    padding: 16px 20px;
-}
-
+.aether-summary-label,
 .aether-trend-label {
     font-size: 11px;
+    letter-spacing: .5px;
     color: var(--a-text-dim);
     text-transform: uppercase;
-    letter-spacing: .5px;
     margin-bottom: 6px;
 }
 
+.aether-summary-value,
 .aether-trend-value {
     font-family: "Fira Code", monospace;
     font-size: 18px;
@@ -563,33 +500,14 @@ body{
     margin-bottom: 6px;
 }
 
+.aether-summary-desc,
 .aether-trend-desc {
     font-size: 11px;
     color: var(--a-text-dim);
     line-height: 1.5;
 }
 
-/* ═══ TOP INTELLIGENCE REPORTS & CARDS ═══ */
-
-.aether-reports-section-title {
-    font-size: 26px; /* Bigger Title */
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    /* Gold, Red, Blue Linear Gradient */
-    background: linear-gradient(90deg, var(--a-gold) 0%, var(--a-red) 50%, #007BFF 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    /* Neon Strobe Pulse Animation */
-    animation: aether-title-strobe 1.5s ease-in-out infinite alternate;
-}
-
-@keyframes aether-title-strobe {
-    0% { filter: drop-shadow(0 0 2px rgba(0, 123, 255, 0.4)); opacity: 0.85; }
-    50% { filter: drop-shadow(0 0 10px rgba(232, 51, 74, 0.8)); opacity: 1; }
-    100% { filter: drop-shadow(0 0 14px rgba(200, 169, 110, 1)); opacity: 0.9; }
-}
+/* REPORT CARDS */
 
 .aether-reports-header-row {
     display: flex;
@@ -645,18 +563,14 @@ body{
     border-radius: 10px;
 }
 
-/* ═══ REPORT CARD: BLUE & WHITE TOP HALF SPLIT ═══ */
-
 .aether-report-card {
-    /* Top 50% Blue to White, Bottom 50% Dark Surface */
-    background: linear-gradient(to bottom, #007BFF 0%, #FFFFFF 50%, var(--a-surface) 50%, var(--a-surface) 100%);
+    background: var(--a-surface);
     border: 1px solid var(--a-border);
     border-radius: 16px;
     padding: 22px;
     flex: 0 0 320px;
     scroll-snap-align: center;
     transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
-    overflow: hidden;
 }
 
 .aether-report-card:hover {
@@ -671,7 +585,6 @@ body{
     }
 }
 
-/* Non-Contrasting High Visibility Text inside Top Half */
 .aether-report-top {
     display: flex;
     align-items: baseline;
@@ -681,15 +594,12 @@ body{
 
 .aether-report-rank {
     font-family: "Fira Code", monospace;
-    color: #07121f; /* Dark slate for strong contrast on blue gradient top */
-    font-weight: 800;
-    font-size: 14px;
+    color: var(--a-cyan);
+    font-size: 13px;
 }
 
 .aether-report-title {
     font-size: 16px;
-    font-weight: 700;
-    color: #07121f; /* High contrast dark readable text on light gradient background */
 }
 
 .aether-report-tags {
@@ -703,22 +613,19 @@ body{
     font-size: 11px;
     padding: 4px 10px;
     border-radius: 20px;
-    background: #07121f;
-    color: #ffffff;
-    font-weight: 600;
+    background: var(--a-surface-alt);
+    color: var(--a-text-dim);
 }
 
 .aether-tag-alert {
-    background: var(--a-red);
-    color: #ffffff;
+    background: rgba(232, 51, 74, .16);
+    color: var(--a-red);
 }
 
-/* Bottom Half Card Text (Sits on dark surface background) */
 .aether-report-stats {
     display: flex;
     gap: 28px;
     margin-bottom: 16px;
-    margin-top: 10px;
 }
 
 .aether-report-stat-label {
@@ -733,7 +640,6 @@ body{
     font-family: "Fira Code", monospace;
     font-size: 15px;
     font-weight: 600;
-    color: var(--a-text);
 }
 
 .aether-report-card h4 {
@@ -752,7 +658,6 @@ body{
 }
 
 /* GLOBE & LEGEND */
-
 .aether-globe-wrapper {
     width: 100%;
     height: 450px; 
