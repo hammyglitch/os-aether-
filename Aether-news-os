@@ -2412,7 +2412,7 @@ document.addEventListener('DOMContentLoaded', function(){
         <a href="/aether-news.html">News</a>
         <a href="/community.html">Community</a>
         <a href="/gold.html">Gold</a>
-    </div>
+    </div>//
     <div class="footer-copy">&copy; 2026 Aether Business Architects Ltd &middot; jay@aetherbusinessarchitectsltd.uk</div>
 </footer>
 <script src="/output/dashboard.js"></script>
