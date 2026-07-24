@@ -1,60 +1,1204 @@
+html,
+body{
+    margin:0;
+    padding:0;
+}
+/* =====================================================
+   AETHER INTELLIGENCE DASHBOARD — v2 "Glass Command Deck"
+   Every selector stays namespaced under .aether-dash so
+   this drops into any page without leaking styles.
+   Same class names as before — this is a drop-in replace.
+===================================================== */
+
+.aether-dash,
+.aether-dash * {
+    box-sizing: border-box;
+}
 /* =====================================================
    AETHER COMMUNITY
-   Light Executive Theme
 ===================================================== */
 
 .community-section{
     position:relative;
     padding:100px 6%;
-    overflow:hidden;
-
     background:
-        radial-gradient(circle at top left,
-            #ffffff 0%,
-            #eef9ff 22%,
-            #d9f2ff 48%,
-            #f8fcff 70%,
-            #ffffff 100%);
-
-    color:#17304f;
+        radial-gradient(circle at top,#14325f 0%,#09101f 35%,#04070d 100%);
+    overflow:hidden;
+    color:#fff;
 }
 
-/* Decorative lighting */
+/* animated glow */
 
 .community-section::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:
+        radial-gradient(circle at 20% 20%,rgba(0,160,255,.15),transparent 35%),
+        radial-gradient(circle at 80% 70%,rgba(255,184,0,.12),transparent 35%);
+    pointer-events:none;
+}
+
+.community-container{
+    max-width:1500px;
+    margin:auto;
+    position:relative;
+    z-index:2;
+}
+
+.community-title{
+    text-align:center;
+    font-size:3rem;
+    font-weight:800;
+    margin-bottom:15px;
+    color:#fff;
+}
+
+.community-title span{
+    color:#ffcb3d;
+}
+
+.community-subtitle{
+    max-width:950px;
+    margin:auto;
+    text-align:center;
+    font-size:1.15rem;
+    line-height:1.8;
+    color:#b8c7d6;
+    margin-bottom:70px;
+}
+
+/* =====================================================
+    GRID
+===================================================== */
+
+.community-grid{
+    display:grid;
+    grid-template-columns:
+        repeat(auto-fit,minmax(300px,1fr));
+    gap:28px;
+}
+
+/* =====================================================
+    CARDS
+===================================================== */
+
+.community-card{
+
+    background:
+        rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:18px;
+
+    backdrop-filter:blur(20px);
+
+    padding:28px;
+
+    transition:.35s;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.community-card::before{
 
     content:"";
 
     position:absolute;
 
-    inset:0;
+    top:0;
+    left:0;
 
-    pointer-events:none;
+    width:100%;
+
+    height:4px;
+
+    background:linear-gradient(
+        90deg,
+        #2ba8ff,
+        #ffd447
+    );
+
+}
+
+.community-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#2ba8ff;
+
+    box-shadow:
+
+    0 18px 45px rgba(0,0,0,.45),
+
+    0 0 30px rgba(43,168,255,.25);
+
+}
+
+/* =====================================================
+    ICONS
+===================================================== */
+
+.community-icon{
+
+    width:58px;
+
+    height:58px;
+
+    border-radius:14px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:30px;
+
+    margin-bottom:20px;
+
+    background:linear-gradient(
+        135deg,
+        #1b66ff,
+        #00b7ff
+    );
+
+}
+
+/* =====================================================
+    HEADINGS
+===================================================== */
+
+.community-card h3{
+
+    font-size:1.45rem;
+
+    margin-bottom:10px;
+
+    color:#ffffff;
+
+}
+
+.community-card h4{
+
+    color:#ffcb3d;
+
+    margin-bottom:14px;
+
+    font-size:1rem;
+
+    text-transform:uppercase;
+
+    letter-spacing:1px;
+
+}
+
+/* =====================================================
+    CONTENT
+===================================================== */
+
+.community-card p{
+
+    color:#b8c7d6;
+
+    line-height:1.8;
+
+    margin-bottom:12px;
+
+}
+
+.community-card ul{
+
+    list-style:none;
+
+    padding:0;
+
+    margin:0;
+
+}
+
+.community-card li{
+
+    padding:8px 0;
+
+    border-bottom:1px solid rgba(255,255,255,.06);
+
+    color:#dce8f4;
+
+}
+
+.community-card li:last-child{
+
+    border:none;
+
+}
+
+/* =====================================================
+    JOIN BUTTON
+===================================================== */
+
+.community-button{
+
+    display:inline-block;
+
+    margin-top:22px;
+
+    padding:14px 30px;
+
+    border-radius:50px;
+
+    background:linear-gradient(
+        90deg,
+        #1f8dff,
+        #00b7ff
+    );
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+    transition:.3s;
+
+}
+
+.community-button:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+        0 0 25px rgba(0,174,255,.5);
+
+}
+
+/* =====================================================
+   GOLD MEMBERSHIP
+===================================================== */
+
+.gold-card{
+
+    border:2px solid rgba(255,205,60,.5);
 
     background:
 
-        /* blue glow */
+    linear-gradient(
 
-        radial-gradient(
-            circle at 8% 8%,
-            rgba(56,189,248,.35),
-            transparent 38%
-        ),
+        160deg,
 
-        /* gold glow */
+        rgba(255,210,50,.10),
 
-        radial-gradient(
-            circle at 92% 18%,
-            rgba(255,204,64,.30),
-            transparent 34%
-        ),
+        rgba(255,255,255,.03)
 
-        /* white highlight */
+    );
 
-        radial-gradient(
-            circle at 55% -10%,
-            rgba(255,255,255,.95),
-            transparent 40%
-        );
+}
 
+.gold-card::before{
+
+    height:5px;
+
+    background:
+
+    linear-gradient(
+
+        90deg,
+
+        #ffd447,
+
+        #fff3b2
+
+    );
+
+}
+
+.gold-card h3{
+
+    color:#ffd447;
+
+}
+
+.gold-card:hover{
+
+    border-color:#ffd447;
+
+    box-shadow:
+
+    0 20px 60px rgba(255,196,0,.28);
+
+}
+
+/* =====================================================
+    TAGS
+===================================================== */
+
+.community-tag{
+
+    display:inline-block;
+
+    padding:5px 12px;
+
+    border-radius:50px;
+
+    background:#1c2c45;
+
+    color:#84c6ff;
+
+    font-size:.8rem;
+
+    margin:5px 5px 0 0;
+
+}
+
+/* =====================================================
+   STATS
+===================================================== */
+
+.community-stat{
+
+    font-size:2rem;
+
+    font-weight:700;
+
+    color:#2ba8ff;
+
+    margin-bottom:5px;
+
+}
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media(max-width:900px){
+
+.community-title{
+
+    font-size:2.2rem;
+
+}
+
+.community-subtitle{
+
+    font-size:1rem;
+
+}
+
+.community-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+}
+.aether-dash {
+    --a-bg: #060b14;
+    --a-surface: rgba(20, 32, 51, 0.55);
+    --a-surface-alt: rgba(28, 44, 68, 0.55);
+    --a-border: rgba(255, 255, 255, .08);
+    --a-border-strong: rgba(255, 255, 255, .16);
+    --a-text: #eef3fa;
+    --a-text-dim: #93a4bd;
+    --a-cyan: #00d4f0;
+    --a-gold: #d9b579;
+    --a-violet: #a78bfa;
+    --a-green: #34d399;
+    --a-amber: #fbbf24;
+    --a-red: #f43f5e;
+    --a-glass-blur: 18px;
+
+    font-family: -apple-system, "Segoe UI", Inter, Arial, sans-serif;
+    background:
+        radial-gradient(circle at 15% 10%, rgba(0, 212, 240, 0.12), transparent 45%),
+        radial-gradient(circle at 85% 0%, rgba(217, 181, 121, 0.10), transparent 40%),
+        linear-gradient(160deg, #060b14 0%, #0a1526 35%, #0c2033 65%, #060b14 100%);
+    background-size: 200% 200%, 200% 200%, 220% 220%;
+    animation: aether-bg-shift 28s ease infinite;
+    color: var(--a-text);
+    padding: 36px;
+    border-radius: 28px;
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,0.04),
+        0 40px 80px -30px rgba(0,0,0,0.6);
+}
+
+/* subtle grain/noise-style texture for depth (pure CSS, no image) */
+.aether-dash::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image:
+        radial-gradient(rgba(255,255,255,0.025) 1px, transparent 1px);
+    background-size: 3px 3px;
+    pointer-events: none;
+    z-index: 0;
+    opacity: .5;
+}
+
+/* ═══ TOP NEON STROBE — softer, glassier sweep ═══ */
+.aether-dash::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 3px;
+    width: 26%;
+    background: linear-gradient(90deg, transparent, var(--a-cyan), #ffffff, var(--a-gold), transparent);
+    filter: blur(0.3px);
+    box-shadow: 0 0 20px var(--a-cyan), 0 0 40px rgba(0, 212, 240, 0.4);
+    animation: knight-rider-sweep 3.2s cubic-bezier(.45,0,.55,1) infinite alternate;
+    z-index: 100;
+}
+
+@keyframes knight-rider-sweep {
+    0% { left: -10%; opacity: .6; }
+    50% { opacity: 1; }
+    100% { left: 84%; opacity: .6; }
+}
+
+@keyframes aether-bg-shift {
+    0% { background-position: 0% 50%, 100% 0%, 0% 50%; }
+    50% { background-position: 100% 50%, 0% 100%, 100% 50%; }
+    100% { background-position: 0% 50%, 100% 0%, 0% 50%; }
+}
+
+@keyframes aether-fade-up {
+    from { opacity: 0; transform: translateY(16px) scale(.98); }
+    to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.aether-animate {
+    animation: aether-fade-up .6s cubic-bezier(.22,1,.36,1) both;
+}
+
+.aether-dash h2,
+.aether-dash h3,
+.aether-dash h4,
+.aether-dash p {
+    margin: 0;
+}
+
+.aether-dash > * {
+    position: relative;
+    z-index: 1;
+}
+
+.aether-empty-note {
+    font-size: 13px;
+    color: var(--a-text-dim);
+    padding: 12px 0;
+}
+
+/* ═══════════════════════════════════
+   HEADER & BRANDING
+═══════════════════════════════════ */
+
+.aether-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+.aether-header-brand-wrap {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.aether-brand-logo {
+    width: 54px;
+    height: 54px;
+    border-radius: 14px;
+    border: 1px solid var(--a-border-strong);
+    background: var(--a-surface);
+    object-fit: cover;
+    box-shadow: 0 0 20px rgba(0, 212, 240, 0.25);
+    flex-shrink: 0;
+}
+
+.aether-header-titles h2 {
+    font-size: 34px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    background: linear-gradient(90deg, #ffffff, #cfe9f5 60%, var(--a-cyan));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: none;
+}
+
+.aether-header-titles p {
+    margin-top: 6px;
+    font-size: 16px;
+    color: var(--a-gold);
+    font-weight: 600;
+    letter-spacing: .2px;
+}
+
+.aether-live-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--a-surface);
+    backdrop-filter: blur(var(--a-glass-blur));
+    -webkit-backdrop-filter: blur(var(--a-glass-blur));
+    border: 1px solid var(--a-border-strong);
+    padding: 9px 18px;
+    border-radius: 30px;
+    font-size: 13px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+}
+
+.aether-live-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--a-green);
+    box-shadow: 0 0 10px var(--a-green);
+    animation: aether-pulse 1.8s ease-in-out infinite;
+}
+
+@keyframes aether-pulse {
+    0% { opacity: 1; transform: scale(1); }
+    50% { opacity: .4; transform: scale(1.35); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+.aether-live-label {
+    color: var(--a-green);
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+.aether-live-updated {
+    color: var(--a-text-dim);
+    font-weight: 500;
+}
+
+/* ═══════════════════════════════════
+   KPI CARDS — glass tiles
+═══════════════════════════════════ */
+
+.aether-kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+    margin-bottom: 24px;
+}
+
+.aether-kpi-card {
+    background: var(--a-surface);
+    backdrop-filter: blur(var(--a-glass-blur));
+    -webkit-backdrop-filter: blur(var(--a-glass-blur));
+    border: 1px solid var(--a-border);
+    border-radius: 20px;
+    padding: 22px;
+    animation: aether-fade-up .5s ease both;
+    transition: transform .3s cubic-bezier(.22,1,.36,1), box-shadow .3s ease, border-color .3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.aether-kpi-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(0,212,240,0.08), transparent 55%);
+    opacity: 0;
+    transition: opacity .3s ease;
+}
+
+.aether-kpi-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .4), 0 0 0 1px rgba(0,212,240,0.15);
+    border-color: var(--a-cyan);
+}
+
+.aether-kpi-card:hover::before {
+    opacity: 1;
+}
+
+.aether-kpi-grid .aether-kpi-card:nth-child(1) { animation-delay: .05s; }
+.aether-kpi-grid .aether-kpi-card:nth-child(2) { animation-delay: .12s; }
+.aether-kpi-grid .aether-kpi-card:nth-child(3) { animation-delay: .19s; }
+.aether-kpi-grid .aether-kpi-card:nth-child(4) { animation-delay: .26s; }
+
+.aether-kpi-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 18px;
+}
+
+.aether-kpi-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    background: rgba(0, 212, 240, .12);
+    border: 1px solid rgba(0, 212, 240, .2);
+}
+
+.aether-kpi-caption {
+    text-align: right;
+}
+
+.aether-kpi-label {
+    font-size: 12px;
+    color: var(--a-text-dim);
+    text-transform: uppercase;
+    letter-spacing: .6px;
+}
+
+.aether-kpi-value {
+    font-family: "Fira Code", monospace;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    letter-spacing: -0.5px;
+}
+
+.aether-kpi-desc {
+    font-size: 13px;
+    color: var(--a-text-dim);
+    line-height: 1.5;
+}
+
+/* ═══════════════════════════════════
+   PANEL GRID
+═══════════════════════════════════ */
+
+.aether-panel-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+    margin-bottom: 18px;
+}
+
+@media (min-width: 800px) {
+    .aether-panel-grid {
+        grid-template-columns: 1.4fr 1fr;
+    }
+}
+
+.aether-panel {
+    background: var(--a-surface);
+    backdrop-filter: blur(var(--a-glass-blur));
+    -webkit-backdrop-filter: blur(var(--a-glass-blur));
+    border: 1px solid var(--a-border);
+    border-radius: 20px;
+    padding: 26px;
+    transition: transform .3s cubic-bezier(.22,1,.36,1), box-shadow .3s ease, border-color .3s ease;
+}
+
+.aether-panel:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .35);
+    border-color: var(--a-cyan);
+}
+
+.aether-panel-header {
+    margin-bottom: 20px;
+}
+
+.aether-panel-header h3 {
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: .3px;
+}
+
+.aether-panel-header p {
+    margin-top: 4px;
+    font-size: 13px;
+    color: var(--a-text-dim);
+}
+
+/* ═══════════════════════════════════
+   SECTOR BAR LIST
+═══════════════════════════════════ */
+
+.aether-sector-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.aether-sector-row {
+    padding: 10px;
+    margin: -10px;
+    border-radius: 14px;
+    transition: background .25s ease;
+}
+
+.aether-sector-row:hover {
+    background: var(--a-surface-alt);
+}
+
+.aether-sector-row-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.aether-sector-identity {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.aether-sector-icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.aether-sector-name {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.aether-sector-meta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.aether-sector-score {
+    font-family: "Fira Code", monospace;
+    font-size: 13px;
+    color: var(--a-text-dim);
+}
+
+.aether-sector-level {
+    padding: 3px 11px;
+    border-radius: 20px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .5px;
+}
+
+.level-critical { background: rgba(244, 63, 94, .16); color: var(--a-red); }
+.level-high { background: rgba(251, 191, 36, .16); color: var(--a-amber); }
+.level-moderate { background: rgba(217, 181, 121, .18); color: var(--a-gold); }
+.level-low { background: rgba(52, 211, 153, .16); color: var(--a-green); }
+
+.aether-bar-track {
+    height: 8px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.aether-bar-fill {
+    height: 100%;
+    width: 0%;
+    border-radius: 20px;
+    transition: width 1s cubic-bezier(.22, .9, .3, 1);
+    box-shadow: 0 0 12px currentColor;
+}
+
+.aether-sector-percent {
+    margin-top: 6px;
+    font-size: 11px;
+    color: var(--a-text-dim);
+}
+
+/* ═══════════════════════════════════
+   DONUT CHART
+═══════════════════════════════════ */
+
+.aether-donut-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+}
+
+.aether-donut {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    position: relative;
+    background: #16233a;
+    box-shadow: 0 0 40px rgba(0,212,240,0.15), inset 0 0 0 1px rgba(255,255,255,0.04);
+    transition: transform .4s cubic-bezier(.22,1,.36,1);
+}
+
+.aether-donut:hover {
+    transform: scale(1.03) rotate(2deg);
+}
+
+.aether-donut::after {
+    content: "";
+    position: absolute;
+    inset: 24px;
+    border-radius: 50%;
+    background: #0d1728;
+    box-shadow: inset 0 0 20px rgba(0,0,0,0.4);
+}
+
+.aether-legend {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.aether-legend-item {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    font-size: 12px;
+}
+
+.aether-legend-dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    box-shadow: 0 0 8px currentColor;
+}
+
+.aether-legend-name {
+    flex: 1;
+    color: var(--a-text-dim);
+}
+
+.aether-legend-value {
+    font-family: "Fira Code", monospace;
+    color: var(--a-text);
+    font-weight: 600;
+}
+
+/* ═══════════════════════════════════
+   GLOBAL RISK MAP
+═══════════════════════════════════ */
+
+.aether-secondary-panel {
+    background: var(--a-surface);
+    backdrop-filter: blur(var(--a-glass-blur));
+    -webkit-backdrop-filter: blur(var(--a-glass-blur));
+    border: 1px solid var(--a-border);
+    border-radius: 20px;
+    padding: 22px 26px;
+    margin-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+.aether-secondary-panel .aether-panel-header {
+    margin-bottom: 16px;
+    flex-shrink: 0;
+}
+
+.aether-secondary-panel .aether-panel-header h3 {
+    font-size: 13px;
+    color: var(--a-text-dim);
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: .8px;
+}
+
+.aether-global-risk-list {
+    display: block;
+    width: 100%;
+    height: 450px;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+/* ═══════════════════════════════════
+   EXECUTIVE SUMMARY & TREND STRIPS
+═══════════════════════════════════ */
+
+.aether-summary-strip,
+.aether-trend-strip {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 16px;
+    margin-bottom: 18px;
+    background: var(--a-surface);
+    backdrop-filter: blur(var(--a-glass-blur));
+    -webkit-backdrop-filter: blur(var(--a-glass-blur));
+    border: 1px solid var(--a-border);
+    border-radius: 20px;
+    padding: 22px 26px;
+}
+
+.aether-summary-item,
+.aether-trend-item {
+    text-align: left;
+}
+
+.aether-summary-label,
+.aether-trend-label {
+    font-size: 11px;
+    letter-spacing: .8px;
+    color: var(--a-text-dim);
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.aether-summary-value,
+.aether-trend-value {
+    font-family: "Fira Code", monospace;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.aether-summary-desc,
+.aether-trend-desc {
+    font-size: 12px;
+    color: var(--a-text-dim);
+    line-height: 1.5;
+}
+
+/* ═══════════════════════════════════
+   REPORT CARDS
+═══════════════════════════════════ */
+
+.aether-reports-header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.aether-reports-nav {
+    display: flex;
+    gap: 8px;
+}
+
+.aether-nav-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid var(--a-border);
+    background: var(--a-surface);
+    backdrop-filter: blur(var(--a-glass-blur));
+    color: var(--a-text);
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background .25s ease, border-color .25s ease, transform .2s ease;
+}
+
+.aether-nav-btn:hover {
+    background: var(--a-surface-alt);
+    border-color: var(--a-cyan);
+    color: var(--a-cyan);
+    transform: scale(1.08);
+}
+
+.aether-reports-viewport {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    padding: 4px 4px 16px;
+    margin: 0 -4px;
+    scrollbar-width: thin;
+    scrollbar-color: var(--a-border) transparent;
+}
+
+.aether-reports-viewport::-webkit-scrollbar {
+    height: 6px;
+}
+
+.aether-reports-viewport::-webkit-scrollbar-thumb {
+    background: var(--a-border);
+    border-radius: 10px;
+}
+
+.aether-report-card {
+    background: var(--a-surface);
+    backdrop-filter: blur(var(--a-glass-blur));
+    -webkit-backdrop-filter: blur(var(--a-glass-blur));
+    border: 1px solid var(--a-border);
+    border-radius: 18px;
+    padding: 24px;
+    flex: 0 0 320px;
+    scroll-snap-align: center;
+    transition: transform .3s cubic-bezier(.22,1,.36,1), box-shadow .3s ease, border-color .3s ease;
+}
+
+.aether-report-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
+    border-color: var(--a-cyan);
+}
+
+@media (max-width: 560px) {
+    .aether-report-card {
+        flex-basis: 82vw;
+    }
+}
+
+.aether-report-top {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin-bottom: 14px;
+}
+
+.aether-report-rank {
+    font-family: "Fira Code", monospace;
+    color: var(--a-cyan);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.aether-report-title {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.35;
+}
+
+.aether-report-tags {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 18px;
+}
+
+.aether-tag {
+    font-size: 10px;
+    font-weight: 600;
+    padding: 5px 11px;
+    border-radius: 20px;
+    background: var(--a-surface-alt);
+    color: var(--a-text-dim);
+    letter-spacing: .3px;
+}
+
+.aether-tag-alert {
+    background: rgba(244, 63, 94, .16);
+    color: var(--a-red);
+}
+
+.aether-report-stats {
+    display: flex;
+    gap: 28px;
+    margin-bottom: 18px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid var(--a-border);
+}
+
+.aether-report-stat-label {
+    display: block;
+    font-size: 10px;
+    color: var(--a-text-dim);
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    margin-bottom: 4px;
+}
+
+.aether-report-stat-value {
+    font-family: "Fira Code", monospace;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.aether-report-card h4 {
+    font-size: 11px;
+    color: var(--a-cyan);
+    text-transform: uppercase;
+    letter-spacing: .6px;
+    margin-top: 14px;
+    margin-bottom: 6px;
+    font-weight: 700;
+}
+
+.aether-report-card p {
+    font-size: 13px;
+    color: var(--a-text-dim);
+    line-height: 1.6;
+}
+
+/* ═══════════════════════════════════
+   GLOBE & LEGEND
+═══════════════════════════════════ */
+
+.aether-globe-wrapper {
+    width: 100%;
+    height: 450px;
+    min-height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 50;
+    background: radial-gradient(circle at center, rgba(0,212,240,0.06), transparent 70%);
+    overflow: visible;
+    margin-top: 16px;
+    border-radius: 20px;
+}
+
+#aetherRiskGlobe {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 51;
+    cursor: grab;
+}
+
+#aetherRiskGlobe:active {
+    cursor: grabbing;
+}
+
+.aether-risk-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 18px;
+    padding: 6px 0 14px 0;
+    font-size: 12px;
+    color: var(--a-text, #f8fafc);
+    border-bottom: 1px solid var(--a-border);
+    margin-bottom: 10px;
+}
+
+.aether-risk-legend .legend-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.03);
+}
+
+.aether-risk-legend .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 0 0 8px currentColor;
 }
