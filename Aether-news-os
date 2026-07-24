@@ -1790,6 +1790,163 @@ This shifting ecosystem presents both new opportunities and strategic challenges
    
 
 </section>
+<section class="community-section" aria-labelledby="community-heading">
+  <span class="sr-only" id="community-heading">Aether Community — free, bespoke UK SME business intelligence across Politics, Cyber and Quantum, Business Global, War and Defence, AI Intelligence and Community Voice, with a premium Aether Gold membership tier.</span>
+
+  <div class="hub-ring" aria-hidden="true"></div>
+  <div id="particles" aria-hidden="true"></div>
+
+  <p class="community-eyebrow" aria-hidden="true">Aether Community</p>
+  <h2 class="community-heading" aria-hidden="true">Intelligence, tuned to <em>your</em> business</h2>
+
+  <div class="community-hub">
+
+    <article class="community-card" id="card-politics" itemscope itemtype="https://schema.org/Thing">
+      <span class="cat-tag">Politics</span>
+      <h3 itemprop="name">Westminster Watch</h3>
+      <ul>
+        <li>Seventh PM in a decade sworn in</li>
+        <li>AI Regulation Bill clears final reading</li>
+      </ul>
+    </article>
+
+    <article class="community-card" id="card-cyber" itemscope itemtype="https://schema.org/Thing">
+      <span class="cat-tag">Cyber &amp; Quantum</span>
+      <h3 itemprop="name">Threat Signal</h3>
+      <ul>
+        <li>NHS ransomware attempt contained</li>
+        <li>68% of SMEs still on legacy systems</li>
+      </ul>
+    </article>
+
+    <article class="community-card" id="card-legacy" itemscope itemtype="https://schema.org/Thing">
+      <span class="cat-tag">Zero Trust</span>
+      <h3 itemprop="name">Adoption Curve</h3>
+      <ul>
+        <li>Zero-trust set to default in public contracts</li>
+      </ul>
+    </article>
+
+    <div class="community-centre">
+      <span class="community-badge">Free Membership</span>
+      <h2>Get news relevant to you</h2>
+
+      <div class="hero-typebox">
+        <p id="hero-line"><span class="cursor">|</span></p>
+      </div>
+
+      <a href="/gold button.html" class="community-btn">Join Free Today →</a>
+      <a href="/gold button.html" class="community-btn gold">Upgrade to Aether Gold ★</a>
+    </div>
+
+    <article class="community-card" id="card-global" itemscope itemtype="https://schema.org/Thing">
+      <span class="cat-tag">Business Global</span>
+      <h3 itemprop="name">Market Pulse</h3>
+      <ul>
+        <li>Midlands Investment Zones confirmed</li>
+        <li>SME Confidence Index rises 3 points</li>
+      </ul>
+    </article>
+
+    <article class="community-card" id="card-defence" itemscope itemtype="https://schema.org/Thing">
+      <span class="cat-tag">War &amp; Defence</span>
+      <h3 itemprop="name">Sovereign Watch</h3>
+      <ul>
+        <li>UK mandates domestic silicon by 2027</li>
+        <li>Defence spend climbs past 2.5% GDP</li>
+      </ul>
+    </article>
+
+    <article class="community-card" id="card-ai" itemscope itemtype="https://schema.org/Thing">
+      <span class="cat-tag">AI Intelligence</span>
+      <h3 itemprop="name">Build Watch</h3>
+      <ul>
+        <li>Latest releases &amp; automation tools</li>
+      </ul>
+    </article>
+
+    <article class="community-card" id="card-voice" itemscope itemtype="https://schema.org/Thing">
+      <span class="cat-tag">Community Voice</span>
+      <h3 itemprop="name">Your Region, Your Say</h3>
+      <p>A personalised feed built around what you need.</p>
+    </article>
+
+    <article class="community-card gold-card" id="card-gold" itemscope itemtype="https://schema.org/Thing">
+      <span class="cat-tag">★ Aether Gold</span>
+      <h3 itemprop="name">Premium Intelligence</h3>
+      <ul class="gold-list">
+        <li>Bespoke feed</li>
+        <li>Executive briefings</li>
+        <li>Daily cyber reports</li>
+        <li>Regional opportunities</li>
+        <li>AI intelligence</li>
+        <li>Quantum alerts</li>
+        <li>Market forecasts</li>
+        <li>Early access</li>
+      </ul>
+    </article>
+
+  </div>
+</section>
+
+<script>
+  (function(){
+    const wrap = document.getElementById('particles');
+    const colors = ['#00C8DC', '#C8A96E', '#8B5CF6'];
+    for(let i=0;i<18;i++){
+      const p = document.createElement('div');
+      p.className = 'particle';
+      const size = 2 + Math.random()*3;
+      p.style.width = size+'px';
+      p.style.height = size+'px';
+      p.style.left = Math.random()*100+'%';
+      p.style.bottom = '-10px';
+      p.style.background = colors[i % colors.length];
+      p.style.animationDuration = (6 + Math.random()*8)+'s';
+      p.style.animationDelay = (Math.random()*8)+'s';
+      wrap.appendChild(p);
+    }
+  })();
+
+  (function(){
+    const lines = [
+      "Business intelligence built around your industry.",
+      "Stop searching hundreds of articles.",
+      "Let AETHER AIOS deliver exactly what matters.",
+      "Political intelligence. Cyber intelligence.",
+      "Business opportunities. Defence updates.",
+      "Have your voice heard in the Aether Community.",
+      "Select what interests you. We do the rest."
+    ];
+    const el = document.getElementById('hero-line');
+    let li = 0, ci = 0, deleting = false;
+    const TYPE_MS = 38, HOLD_MS = 1400, DELETE_MS = 20, GAP_MS = 300;
+
+    function tick(){
+      const full = lines[li];
+      if(!deleting){
+        ci++;
+        el.innerHTML = full.slice(0, ci) + '<span class="cursor">|</span>';
+        if(ci >= full.length){
+          setTimeout(()=>{ deleting = true; tick(); }, HOLD_MS);
+          return;
+        }
+        setTimeout(tick, TYPE_MS);
+      } else {
+        ci--;
+        el.innerHTML = full.slice(0, ci) + '<span class="cursor">|</span>';
+        if(ci <= 0){
+          deleting = false;
+          li = (li + 1) % lines.length;
+          setTimeout(tick, GAP_MS);
+          return;
+        }
+        setTimeout(tick, DELETE_MS);
+      }
+    }
+    tick();
+  })();
+</script>
 
 <section class="aether-dash" data-news-src="/output/aether_news.json">
 
