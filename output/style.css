@@ -5,8 +5,6 @@ body{
 }
 /* =====================================================
    AETHER INTELLIGENCE DASHBOARD — scoped section styles
-   Every selector is namespaced under .aether-dash so this
-   can be dropped into any page without leaking styles.
 ===================================================== */
 
 .aether-dash,
@@ -29,7 +27,6 @@ body{
     --a-red: #e8334a;
 
     font-family: -apple-system, "Segoe UI", Inter, Arial, sans-serif;
-    /* Animated Blue-to-Gold Linear Gradient */
     background: linear-gradient(135deg, #07121f 0%, #007BFF 50%, #C8A96E 100%);
     background-size: 220% 220%;
     animation: aether-bg-shift 24s ease infinite;
@@ -81,12 +78,6 @@ body{
 .aether-dash h4,
 .aether-dash p {
     margin: 0;
-}
-
-.aether-empty-note {
-    font-size: 13px;
-    color: var(--a-text-dim);
-    padding: 12px 0;
 }
 
 /* HEADER & BRANDING */
@@ -277,155 +268,7 @@ body{
     color: var(--a-text-dim);
 }
 
-/* SECTOR BAR LIST */
-
-.aether-sector-list {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
-.aether-sector-row {
-    padding: 8px;
-    margin: -8px;
-    border-radius: 12px;
-    transition: background .2s ease;
-}
-
-.aether-sector-row:hover {
-    background: var(--a-surface-alt);
-}
-
-.aether-sector-row-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 8px;
-}
-
-.aether-sector-identity {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.aether-sector-icon {
-    width: 26px;
-    height: 26px;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 13px;
-}
-
-.aether-sector-name {
-    font-size: 13px;
-    font-weight: 600;
-}
-
-.aether-sector-meta {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.aether-sector-score {
-    font-family: "Fira Code", monospace;
-    font-size: 13px;
-    color: var(--a-text-dim);
-}
-
-.aether-sector-level {
-    padding: 3px 10px;
-    border-radius: 20px;
-    font-size: 10px;
-    font-weight: 700;
-    letter-spacing: .5px;
-}
-
-.level-critical { background: rgba(232, 51, 74, .16); color: var(--a-red); }
-.level-high { background: rgba(245, 158, 11, .16); color: var(--a-amber); }
-.level-moderate { background: rgba(200, 169, 110, .18); color: var(--a-gold); }
-.level-low { background: rgba(34, 197, 94, .16); color: var(--a-green); }
-
-.aether-bar-track {
-    height: 8px;
-    background: var(--a-surface-alt);
-    border-radius: 20px;
-    overflow: hidden;
-}
-
-.aether-bar-fill {
-    height: 100%;
-    width: 0%;
-    border-radius: 20px;
-    transition: width .8s cubic-bezier(.22, .9, .3, 1);
-}
-
-.aether-sector-percent {
-    margin-top: 6px;
-    font-size: 11px;
-    color: var(--a-text-dim);
-}
-
-/* DONUT CHART */
-
-.aether-donut-wrap {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-}
-
-.aether-donut {
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    position: relative;
-    background: #1b2744;
-}
-
-.aether-donut::after {
-    content: "";
-    position: absolute;
-    inset: 22px;
-    border-radius: 50%;
-    background: var(--a-surface);
-}
-
-.aether-legend {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.aether-legend-item {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 12px;
-}
-
-.aether-legend-dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    flex-shrink: 0;
-}
-
-.aether-legend-name {
-    flex: 1;
-    color: var(--a-text-dim);
-}
-
-.aether-legend-value {
-    font-family: "Fira Code", monospace;
-    color: var(--a-text);
-}
-
-/* ═══ GLOBAL RISK MAP (ENLARGED + GOLD/RED/BLUE GRADIENT) ═══ */
+/* ═══ GLOBAL RISK MAP ═══ */
 
 .aether-secondary-panel {
     background: transparent;
@@ -439,11 +282,10 @@ body{
 }
 
 .aether-secondary-panel .aether-panel-header h3 {
-    font-size: 26px; /* Bigger Title */
+    font-size: 26px;
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 1px;
-    /* Gold, Red, Blue Linear Gradient */
     background: linear-gradient(90deg, var(--a-gold) 0%, var(--a-red) 50%, #007BFF 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -452,7 +294,7 @@ body{
 }
 
 .aether-secondary-panel .aether-panel-header p {
-    font-size: 15px; /* Bigger Subtitle */
+    font-size: 15px;
     font-weight: 700;
     margin-top: 6px;
     background: linear-gradient(90deg, #007BFF 0%, var(--a-gold) 100%);
@@ -470,7 +312,7 @@ body{
     margin: 0;
 }
 
-/* ═══ TELEMETRY ARCHITECTURE OVERVIEW (GOLD/RED/BLUE STYLING) ═══ */
+/* ═══ TELEMETRY ARCHITECTURE OVERVIEW (TEXT ENLARGED) ═══ */
 
 .aether-summary-strip {
     display: grid;
@@ -480,108 +322,47 @@ body{
     background: var(--a-surface);
     border: 1px solid var(--a-border);
     border-radius: 18px;
-    padding: 24px;
+    padding: 28px;
 }
 
 .aether-telemetry-header {
     grid-column: 1 / -1;
-    margin-bottom: 12px;
+    margin-bottom: 16px;
 }
 
 .aether-telemetry-header h3 {
-    font-size: 24px; /* Bigger Title */
+    font-size: 28px; /* Larger Heading */
     font-weight: 800;
     letter-spacing: 0.5px;
-    /* Gold, Red, Blue Linear Gradient */
     background: linear-gradient(90deg, var(--a-gold) 0%, var(--a-red) 50%, #007BFF 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
 }
 
 .aether-telemetry-header p {
-    font-size: 13px;
-    color: var(--a-text-dim);
-    line-height: 1.6;
+    font-size: 15px; /* Larger Body Text */
+    color: #eef3fa;
+    line-height: 1.7;
+    margin-bottom: 10px;
 }
 
-.aether-summary-item {
-    text-align: left;
-}
-
-.aether-summary-label {
-    font-size: 11px;
-    letter-spacing: .5px;
+.aether-telemetry-header p strong {
     color: var(--a-gold);
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-bottom: 6px;
-}
-
-.aether-summary-value {
-    font-family: "Fira Code", monospace;
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 6px;
-}
-
-.aether-summary-desc {
-    font-size: 11px;
-    color: var(--a-text-dim);
-    line-height: 1.5;
-}
-
-/* TREND STRIP */
-
-.aether-trend-strip {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    gap: 16px;
-    margin-bottom: 24px;
-}
-
-.aether-trend-item {
-    background: var(--a-surface);
-    border: 1px solid var(--a-border);
-    border-radius: 16px;
-    padding: 16px 20px;
-}
-
-.aether-trend-label {
-    font-size: 11px;
-    color: var(--a-text-dim);
-    text-transform: uppercase;
-    letter-spacing: .5px;
-    margin-bottom: 6px;
-}
-
-.aether-trend-value {
-    font-family: "Fira Code", monospace;
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 6px;
-}
-
-.aether-trend-desc {
-    font-size: 11px;
-    color: var(--a-text-dim);
-    line-height: 1.5;
 }
 
 /* ═══ TOP INTELLIGENCE REPORTS & CARDS ═══ */
 
 .aether-reports-section-title {
-    font-size: 26px; /* Bigger Title */
+    font-size: 26px;
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 1px;
-    /* Gold, Red, Blue Linear Gradient */
     background: linear-gradient(90deg, var(--a-gold) 0%, var(--a-red) 50%, #007BFF 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    /* Neon Strobe Pulse Animation */
     animation: aether-title-strobe 1.5s ease-in-out infinite alternate;
 }
 
@@ -598,32 +379,6 @@ body{
     margin-bottom: 14px;
 }
 
-.aether-reports-nav {
-    display: flex;
-    gap: 8px;
-}
-
-.aether-nav-btn {
-    width: 34px;
-    height: 34px;
-    border-radius: 50%;
-    border: 1px solid var(--a-border);
-    background: var(--a-surface);
-    color: var(--a-text);
-    font-size: 16px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background .2s ease, border-color .2s ease;
-}
-
-.aether-nav-btn:hover {
-    background: var(--a-surface-alt);
-    border-color: var(--a-cyan);
-    color: var(--a-cyan);
-}
-
 .aether-reports-viewport {
     display: flex;
     gap: 16px;
@@ -632,24 +387,12 @@ body{
     scroll-behavior: smooth;
     padding: 4px 4px 14px;
     margin: 0 -4px;
-    scrollbar-width: thin;
-    scrollbar-color: var(--a-border) transparent;
 }
 
-.aether-reports-viewport::-webkit-scrollbar {
-    height: 6px;
-}
-
-.aether-reports-viewport::-webkit-scrollbar-thumb {
-    background: var(--a-border);
-    border-radius: 10px;
-}
-
-/* ═══ REPORT CARD: BLUE & WHITE TOP HALF SPLIT ═══ */
+/* ═══ REPORT CARD CONTRAST & VISIBILITY FIX ═══ */
 
 .aether-report-card {
-    /* Top 50% Blue to White, Bottom 50% Dark Surface */
-    background: linear-gradient(to bottom, #007BFF 0%, #FFFFFF 50%, var(--a-surface) 50%, var(--a-surface) 100%);
+    background: linear-gradient(to bottom, #007BFF 0%, #FFFFFF 52%, var(--a-surface) 52%, var(--a-surface) 100%);
     border: 1px solid var(--a-border);
     border-radius: 16px;
     padding: 22px;
@@ -665,38 +408,35 @@ body{
     border-color: var(--a-cyan);
 }
 
-@media (max-width: 560px) {
-    .aether-report-card {
-        flex-basis: 82vw;
-    }
-}
-
-/* Non-Contrasting High Visibility Text inside Top Half */
 .aether-report-top {
     display: flex;
     align-items: baseline;
     gap: 10px;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 
+/* #1, #2 Rank Accent Colors */
 .aether-report-rank {
     font-family: "Fira Code", monospace;
-    color: #07121f; /* Dark slate for strong contrast on blue gradient top */
-    font-weight: 800;
-    font-size: 14px;
+    background: linear-gradient(90deg, var(--a-gold), var(--a-red));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+    font-size: 18px;
 }
 
 .aether-report-title {
-    font-size: 16px;
-    font-weight: 700;
-    color: #07121f; /* High contrast dark readable text on light gradient background */
+    font-size: 15px;
+    font-weight: 800;
+    color: #07121f; /* Dark readable title on blue/white top */
+    line-height: 1.3;
 }
 
 .aether-report-tags {
     display: flex;
     gap: 8px;
     flex-wrap: wrap;
-    margin-bottom: 16px;
+    margin-bottom: 14px;
 }
 
 .aether-tag {
@@ -705,7 +445,7 @@ body{
     border-radius: 20px;
     background: #07121f;
     color: #ffffff;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .aether-tag-alert {
@@ -713,27 +453,36 @@ body{
     color: #ffffff;
 }
 
-/* Bottom Half Card Text (Sits on dark surface background) */
+/* High Contrast Fix for Score, SME Risk, and Confidence */
 .aether-report-stats {
     display: flex;
-    gap: 28px;
+    gap: 16px;
+    justify-content: space-between;
     margin-bottom: 16px;
-    margin-top: 10px;
+    padding: 8px 12px;
+    background: rgba(255, 255, 255, 0.95); /* Bright backer over gradient seam */
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.aether-report-stat-item {
+    text-align: center;
 }
 
 .aether-report-stat-label {
     display: block;
     font-size: 10px;
-    color: var(--a-text-dim);
+    color: #07121f; /* Dark text for high visibility */
+    font-weight: 800;
     text-transform: uppercase;
     letter-spacing: .5px;
 }
 
 .aether-report-stat-value {
     font-family: "Fira Code", monospace;
-    font-size: 15px;
-    font-weight: 600;
-    color: var(--a-text);
+    font-size: 16px;
+    font-weight: 800;
+    color: #007BFF; /* High contrast blue value */
 }
 
 .aether-report-card h4 {
@@ -752,7 +501,6 @@ body{
 }
 
 /* GLOBE & LEGEND */
-
 .aether-globe-wrapper {
     width: 100%;
     height: 450px; 
@@ -773,10 +521,6 @@ body{
     position: relative;
     z-index: 51;
     cursor: grab;
-}
-
-#aetherRiskGlobe:active {
-    cursor: grabbing;
 }
 
 .aether-risk-legend {
