@@ -29,13 +29,36 @@ body{
     --a-red: #e8334a;
 
     font-family: -apple-system, "Segoe UI", Inter, Arial, sans-serif;
-    /* New Blue to White Linear Gradient */
-    background: linear-gradient(to right, #007BFF, #FFFFFF);
+    /* Animated Blue-to-Gold Linear Gradient */
+    background: linear-gradient(135deg, #07121f 0%, #007BFF 50%, #C8A96E 100%);
+    background-size: 220% 220%;
+    animation: aether-bg-shift 24s ease infinite;
     color: var(--a-text);
     padding: 32px;
     border-radius: 24px;
     max-width: 1400px;
     margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+/* ═══ KNIGHT RIDER TOP NEON STROBE ═══ */
+.aether-dash::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 4px;
+    width: 30%;
+    background: linear-gradient(90deg, transparent, var(--a-cyan), #ffffff, var(--a-cyan), transparent);
+    box-shadow: 0 0 15px var(--a-cyan), 0 0 30px var(--a-cyan);
+    animation: knight-rider-sweep 2.5s ease-in-out infinite alternate;
+    z-index: 100;
+}
+
+@keyframes knight-rider-sweep {
+    0% { left: -10%; }
+    100% { left: 80%; }
 }
 
 @keyframes aether-bg-shift {
@@ -66,33 +89,55 @@ body{
     padding: 12px 0;
 }
 
-/* HEADER */
+/* HEADER & BRANDING */
 
 .aether-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    gap: 14px;
+    gap: 16px;
     margin-bottom: 28px;
 }
 
+.aether-header-brand-wrap {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+/* Top Left Logo Square */
+.aether-brand-logo {
+    width: 54px;
+    height: 54px;
+    border-radius: 12px;
+    border: 1px solid var(--a-cyan);
+    background: var(--a-surface);
+    object-fit: cover;
+    box-shadow: 0 0 12px rgba(0, 200, 220, 0.3);
+    flex-shrink: 0;
+}
+
 .aether-header-titles h2 {
-    font-size: 22px;
+    font-size: 32px; /* Made Larger */
+    font-weight: 800;
     letter-spacing: .5px;
+    color: #ffffff;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.5);
 }
 
 .aether-header-titles p {
-    margin-top: 4px;
-    font-size: 13px;
-    color: var(--a-text-dim);
+    margin-top: 6px;
+    font-size: 15px; /* Made Larger */
+    color: var(--a-gold);
+    font-weight: 600;
 }
 
 .aether-live-pill {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background: linear-gradient(to right, #007BFF, #FFFFFF);
+    background: linear-gradient(to right, #007BFF, var(--a-gold));
     border: 1px solid var(--a-border);
     padding: 8px 16px;
     border-radius: 30px;
@@ -121,7 +166,8 @@ body{
 }
 
 .aether-live-updated {
-    color: var(--a-text-dim);
+    color: #ffffff;
+    font-weight: 500;
 }
 
 /* KPI CARDS */
@@ -193,7 +239,7 @@ body{
     line-height: 1.5;
 }
 
-/* PANEL GRID: sector bars + donut (primary data — 2 columns) */
+/* PANEL GRID */
 
 .aether-panel-grid {
     display: grid;
@@ -385,7 +431,7 @@ body{
     color: var(--a-text);
 }
 
-/* GLOBAL RISK MAP — secondary/deprioritized strip */
+/* GLOBAL RISK MAP */
 
 .aether-secondary-panel {
     background: transparent;
@@ -395,11 +441,11 @@ body{
     margin-bottom: 18px;
     opacity: .9;
     display: flex;
-    flex-direction: column; /* Forces the header to the top and the globe directly underneath */
+    flex-direction: column;
 }
 
 .aether-secondary-panel .aether-panel-header {
-    margin-bottom: 16px; /* Spacing between the text and the globe */
+    margin-bottom: 16px;
     flex-shrink: 0;
 }
 
@@ -409,53 +455,19 @@ body{
     margin: 0;
 }
 
-/* ═══ GLOBE CONTAINER (Replaces old grid) ═══ */
 .aether-global-risk-list {
-    display: block; /* Overrides the old grid layout */
+    display: block;
     width: 100%;
-    height: 450px; /* Explicit height for the 3D canvas */
-    position: relative; /* Anchors the globe */
+    height: 450px;
+    position: relative;
     padding: 0;
     margin: 0;
 }
 
-/* ═══ LEGACY ROW STYLES (Kept just in case) ═══ */
-.aether-global-risk-row {
-    padding: 6px;
-    margin: -6px;
-    border-radius: 12px;
-    transition: background .2s ease;
-}
+/* EXECUTIVE SUMMARY & TREND STRIPS */
 
-.aether-global-risk-row:hover {
-    background: var(--a-surface-alt);
-}
-
-.aether-global-risk-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 6px;
-    font-size: 12px;
-}
-
-.aether-global-risk-name {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-weight: 600;
-}
-
-.aether-global-risk-note {
-    margin-top: 4px;
-    font-size: 11px;
-    color: var(--a-text-dim);
-    font-style: italic;
-}
-
-/* EXECUTIVE SUMMARY STRIP */
-
-.aether-summary-strip {
+.aether-summary-strip,
+.aether-trend-strip {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
     gap: 16px;
@@ -466,55 +478,21 @@ body{
     padding: 20px 24px;
 }
 
-.aether-summary-item {
+.aether-summary-item,
+.aether-trend-item {
     text-align: left;
 }
 
-.aether-summary-label {
-    font-size: 11px;
-    letter-spacing: .5px;
-    color: var(--a-text-dim);
-    text-transform: uppercase;
-    margin-bottom: 6px;
-}
-
-.aether-summary-value {
-    font-family: "Fira Code", monospace;
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 6px;
-}
-
-.aether-summary-desc {
-    font-size: 11px;
-    color: var(--a-text-dim);
-    line-height: 1.5;
-}
-
-/* TREND STRIP */
-
-.aether-trend-strip {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    gap: 16px;
-    margin-bottom: 24px;
-}
-
-.aether-trend-item {
-    background: var(--a-surface);
-    border: 1px solid var(--a-border);
-    border-radius: 16px;
-    padding: 16px 20px;
-}
-
+.aether-summary-label,
 .aether-trend-label {
     font-size: 11px;
+    letter-spacing: .5px;
     color: var(--a-text-dim);
     text-transform: uppercase;
-    letter-spacing: .5px;
     margin-bottom: 6px;
 }
 
+.aether-summary-value,
 .aether-trend-value {
     font-family: "Fira Code", monospace;
     font-size: 18px;
@@ -522,13 +500,14 @@ body{
     margin-bottom: 6px;
 }
 
+.aether-summary-desc,
 .aether-trend-desc {
     font-size: 11px;
     color: var(--a-text-dim);
     line-height: 1.5;
 }
 
-/* REPORT CARDS — horizontal sliding carousel */
+/* REPORT CARDS */
 
 .aether-reports-header-row {
     display: flex;
@@ -677,18 +656,19 @@ body{
     color: var(--a-text-dim);
     line-height: 1.6;
 }
-/* ═══ AETHER GLOBAL RISK MAP (FIXED) ═══ */
+
+/* GLOBE & LEGEND */
 .aether-globe-wrapper {
     width: 100%;
     height: 450px; 
-    min-height: 450px; /* Forces the div to stay open even if empty initially */
+    min-height: 450px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    z-index: 50; /* Punches through other dashboard elements */
+    z-index: 50;
     background: transparent; 
-    overflow: visible; /* Prevents the globe from being clipped */
+    overflow: visible;
     margin-top: 16px; 
 }
 
@@ -696,14 +676,14 @@ body{
     width: 100%;
     height: 100%;
     position: relative;
-    z-index: 51; /* Ensures the canvas itself is at the very front */
+    z-index: 51;
     cursor: grab;
 }
 
 #aetherRiskGlobe:active {
     cursor: grabbing;
 }
-/* ═══ GLOBAL RISK LEGEND STRIP ═══ */
+
 .aether-risk-legend {
     display: flex;
     flex-wrap: wrap;
