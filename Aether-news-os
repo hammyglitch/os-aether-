@@ -1239,6 +1239,57 @@ footer {
     0%,100%{ opacity:.65; }
     50%{ opacity:1; text-shadow:0 0 12px rgba(0,200,220,.6); }
   }
+ .community-section::before{
+    content:"";
+    position:absolute;
+    left:0; right:0; top:0;
+    height:2px;
+    background:linear-gradient(90deg, transparent, var(--cyan), transparent);
+    opacity:0.5;
+    animation:scan-drift 6s ease-in-out infinite;
+  }
+  @keyframes scan-drift{
+    0%,100%{ transform:translateY(0); opacity:.2; }
+    50%{ transform:translateY(46vh); opacity:.7; }
+  }
+
+  .particle{
+    position:absolute;
+    border-radius:50%;
+    background:var(--cyan);
+    opacity:.4;
+    filter:blur(1px);
+    animation:float-up linear infinite;
+    pointer-events:none;
+  }
+  @keyframes float-up{
+    0%{ transform:translateY(0) translateX(0); opacity:0; }
+    10%{ opacity:.5; }
+    90%{ opacity:.5; }
+    100%{ transform:translateY(-38vh) translateX(20px); opacity:0; }
+  }
+
+  .community-eyebrow{
+    text-align:center;
+    letter-spacing:.35em;
+    text-transform:uppercase;
+    font-size:.7rem;
+    color:var(--cyan);
+    margin:0 0 .4rem;
+    animation:pulse-fade 3s ease-in-out infinite;
+  }
+  @keyframes pulse-fade{
+    0%,100%{ opacity:.65; }
+    50%{ opacity:1; text-shadow:0 0 12px rgba(0,200,220,.6); }
+  }
+  .community-heading{
+    text-align:center;
+    font-family:'Cormorant Garamond', serif;
+    font-weight:600;
+    font-size:clamp(1.8rem, 3vw, 2.6rem);
+    margin:0 0 3rem;
+    color:var(--ink);
+  }
 </style>
 </head>
 <body>
