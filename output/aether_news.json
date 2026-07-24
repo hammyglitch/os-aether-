@@ -2,31 +2,32 @@
     "engine": "AETHER NEWS OS",
     "version": "3.1",
     "status": "ONLINE",
-    "last_updated": "2026-07-24 00:44 UTC",
+    "last_updated": "2026-07-24 14:37 UTC",
     "intelligence": {
         "sources_checked": 29,
-        "articles_scanned": 1500,
-        "classified_articles": 153,
-        "top_story_score": 80,
+        "articles_scanned": 1506,
+        "classified_articles": 151,
+        "top_story_score": 75,
         "threat_level": "ELEVATED",
         "ai_confidence": 86
     },
     "top_articles": [
         {
             "rank": 1,
-            "source": "BBC Business",
+            "source": "BBC World",
             "category": "War & Defence",
-            "title": "UK complacent about war threat, warns defence boss",
-            "score": 80,
+            "title": "Ukraine's ousted defence minister insists on being reinstated",
+            "score": 75,
             "threat_level": "HIGH",
             "business_impact": "MEDIUM",
             "sme_risk": 0,
             "confidence": 80,
             "trend": "STABLE",
             "risk_domains": [
+                "Technology Risk",
                 "Geopolitical Risk"
             ],
-            "market_impact": 80,
+            "market_impact": 100,
             "business_advice": [
                 "Monitor geopolitical exposure"
             ],
@@ -34,49 +35,46 @@
                 "cyber_risk": 0,
                 "geopolitical_risk": 80,
                 "supply_chain_risk": 0,
-                "technology_risk": 0,
+                "technology_risk": 60,
                 "sme_exposure": 0,
-                "overall_risk": 16
+                "overall_risk": 28
             }
         },
         {
             "rank": 2,
-            "source": "Dark Reading",
+            "source": "BleepingComputer",
             "category": "Cyber Security",
-            "title": "Russian Hackers Exploit Zimbra Zero-Day Against US, Ukraine Targets",
-            "score": 78,
+            "title": "Chick-fil-A data breach affects more than 13,000 customers",
+            "score": 73,
             "threat_level": "HIGH",
             "business_impact": "HIGH",
             "sme_risk": 0,
             "confidence": 80,
             "trend": "STABLE",
             "risk_domains": [
-                "Cyber Security",
-                "Geopolitical Risk",
-                "Technology Risk"
+                "Cyber Security"
             ],
-            "market_impact": 100,
+            "market_impact": 85,
             "business_advice": [
                 "Review MFA coverage",
                 "Verify backups",
-                "Check supplier security",
-                "Monitor geopolitical exposure"
+                "Check supplier security"
             ],
             "risk_profile": {
                 "cyber_risk": 85,
-                "geopolitical_risk": 80,
+                "geopolitical_risk": 0,
                 "supply_chain_risk": 0,
-                "technology_risk": 60,
+                "technology_risk": 0,
                 "sme_exposure": 75,
-                "overall_risk": 60
+                "overall_risk": 32
             }
         },
         {
             "rank": 3,
-            "source": "Dark Reading",
+            "source": "BleepingComputer",
             "category": "Cyber Security",
-            "title": "Ransomware Attack Puts a Chill on Japanese Frozen-Food Chain",
-            "score": 78,
+            "title": "Clop ransomware targets Windchill, FlexPLM in data theft attacks",
+            "score": 73,
             "threat_level": "HIGH",
             "business_impact": "HIGH",
             "sme_risk": 0,
@@ -84,15 +82,46 @@
             "trend": "STABLE",
             "risk_domains": [
                 "Cyber Security",
-                "Geopolitical Risk",
-                "Technology Risk"
+                "Geopolitical Risk"
             ],
             "market_impact": 100,
             "business_advice": [
                 "Review MFA coverage",
                 "Verify backups",
-                "Check supplier security",
-                "Monitor geopolitical exposure"
+                "Monitor geopolitical exposure",
+                "Check supplier security"
+            ],
+            "risk_profile": {
+                "cyber_risk": 85,
+                "geopolitical_risk": 80,
+                "supply_chain_risk": 0,
+                "technology_risk": 0,
+                "sme_exposure": 75,
+                "overall_risk": 48
+            }
+        },
+        {
+            "rank": 4,
+            "source": "BleepingComputer",
+            "category": "Cyber Security",
+            "title": "New Dolphin X malware uses AI to rank high-value targets",
+            "score": 73,
+            "threat_level": "HIGH",
+            "business_impact": "HIGH",
+            "sme_risk": 0,
+            "confidence": 80,
+            "trend": "STABLE",
+            "risk_domains": [
+                "Cyber Security",
+                "Technology Risk",
+                "Geopolitical Risk"
+            ],
+            "market_impact": 100,
+            "business_advice": [
+                "Review MFA coverage",
+                "Verify backups",
+                "Monitor geopolitical exposure",
+                "Check supplier security"
             ],
             "risk_profile": {
                 "cyber_risk": 85,
@@ -104,57 +133,35 @@
             }
         },
         {
-            "rank": 4,
-            "source": "BBC Politics",
-            "category": "War & Defence",
-            "title": "Scottish Labour leader Anas Sarwar 'delighted' to accept trade minister job",
-            "score": 75,
-            "threat_level": "HIGH",
-            "business_impact": "MEDIUM",
-            "sme_risk": 0,
-            "confidence": 80,
-            "trend": "STABLE",
-            "risk_domains": [
-                "Geopolitical Risk"
-            ],
-            "market_impact": 80,
-            "business_advice": [
-                "Monitor geopolitical exposure"
-            ],
-            "risk_profile": {
-                "cyber_risk": 0,
-                "geopolitical_risk": 80,
-                "supply_chain_risk": 0,
-                "technology_risk": 0,
-                "sme_exposure": 0,
-                "overall_risk": 16
-            }
-        },
-        {
             "rank": 5,
-            "source": "BBC Politics",
-            "category": "War & Defence",
-            "title": "Sarwar to become minister in Burnham's government",
-            "score": 75,
+            "source": "Dark Reading",
+            "category": "Cyber Security",
+            "title": "Russian Hackers Exploit Zimbra Zero-Day Against US, Ukraine Targets",
+            "score": 73,
             "threat_level": "HIGH",
-            "business_impact": "MEDIUM",
+            "business_impact": "HIGH",
             "sme_risk": 0,
             "confidence": 80,
             "trend": "STABLE",
             "risk_domains": [
+                "Cyber Security",
+                "Technology Risk",
                 "Geopolitical Risk"
             ],
-            "market_impact": 80,
+            "market_impact": 100,
             "business_advice": [
-                "Monitor geopolitical exposure"
+                "Review MFA coverage",
+                "Verify backups",
+                "Monitor geopolitical exposure",
+                "Check supplier security"
             ],
             "risk_profile": {
-                "cyber_risk": 0,
+                "cyber_risk": 85,
                 "geopolitical_risk": 80,
                 "supply_chain_risk": 0,
-                "technology_risk": 0,
-                "sme_exposure": 0,
-                "overall_risk": 16
+                "technology_risk": 60,
+                "sme_exposure": 75,
+                "overall_risk": 60
             }
         }
     ]
