@@ -630,7 +630,7 @@ footer { background: var(--bg-dark); color: var(--text-light); padding: 50px 0; 
        <li><a href="/aether-aios-sme-v4.5.2.html">SME</a></li>
     <li><a href="/aether-aios-pricing">Pricing</a></li>
     <li><a href="/Aether-news-os">News</a></li>
-    <li><a hef="/index.html">Home</a></li>
+    <li><a href="/">Home</a></li>
       </div>
     </li>
     <li><a href="gold button.html" style="color:var(--gold)">Gold</a></li>
