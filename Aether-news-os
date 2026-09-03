@@ -1481,6 +1481,24 @@ footer {
 .cat-card h3 { font-size:0.88rem; margin:0 0 6px 0; color:var(--ink,#0B0E17); line-height:1.3; }
 .cat-card p { font-size:0.78rem; color:#555; line-height:1.45; margin:0 0 8px 0; }
 .cat-card .cat-meta { font-size:0.62rem; color:var(--col-color, var(--gold)); text-transform:uppercase; letter-spacing:0.06em; font-weight:700; }
+body{font-size:16px}
+@media(max-width:768px){
+  .nav-brand-text{font-size:1.3rem}
+  .logo-word{font-size:16px;padding:5px 8px}
+  .masthead{flex-wrap:wrap;justify-content:center;gap:4px}
+  header{padding:10px 12px}
+  .logo-slot{height:40px;margin-right:8px}
+  .header-logo{max-height:40px}
+}
+@media(max-width:480px){
+  .nav-brand-text{font-size:1.05rem}
+  .community-heading{font-size:1.4rem}
+  .newsos-content h1{font-size:1.8rem}
+  .newsos-content h2{font-size:.75rem}
+  .cta-card{padding:24px}
+  .story h2{font-size:1rem}
+  .col-header{font-size:.62rem;padding:10px 12px}
+}
 </style>
 </head>
 <body>
