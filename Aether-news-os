@@ -1509,6 +1509,9 @@ body{font-size:16px}
   .aether-intelligence-container{height:auto}
   .aether-dashboard-frame{height:600px}
 }
+#globeVis canvas,#globeVis svg{max-width:100%!important;width:100%!important}
+.video-wrapper iframe{max-width:100%!important}
+.aether-donut,.aether-legend{max-width:100%!important}
 </style>
 </head>
 <body>
