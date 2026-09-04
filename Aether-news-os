@@ -1771,7 +1771,27 @@ html,body{overflow-x:hidden;max-width:100vw}
             <p>Despite political turbulence, small business optimism grows.</p>
             <div class="sc-time">8h ago</div>
         </div>
+        <div class="scroll-card">
+            <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=300&h=100&fit=crop" alt="" style="width:100%;height:80px;object-fit:cover;border-radius:8px 8px 0 0;margin-bottom:8px;" onerror="this.style.display='none'">
+            <span class="sc-tag business">Business</span>
+            <h3>SME Confidence Index Rises</h3>
+            <p>Despite political turbulence, small business optimism grows.</p>
+            <div class="sc-time">8h ago</div>
+        </div>
+
+        <div class="scroll-card" style="border-color:rgba(0,110,255,.3)">
+            <!-- PA-CAROUSEL-START -->
+            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=300&h=100&fit=crop" alt="" style="width:100%;height:80px;object-fit:cover;border-radius:8px 8px 0 0;margin-bottom:8px;">
+            <span class="sc-tag tech">AETHER PA</span>
+            <h3>Loading pick...</h3>
+            <p>Awaiting today's editorial selection.</p>
+            <div class="sc-time">now</div>
+            <!-- PA-CAROUSEL-END -->
+        </div>
     </div>
+</div>
+    </div>
+
 </div>
 
 <!-- MAIN GRID -->
