@@ -2752,6 +2752,16 @@ document.addEventListener('DOMContentLoaded', function(){
     </div>
     <div class="footer-copy">&copy; 2026 Aether Business Architects Ltd &middot; jay@aetherbusinessarchitectsltd.uk</div>
 </footer>
-<script src="/output/dashboard.js"></script>
+<script src="/output/dashboard.js"> (function(){
+  function checkOrientation(){
+    var prompt = document.getElementById('rotate-prompt');
+    var isMobile = window.innerWidth <= 768;
+    var isPortrait = window.innerHeight > window.innerWidth;
+    prompt.style.display = (isMobile && isPortrait) ? 'flex' : 'none';
+  }
+  window.addEventListener('resize', checkOrientation);
+  window.addEventListener('orientationchange', checkOrientation);
+  checkOrientation();
+})();</script>
 </body>
 </html>
