@@ -257,6 +257,95 @@ footer{background:var(--dark);padding:50px 8vw;color:rgba(255,255,255,0.4);text-
 .footer-copy{font-family:var(--mono);font-size:.5rem;color:rgba(255,255,255,0.15);letter-spacing:.1em}
 @media(max-width:1024px){.nav-brand-text{font-size:.9rem}.nav-links{gap:14px}.solutions-strip{grid-template-columns:repeat(3,1fr)}.solution{border-bottom:1px solid rgba(255,255,255,.06)}.hero-cols{grid-template-columns:1fr}.hero-logo-wrap{order:-1;margin-bottom:10px;transform:none;padding-top:0}.logo-container{width:180px;height:180px}}
 @media(max-width:768px){.nav-links{display:none}.nav-brand-text{font-size:.82rem}.hero{min-height:auto}.hero-copy h1{font-size:2.6rem}.hero-copy>p{font-size:.95rem}.solutions-strip{grid-template-columns:1fr 1fr}.solution{padding:22px 10px;font-size:.55rem}.section{padding:64px 5vw}.split-section{grid-template-columns:1fr;min-height:auto}.split-section .asset-container{min-height:300px}.split-section .content-panel{padding:50px 5vw}.split-section.alt-rev .asset-container{grid-column:1;grid-row:1}.split-section.alt-rev .content-panel{grid-column:1;grid-row:2}.form-grid{grid-template-columns:1fr}.cta-banner{padding:80px 5vw}.intel-tabs{overflow-x:auto;flex-wrap:nowrap}}
+/* MOBILE NAV + SCALE — desktop layout remains unchanged */
+.mobile-menu-toggle{display:none;background:transparent;border:1px solid rgba(200,169,110,.35);width:44px;height:44px;border-radius:8px;align-items:center;justify-content:center;flex-direction:column;gap:5px;cursor:pointer;padding:8px;z-index:10002}
+.mobile-menu-toggle span{display:block;width:22px;height:2px;background:var(--cyan);border-radius:2px;transition:transform .25s,opacity .25s}
+.mobile-menu-toggle.active span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.mobile-menu-toggle.active span:nth-child(2){opacity:0}
+.mobile-menu-toggle.active span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.mobile-nav-panel{display:none}
+
+@media(max-width:768px){
+  nav{height:60px;max-height:60px;padding:0 18px}
+  nav.scrolled{height:56px;max-height:56px}
+  .header-logo{width:32px;height:32px}
+  nav.scrolled .header-logo{width:30px;height:30px}
+  .nav-brand-text{font-size:.78rem}
+  .mobile-menu-toggle{display:flex}
+  .mobile-nav-panel{
+    position:absolute;
+    top:60px;
+    left:0;
+    right:0;
+    display:flex;
+    flex-direction:column;
+    gap:0;
+    padding:8px 18px 18px;
+    background:rgba(6,8,16,.98);
+    backdrop-filter:blur(18px);
+    border-bottom:1px solid rgba(200,169,110,.2);
+    box-shadow:0 14px 30px rgba(0,0,0,.3);
+    transform:translateY(-12px);
+    opacity:0;
+    visibility:hidden;
+    pointer-events:none;
+    transition:opacity .2s ease,transform .2s ease,visibility .2s ease;
+  }
+  .mobile-nav-panel.open{transform:translateY(0);opacity:1;visibility:visible;pointer-events:auto}
+  .mobile-nav-panel a{
+    display:block;
+    padding:14px 8px;
+    color:#fff;
+    text-decoration:none;
+    font-family:var(--mono);
+    font-size:.68rem;
+    letter-spacing:.16em;
+    text-transform:uppercase;
+    border-bottom:1px solid rgba(255,255,255,.07);
+  }
+  .mobile-nav-panel a:last-child{border-bottom:0}
+  .mobile-nav-panel a:active,.mobile-nav-panel a:hover{color:var(--cyan)}
+  .mobile-nav-panel .mobile-gold{color:var(--gold)}
+
+  /* Prevent fixed nav from crowding the mobile hero and scale large elements down */
+  .hero{padding-top:60px}
+  .container{padding-left:5vw;padding-right:5vw}
+  .hero-cols{gap:28px;padding:42px 0}
+  .hero-copy h1{font-size:clamp(2.15rem,10vw,2.8rem);line-height:1.08}
+  .hero-copy>p{font-size:.9rem;line-height:1.65}
+  .hero-btns{gap:10px}
+  .btn,.btn-cyan{padding:12px 18px;font-size:.58rem;letter-spacing:.16em}
+  .hero-stats{gap:8px}
+  .stat{min-width:calc(50% - 4px);padding:12px 8px}
+  .logo-container{width:min(72vw,300px);height:min(72vw,300px);padding:20px}
+  .hero-logo-wrap{margin-bottom:0}
+  .solutions-strip{grid-template-columns:1fr 1fr}
+  .solution{min-width:0;padding:18px 8px;font-size:.48rem;letter-spacing:.12em}
+  .section{padding:52px 5vw}
+  .section-title{font-size:clamp(2rem,9vw,3rem)}
+  .section-sub{font-size:.9rem}
+  .cards-grid,.intel-grid{grid-template-columns:1fr;gap:16px}
+  .card{padding:24px;min-height:0}
+  .split-section .asset-container{min-height:260px}
+  .split-section .content-panel{padding:42px 5vw}
+  .split-section .svc-heading{font-size:clamp(2rem,9vw,3rem)}
+  .split-section .svc-body{font-size:.9rem;line-height:1.7}
+  .intel-tabs{gap:4px}
+  .intel-tab{padding:10px 13px;font-size:.58rem}
+  .form-grid{gap:12px}
+  .field input,.field select,.field textarea{font-size:.8rem}
+  .cta-banner{padding:64px 5vw}
+  .cta-banner h2{font-size:clamp(2.2rem,10vw,3.2rem)}
+  footer{padding:40px 5vw}
+}
+@media(max-width:400px){
+  .nav-brand-text{font-size:.7rem}
+  .mobile-menu-toggle{width:40px;height:40px}
+  .hero-copy h1{font-size:2.05rem}
+  .stat{min-width:100%}
+  .solution{font-size:.44rem}
+  .card{padding:20px}
+}
 /* ───────────────────────────────────────── QUIZ MODAL */
 .quiz-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.92);backdrop-filter:blur(12px);z-index:10001;align-items:center;justify-content:center;padding:16px}
 .quiz-overlay.active{display:flex}
@@ -312,6 +401,20 @@ footer{background:var(--dark);padding:50px 8vw;color:rgba(255,255,255,0.4);text-
     </li>
     <li><a href="gold button.html" style="color:var(--gold)">Gold</a></li>
   </ul>
+
+  <!-- MOBILE NAV -->
+  <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Open navigation" aria-expanded="false" type="button">
+    <span></span><span></span><span></span>
+  </button>
+
+  <div class="mobile-nav-panel" id="mobileNavPanel" aria-hidden="true">
+    <a href="/aether-aios-sme-v4.5.2.html">SME</a>
+    <a href="/aether-aios-pricing">Pricing</a>
+    <a href="/Aether-news-os">News</a>
+    <a href="/community-v1">Community</a>
+    <a href="/ceo-blog-diary.html">CEO Blog Diary</a>
+    <a href="gold button.html" class="mobile-gold">Gold</a>
+  </div>
 </nav>
 <section class="hero">
   <div class="hero-bg-grid"></div>
@@ -1079,5 +1182,319 @@ function quizEmailSubmit(e){
     <div class="footer-copy">&copy; 2026 Aether Business Architects Ltd // Leicester // UK // jay@aetherbusinessarchitectsltd.uk // </div>
   </div>
 </footer>
+<script>
+(function(){
+  var nav=document.getElementById('nav');
+  window.addEventListener('scroll',function(){nav.classList.toggle('scrolled',window.scrollY>20)});
+ 
+/* ── QUIZ ── */
+var quizQuestions=[
+  {
+    area:"Operations",
+    question:"How would you describe your core business processes?",
+    options:[
+      {text:"We have documented, consistent processes the whole team follows",score:4},
+      {text:"Most things are documented but there are gaps and inconsistencies",score:2},
+      {text:"It's mostly in people's heads — or my head",score:1},
+      {text:"We make it up as we go and it shows",score:0}
+    ]
+  },
+  {
+    area:"Cybersecurity",
+    question:"How does your business handle cybersecurity?",
+    options:[
+      {text:"We have active monitoring, policies and an incident response plan",score:4},
+      {text:"We use basic tools (antivirus, firewall) but no formal approach",score:2},
+      {text:"We rely on IT to handle it — but aren't sure what that involves",score:1},
+      {text:"We haven't really addressed it yet",score:0}
+    ]
+  },
+  {
+    area:"Compliance",
+    question:"How do you manage regulatory compliance (GDPR, ICO, sector-specific)?",
+    options:[
+      {text:"Continuous monitoring with regular audits and documented evidence",score:4},
+      {text:"We did a review at some point and made changes",score:2},
+      {text:"We're aware of the requirements but haven't formalised anything",score:1},
+      {text:"Compliance isn't something we've tackled properly",score:0}
+    ]
+  },
+  {
+    area:"Automation",
+    question:"How much of your team's repetitive work is automated?",
+    options:[
+      {text:"Significant parts — reporting, comms, data handling run automatically",score:4},
+      {text:"A few things are automated but most work is still manual",score:2},
+      {text:"Almost nothing — we've talked about it but haven't done it",score:1},
+      {text:"Everything is fully manual",score:0}
+    ]
+  },
+  {
+    area:"Growth Systems",
+    question:"How do you make important business decisions?",
+    options:[
+      {text:"Live dashboards with real data feeding every major call",score:4},
+      {text:"Regular reports — though they're sometimes out of date",score:2},
+      {text:"Mostly experience and gut feel",score:1},
+      {text:"Reactively — when something goes wrong",score:0}
+    ]
+  },
+  {
+    area:"Documentation",
+    question:"How does your business handle staff onboarding and process handover?",
+    options:[
+      {text:"Structured onboarding with documented processes for every role",score:4},
+      {text:"Some documentation exists but it's patchy and often outdated",score:2},
+      {text:"It's mostly word of mouth and shadowing",score:1},
+      {text:"New people figure it out as they go",score:0}
+    ]
+  },
+  {
+    area:"Operations",
+    question:"If you stepped away for two weeks, what would happen?",
+    options:[
+      {text:"The business would run normally without me",score:4},
+      {text:"It would mostly hold together with some extra effort from the team",score:2},
+      {text:"A few things would slip — I'm needed for key decisions",score:1},
+      {text:"It would struggle significantly",score:0}
+    ]
+  },
+  {
+    area:"Cybersecurity",
+    question:"Has your business experienced a data breach, ransomware or security incident in the last 3 years?",
+    options:[
+      {text:"No — and we actively test and monitor to keep it that way",score:4},
+      {text:"No — but I couldn't be fully confident we'd catch one",score:2},
+      {text:"A minor incident that we dealt with informally",score:1},
+      {text:"Yes — a significant incident",score:0}
+    ]
+  },
+  {
+    area:"Growth Systems",
+    question:"How would you describe your current growth trajectory?",
+    options:[
+      {text:"Predictable and repeatable — we know what drives growth",score:4},
+      {text:"Growing but inconsistently — some months are great, others aren't",score:2},
+      {text:"Mostly flat — we're sustaining rather than growing",score:1},
+      {text:"Declining or uncertain",score:0}
+    ]
+  },
+  {
+    area:"Compliance",
+    question:"Do you have a formal approach to AI tools used in your business?",
+    options:[
+      {text:"Yes — policies, data handling rules, and staff training in place",score:4},
+      {text:"Staff use AI tools informally but no formal policy exists",score:2},
+      {text:"We're aware we should address this but haven't yet",score:1},
+      {text:"AI tools aren't used — or I'm not sure what the team uses",score:0}
+    ]
+  }
+];
+var quizState={current:0, answers:[], scores:{Operations:0,Cybersecurity:0,Compliance:0,Automation:0,"Growth Systems":0,Documentation:0}, maxScores:{Operations:0,Cybersecurity:0,Compliance:0,Automation:0,"Growth Systems":0,Documentation:0}};
+function initQuizState(){
+  quizState={current:0,answers:[],scores:{Operations:0,Cybersecurity:0,Compliance:0,Automation:0,"Growth Systems":0,Documentation:0},maxScores:{Operations:0,Cybersecurity:0,Compliance:0,Automation:0,"Growth Systems":0,Documentation:0}};
+  quizQuestions.forEach(function(q){
+    var maxOpts=Math.max.apply(null,q.options.map(function(o){return o.score}));
+    quizState.maxScores[q.area]=(quizState.maxScores[q.area]||0)+maxOpts;
+  });
+}
+function openQuiz(){
+  initQuizState();
+  document.getElementById("quiz-overlay").classList.add("active");
+  document.getElementById("quiz-screen").style.display="block";
+  document.getElementById("quiz-result-screen").style.display="none";
+  document.getElementById("quiz-email-screen").style.display="none";
+  renderQuizQuestion();
+}
+function closeQuiz(){
+  document.getElementById("quiz-overlay").classList.remove("active");
+}
+document.getElementById("quiz-overlay").addEventListener("click",function(e){
+  if(e.target===this) closeQuiz();
+});
+function renderQuizQuestion(){
+  var q=quizQuestions[quizState.current];
+  var total=quizQuestions.length;
+  // progress dots
+  var progHtml="";
+  for(var i=0;i<total;i++){
+    progHtml+='<div class="prog-dot'+(i<=quizState.current?' done':'')+'"></div>';
+  }
+  document.getElementById("quiz-progress").innerHTML=progHtml;
+  document.getElementById("quiz-q-label").textContent="Question "+(quizState.current+1)+" of "+total+" · "+q.area;
+  document.getElementById("quiz-question").textContent=q.question;
+  var optHtml="";
+  q.options.forEach(function(opt,idx){
+    var sel=quizState.answers[quizState.current]===idx?" selected":"";
+    optHtml+='<button class="quiz-option'+sel+'" onclick="selectOption('+idx+')">'+opt.text+'</button>';
+  });
+  document.getElementById("quiz-options").innerHTML=optHtml;
+  document.getElementById("quiz-back").style.visibility=quizState.current===0?"hidden":"visible";
+  document.getElementById("quiz-next").textContent=quizState.current===total-1?"See My Score →":"Next →";
+}
+function selectOption(idx){
+  quizState.answers[quizState.current]=idx;
+  document.querySelectorAll(".quiz-option").forEach(function(el,i){
+    el.classList.toggle("selected",i===idx);
+  });
+}
+function quizNext(){
+  if(quizState.answers[quizState.current]===undefined){
+    alert("Please select an answer to continue.");
+    return;
+  }
+  if(quizState.current<quizQuestions.length-1){
+    quizState.current++;
+    renderQuizQuestion();
+  } else {
+    calculateAndShowResult();
+  }
+}
+function quizBack(){
+  if(quizState.current>0){quizState.current--;renderQuizQuestion();}
+}
+function calculateAndShowResult(){
+  // tally scores per area
+  quizQuestions.forEach(function(q,idx){
+    var ans=quizState.answers[idx];
+    if(ans!==undefined){
+      quizState.scores[q.area]=(quizState.scores[q.area]||0)+q.options[ans].score;
+    }
+  });
+  // total out of 40
+  var total=Object.values(quizState.scores).reduce(function(a,b){return a+b},0);
+  var maxTotal=40;
+  var pct=Math.round((total/maxTotal)*100);
+  var label,summary;
+  if(pct>=75){
+    label="Strong Foundation";
+    summary="Your business has solid operational foundations across most areas. There are targeted improvements to make — particularly in any areas scoring below 60% — but you're well positioned to build on what's working. An Aether architecture review would help you identify the highest-leverage next steps.";
+  } else if(pct>=50){
+    label="Moderate Risk";
+    summary="Your business has some good practices in place but significant gaps that could cost you in the next 12–18 months. Cybersecurity, automation and documentation are common weak spots at this score range. An Aether audit would give you a prioritised list of what to fix first.";
+  } else if(pct>=25){
+    label="High Exposure";
+    summary="Your business is running on institutional memory and manual processes, which creates real operational and financial risk — especially if a key person leaves, a system fails, or regulations tighten. The good news: this is fixable systematically, and the gains from early intervention are significant.";
+  } else {
+    label="Critical — Action Needed";
+    summary="Your business is significantly exposed across multiple areas. Without documented processes, cybersecurity controls and operational structure, you're vulnerable to disruption from multiple directions simultaneously. An urgent architecture audit would help you understand the risks and build a prioritised recovery plan.";
+  }
+  var areas=["Operations","Cybersecurity","Compliance","Automation","Growth Systems","Documentation"];
+  var areaColors={
+    "Operations":"#00E5FF","Cybersecurity":"#FF4D6D","Compliance":"#C8A96E",
+    "Automation":"#10B981","Growth Systems":"#8B5CF6","Documentation":"#C8A96E"
+  };
+  var breakdownHtml="";
+  areas.forEach(function(area){
+    var score=quizState.scores[area]||0;
+    var max=quizState.maxScores[area]||4;
+    var areaPct=Math.round((score/max)*100);
+    breakdownHtml+='<div class="score-area-row"><span class="score-area-name">'+area+'</span><div class="score-area-bar-wrap"><div class="score-area-bar" style="width:'+areaPct+'%;background:'+areaColors[area]+'"></div></div><span class="score-area-val">'+areaPct+'%</span></div>';
+  });
+  var resultHtml='<div class="quiz-result"><div class="score-circle"><span class="big-num">'+pct+'</span><span class="of">/ 100</span></div><div class="score-label">'+label+'</div><div class="score-summary">'+summary+'</div><div class="score-breakdown">'+breakdownHtml+'</div><p style="font-size:0.8rem;color:var(--muted);margin-bottom:16px;font-family:var(--mono);">Enter your email to receive the full report with recommendations →</p><button class="btn-primary" style="width:100%;margin-bottom:12px;" onclick="showQuizEmail()">Get My Full Report</button><button class="btn-secondary" style="width:100%;" onclick="openLeadPopup();closeQuiz()">Book a Free Consultation Instead</button></div>';
+  document.getElementById("quiz-screen").style.display="none";
+  document.getElementById("quiz-result-screen").innerHTML=resultHtml;
+  document.getElementById("quiz-result-screen").style.display="block";
+  document.getElementById("quiz-email-screen").style.display="none";
+}
+function showQuizEmail(){
+  document.getElementById("quiz-result-screen").style.display="none";
+  document.getElementById("quiz-email-screen").style.display="block";
+}
+function quizEmailSubmit(e){
+  e.preventDefault();
+  var name=document.getElementById("quiz-name").value;
+  var email=document.getElementById("quiz-email").value;
+  var btn=e.target.querySelector("button");
+  btn.textContent="Transmitting...";
+  btn.disabled=true;
+  var totalScore=Object.values(quizState.scores).reduce(function(a,b){return a+b},0);
+  var pct=Math.round((totalScore/40)*100);
+  var body=new FormData();
+  body.append("name", name);
+  body.append("_replyto", email);
+  body.append("destination_email", "jay@aetherbusinessarchitectsltd.uk");
+  body.append("submission_type", "Aether Quiz Diagnostics Entry");
+  body.append("page_source", "Index Homepage - Resilience Quiz");
+  body.append("_subject", "New Quiz Analysis Target Matrix - " + name);
+  body.append("Overall Metrics", pct + "% Resilience Score Profile");
+  Object.keys(quizState.scores).forEach(function(area){
+     body.append("Telemetry Cluster (" + area + ")", quizState.scores[area] + " / " + quizState.maxScores[area]);
+  });
+  fetch("https://formspree.io/f/xgoqdkye",{method:"POST",body:body,headers:{"Accept":"application/json"}})
+    .then(function(r){
+      if(r.ok){
+        document.getElementById("quiz-email-screen").innerHTML='<div style="text-align:center;padding:24px 0"><span style="font-size:3rem;display:block;margin-bottom:16px">✓</span><h3 style="font-family:var(--serif);font-size:1.5rem;font-weight:700;color:var(--white);margin-bottom:10px">Report on its way, '+name.split(' ')[0]+'.</h3><p style="color:var(--grey);font-size:0.87rem;line-height:1.65;margin-bottom:24px">Check your inbox — your personalised resilience report will arrive within a few minutes. Want to talk through the results with a senior architect?</p><button class="btn-primary" style="width:100%;" onclick="closeQuiz();openLeadPopup()">Book a Free 30-Minute Review</button></div>';
+      } else {
+        btn.textContent="Send My Report →";
+        btn.disabled=false;
+        alert("Something went wrong. Please email jay@aetherbusinessarchitectsltd.uk directly.");
+      }
+    }).catch(function(){
+      btn.textContent="Send My Report →";
+      btn.disabled=false;
+      alert("Connection error. Please email jay@aetherbusinessarchitectsltd.uk directly.");
+    });
+}
+
+/* Mobile navigation */
+(function(){
+  var toggle=document.getElementById('mobileMenuToggle');
+  var panel=document.getElementById('mobileNavPanel');
+  if(!toggle || !panel) return;
+
+  function closeMobileMenu(){
+    toggle.classList.remove('active');
+    toggle.setAttribute('aria-expanded','false');
+    panel.classList.remove('open');
+    panel.setAttribute('aria-hidden','true');
+  }
+
+  toggle.addEventListener('click',function(){
+    var open=!panel.classList.contains('open');
+    toggle.classList.toggle('active',open);
+    toggle.setAttribute('aria-expanded',String(open));
+    panel.classList.toggle('open',open);
+    panel.setAttribute('aria-hidden',String(!open));
+  });
+
+  panel.querySelectorAll('a').forEach(function(link){
+    link.addEventListener('click',closeMobileMenu);
+  });
+
+  window.addEventListener('resize',function(){
+    if(window.innerWidth>768) closeMobileMenu();
+  });
+})();
+</script>
 </body>
+<div class="quiz-overlay" id="quiz-overlay">
+  <div class="quiz-box">
+    <button class="quiz-close" onclick="closeQuiz()">&#10005;</button>
+    <div id="quiz-screen">
+      <div class="quiz-progress" id="quiz-progress"></div>
+      <span class="quiz-q-label" id="quiz-q-label"></span>
+      <div class="quiz-question" id="quiz-question"></div>
+      <div class="quiz-options" id="quiz-options"></div>
+      <div class="quiz-nav">
+        <button class="quiz-back" id="quiz-back" onclick="quizBack()">← Back</button>
+        <button class="quiz-next" id="quiz-next" onclick="quizNext()">Next →</button>
+      </div>
+    </div>
+    <div id="quiz-result-screen" style="display:none"></div>
+    <div id="quiz-email-screen" style="display:none">
+      <div style="text-align:center;margin-bottom:20px;">
+        <span style="font-size:2rem">📬</span>
+        <h3 style="font-family:var(--serif);font-size:1.4rem;font-weight:700;color:var(--white);margin:10px 0 6px;">Get Your Full Report</h3>
+        <p style="font-size:0.85rem;color:var(--grey);">Enter your email and we'll send your personalised resilience report with recommendations.</p>
+      </div>
+      <form class="popup-form" onsubmit="quizEmailSubmit(event)">
+        <input type="text" id="quiz-name" placeholder="Your name" required>
+        <input type="email" id="quiz-email" placeholder="Your business email" required>
+        <button type="submit">Send My Report →</button>
+      </form>
+      <p style="text-align:center;font-size:0.7rem;color:var(--muted);margin-top:12px;font-family:var(--mono);">No spam. Unsubscribe any time.</p>
+    </div>
+  </div>
+</div>
 </html>
