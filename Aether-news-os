@@ -1935,8 +1935,8 @@ This shifting ecosystem presents both new opportunities and strategic challenges
 
 <div class="scraper-section" id="scraper-section-6" style="border-left:4px solid var(--blue);">
     <div class="scraper-header">
-      <span class="scraper-title strobe" style="font-size:1.3rem;color:var(--red)">AETHER PA — Editorial Pick</span>
-<span class="scraper-num" style="background:var(--red);font-size:0.7rem;padding:3px 10px;color:#fff">AI SELECTED</span>
+    <span class="scraper-title" style="font-size:1.3rem;color:var(--ink);font-weight:800">AETHER PA — <span style="color:var(--gold)">Editorial Pick</span></span>
+<span class="scraper-num" style="background:var(--gold);font-size:0.7rem;padding:3px 10px;color:var(--ink)">AI SELECTED</span>
     </div>
     <div class="scraper-content">
         <!-- PA-PICK-START -->
