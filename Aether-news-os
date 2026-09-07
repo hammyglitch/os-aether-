@@ -2081,11 +2081,12 @@ This shifting ecosystem presents both new opportunities and strategic challenges
         <span class="scraper-num" style="background:var(--blue);font-size:0.55rem;padding:2px 8px;">AI SELECTED</span>
     </div>
     <div class="scraper-content">
-        <ul>
-            <!-- PA-PICK-START -->
-<li><strong>Pick:</strong> IDScan sued over data breach <— A major breach impacting over 150 million drivers, raising concerns about identity theft and data security.</li>
-<!-- PA-PICK-END -->
-        </ul>
+        <!-- PA-PICK-START -->
+        <div style="display:flex;gap:12px;align-items:flex-start">
+            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=100&h=70&fit=crop" style="width:90px;height:64px;object-fit:cover;border-radius:6px;flex-shrink:0">
+            <p style="margin:0;font-size:0.85rem;color:var(--ink2)"><strong>Pick:</strong> Loading pick...</p>
+        </div>
+        <!-- PA-PICK-END -->
     </div>
 </div>
     </div>
