@@ -1985,7 +1985,17 @@ This shifting ecosystem presents both new opportunities and strategic challenges
             <p>As international negotiations stall over cryptographic key custody, UK firms must prepare for potential data localization requirements. Our guide outlines the practical steps to ensure compliance.</p>
             <div class="story-meta">Defence &middot; 6h ago</div>
         </div>
-
+<div class="scraper-section" id="scraper-section-6" style="border-left:4px solid var(--blue);">
+    <div class="scraper-header">
+      <span class="scraper-title strobe" style="font-size:1.3rem;color:var(--red)">AETHER PA — Editorial Pick</span>
+<span class="scraper-num" style="background:var(--red);font-size:0.7rem;padding:3px 10px;color:#fff">AI SELECTED</span>
+    </div>
+    <div class="scraper-content">
+        <!-- PA-PICK-START -->
+<div style="display:flex;flex-direction:column;gap:12px"><div style="display:flex;gap:16px;align-items:flex-start"><img src="https://raw.githubusercontent.com/hammyglitch/os-aether-/main/images/pa-generated/pa_card_91998.png" style="width:150px;height:106px;object-fit:cover;border-radius:8px;flex-shrink:0"><div><h4 style="margin:0 0 6px;font-size:1.15rem;color:var(--ink)">IDScan Data Breach Affects Millions of Drivers</h4><p style="margin:0;font-size:0.78rem;color:var(--muted)">07 September 2026</p></div></div><p style="margin:0;font-size:1rem;color:var(--ink2);font-weight:600">IDScan, an identity verification company, has been sued over an alleged data breach that exposed the personal information of over 153 million drivers. The lawsuits accuse the company of hacking their system and selling sensitive data online. </p><p style="margin:0;font-size:0.95rem;color:var(--ink2);line-height:1.7">The IDScan data breach affecting over 153 million drivers is a significant and concerning development for UK SMEs, particularly in the automotive and insurance sectors. This incident highlights the critical importance of robust cybersecurity measures to protect sensitive personal and financial data. For SMEs reliant on driver's license information, such as insurance companies and rental car services, the breach could lead to increased fraud and increased costs to verify customer information. This not only puts these businesses at risk but also endangers consumer trust and compliance with data protection regulations like GDPR.  Furthermore, the fact that this data has been sold online suggests a potential security failure in the way IDScan handled and protected customer information. This breach could expose not only personal data but also potentially financial information, such as credit card details, making it even more serious. For UK SMEs, this incident serves as a stark reminder of the necessity of investing in advanced cybersecurity solutions and compliance with</p></div>
+<!-- PA-PICK-END -->
+    </div>
+</div>
    
         <div class="scraper-section" id="scraper-section-1" style="border-left:4px solid var(--violet);">
             <div class="scraper-header">
@@ -2075,17 +2085,7 @@ This shifting ecosystem presents both new opportunities and strategic challenges
                 </ul>
             </div>
         </div>
-<div class="scraper-section" id="scraper-section-6" style="border-left:4px solid var(--blue);">
-    <div class="scraper-header">
-      <span class="scraper-title strobe" style="font-size:1.3rem;color:var(--red)">AETHER PA — Editorial Pick</span>
-<span class="scraper-num" style="background:var(--red);font-size:0.7rem;padding:3px 10px;color:#fff">AI SELECTED</span>
-    </div>
-    <div class="scraper-content">
-        <!-- PA-PICK-START -->
-<div style="display:flex;flex-direction:column;gap:12px"><div style="display:flex;gap:16px;align-items:flex-start"><img src="https://raw.githubusercontent.com/hammyglitch/os-aether-/main/images/pa-generated/pa_card_91998.png" style="width:150px;height:106px;object-fit:cover;border-radius:8px;flex-shrink:0"><div><h4 style="margin:0 0 6px;font-size:1.15rem;color:var(--ink)">IDScan Data Breach Affects Millions of Drivers</h4><p style="margin:0;font-size:0.78rem;color:var(--muted)">07 September 2026</p></div></div><p style="margin:0;font-size:1rem;color:var(--ink2);font-weight:600">IDScan, an identity verification company, has been sued over an alleged data breach that exposed the personal information of over 153 million drivers. The lawsuits accuse the company of hacking their system and selling sensitive data online. </p><p style="margin:0;font-size:0.95rem;color:var(--ink2);line-height:1.7">The IDScan data breach affecting over 153 million drivers is a significant and concerning development for UK SMEs, particularly in the automotive and insurance sectors. This incident highlights the critical importance of robust cybersecurity measures to protect sensitive personal and financial data. For SMEs reliant on driver's license information, such as insurance companies and rental car services, the breach could lead to increased fraud and increased costs to verify customer information. This not only puts these businesses at risk but also endangers consumer trust and compliance with data protection regulations like GDPR.  Furthermore, the fact that this data has been sold online suggests a potential security failure in the way IDScan handled and protected customer information. This breach could expose not only personal data but also potentially financial information, such as credit card details, making it even more serious. For UK SMEs, this incident serves as a stark reminder of the necessity of investing in advanced cybersecurity solutions and compliance with</p></div>
-<!-- PA-PICK-END -->
-    </div>
-</div>
+
     </div>
 
     <!-- RIGHT: MOST READ -->
