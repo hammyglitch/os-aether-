@@ -2406,7 +2406,7 @@ This shifting ecosystem presents both new opportunities and strategic challenges
   })();
 </script>
 
-<section class="aether-dash" data-news-src="/output/aether_news.json">
+<section class="aether-dash" id="command-centre-anchor" data-news-src="/output/aether_news.json">
 
     <div class="aether-header">
         <div class="aether-header-titles">
