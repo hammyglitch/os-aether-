@@ -2578,33 +2578,38 @@ This shifting ecosystem presents both new opportunities and strategic challenges
         <span class="scraper-title" style="font-size:1.3rem;color:var(--ink);font-weight:800">AETHER PA — <span style="color:var(--cyan)">Cyber Intelligence</span></span>
         <span class="scraper-num" style="background:var(--cyan);font-size:0.7rem;padding:3px 10px;color:#fff">AI SELECTED</span>
     </div>
-    <div class="scraper-content">
-        <div id="cyber-card-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px;padding:8px 0">
-            <!-- CYBER-INTEL-START -->
-<div class="cyber-card" data-card-id="cyber-card-44325" style="cursor:pointer;border-radius:10px;overflow:hidden;background:rgba(255,255,255,0.04);border:1px solid rgba(0,229,255,0.15);transition:transform .25s ease"><img src="https://raw.githubusercontent.com/hammyglitch/os-aether-/main/images/pa-generated/pa_card_44325.png" style="width:100%;height:160px;object-fit:cover"><div style="padding:14px"><p style="margin:0 0 4px;font-size:0.7rem;color:var(--cyan);font-family:var(--mono);text-transform:uppercase;letter-spacing:0.05em">08 September 2026</p><h4 style="margin:0;font-size:1rem;color:var(--ink)">Cybercam Weakness Opens Critical Infrastructure Wide</h4></div></div><div class="cyber-modal-data" data-card-id="cyber-card-44325" style="display:none"><div class="modal-headline">Cybercam Weakness Opens Critical Infrastructure Wide</div><div class="modal-date">08 September 2026 - Source: CISA Advisories</div><div class="modal-image">https://raw.githubusercontent.com/hammyglitch/os-aether-/main/images/pa-generated/pa_card_44325.png</div><div class="modal-summary">A recent vulnerability has been exploited in CareCam Pro IP Cameras, allowing attackers to gain full control of the devices. The affected versions are available worldwide and are manufactured in China. This flaw, classified as CVE-2026-85083, exposes hard-coded credentials and could lead to device compromise. </div><div class="modal-impact">The exploitation of this vulnerability could severely impact critical infrastructure, particularly in commercial facilities. Companies worldwide with these cameras are at risk, as the device’s unsecured nature and the potential for remote access makes them attractive targets for attackers. The lack of proper security measures could lead to unauthorized firmware modifications and configuration changes, thereby jeopardizing the operational integrity and privacy of the affected systems. </div><div class="modal-outcomes">Given the severity of the vulnerability, UK SMEs should prioritize updating their security protocols and firmware to mitigate risks. This includes implementing more robust authentication mechanisms, regularly updating device software, and ensuring a comprehensive security posture. Additionally, SMEs need to fortify their networks and remote access protocols to prevent unauthorized access. It is crucial for them to follow best practices outlined by CISA, such as minimizing network exposure, using secure remote access methods, and conducting thorough</div></div>
-<hr style='margin:16px 0;border:none;border-top:1px solid var(--border)'>
-<p style="margin:0;color:var(--muted)">Loading cyber intelligence...</p>
-<!-- CYBER-INTEL-END -->
+    <div class="scraper-content" style="position:relative">
+        <button id="cyber-arrow-left" onclick="cyberCarouselMove(-1)" style="display:none;position:absolute;left:-8px;top:50%;transform:translateY(-50%);z-index:5;background:rgba(11,14,23,0.75);color:#fff;border:none;width:40px;height:40px;border-radius:50%;font-size:1.4rem;cursor:pointer">‹</button>
+        <button id="cyber-arrow-right" onclick="cyberCarouselMove(1)" style="display:none;position:absolute;right:-8px;top:50%;transform:translateY(-50%);z-index:5;background:rgba(11,14,23,0.75);color:#fff;border:none;width:40px;height:40px;border-radius:50%;font-size:1.4rem;cursor:pointer">›</button>
+        <div style="overflow:hidden">
+            <div id="cyber-card-grid" style="display:flex;transition:transform .35s ease">
+                <!-- CYBER-INTEL-START -->
+                <!-- CYBER-INTEL-END -->
+            </div>
         </div>
     </div>
 </div>
 
-<div id="cyber-article-modal" style="display:none;position:fixed;inset:0;z-index:99999;background:rgba(11,14,23,0.92);align-items:center;justify-content:center;padding:20px">
-  <div style="background:var(--white);max-width:640px;width:100%;max-height:85vh;overflow-y:auto;border-radius:14px;position:relative;padding:0">
-    <button onclick="closeCyberModal()" style="position:absolute;top:14px;right:14px;background:rgba(0,0,0,0.5);color:#fff;border:none;border-radius:50%;width:32px;height:32px;font-size:1.1rem;cursor:pointer;z-index:2">×</button>
-    <img id="modal-img" src="" style="width:100%;height:240px;object-fit:cover;border-radius:14px 14px 0 0">
-    <div style="padding:24px">
-      <p id="modal-date" style="margin:0 0 8px;font-size:0.72rem;color:var(--cyan);font-family:var(--mono);text-transform:uppercase;letter-spacing:0.05em"></p>
-      <h2 id="modal-headline" style="margin:0 0 16px;font-family:var(--serif);font-size:1.5rem;color:var(--ink)"></h2>
-      <p id="modal-summary" style="margin:0 0 16px;font-size:1rem;color:var(--ink2);font-weight:600"></p>
-      <p style="margin:0 0 6px;font-size:0.7rem;color:var(--cyan);font-family:var(--mono);text-transform:uppercase;letter-spacing:0.05em">Impact</p>
-      <p id="modal-impact" style="margin:0 0 16px;font-size:0.95rem;color:var(--ink2);line-height:1.6"></p>
-      <p style="margin:0 0 6px;font-size:0.7rem;color:var(--gold);font-family:var(--mono);text-transform:uppercase;letter-spacing:0.05em">Predicted Outcomes</p>
-      <p id="modal-outcomes" style="margin:0;font-size:0.95rem;color:var(--ink2);line-height:1.6"></p>
+<div id="cyber-article-modal" style="display:none;position:fixed;inset:0;z-index:99999;background:rgba(11,14,23,0.95);align-items:center;justify-content:center;padding:12px">
+  <div style="background:var(--white);max-width:780px;width:100%;max-height:92vh;overflow-y:auto;border-radius:16px;position:relative;padding:0">
+    <button onclick="closeCyberModal()" style="position:absolute;top:16px;right:16px;background:rgba(0,0,0,0.55);color:#fff;border:none;border-radius:50%;width:44px;height:44px;font-size:1.6rem;cursor:pointer;z-index:2;line-height:1">×</button>
+    <img id="modal-img" src="" style="width:100%;height:340px;object-fit:cover;border-radius:16px 16px 0 0;background:linear-gradient(135deg,#1a1a2e,#0B0E17)" onerror="this.src='https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800&h=400&fit=crop'">
+    <div style="padding:32px">
+      <p id="modal-date" style="margin:0 0 10px;font-size:0.75rem;color:var(--cyan);font-family:var(--mono);text-transform:uppercase;letter-spacing:0.06em"></p>
+      <h2 id="modal-headline" class="strobe-red" style="margin:0 0 20px;font-family:var(--serif);font-size:1.9rem;line-height:1.25;font-weight:800"></h2>
+      <p id="modal-summary" style="margin:0 0 22px;font-size:1.1rem;color:var(--ink2);font-weight:600;line-height:1.5"></p>
+      <p style="margin:0 0 8px;font-size:0.72rem;color:var(--cyan);font-family:var(--mono);text-transform:uppercase;letter-spacing:0.06em">Impact</p>
+      <p id="modal-impact" style="margin:0 0 22px;font-size:1rem;color:var(--ink2);line-height:1.75"></p>
+      <p style="margin:0 0 8px;font-size:0.72rem;color:var(--gold);font-family:var(--mono);text-transform:uppercase;letter-spacing:0.06em">Predicted Outcomes</p>
+      <p id="modal-outcomes" style="margin:0 0 28px;font-size:1rem;color:var(--ink2);line-height:1.75"></p>
+      <div style="display:flex;align-items:center;gap:10px;border-top:1px solid var(--border);padding-top:20px">
+        <button id="modal-like-btn" onclick="toggleModalLike()" style="display:flex;align-items:center;gap:6px;background:none;border:1px solid var(--gold);color:var(--gold);padding:8px 16px;border-radius:20px;cursor:pointer;font-family:var(--mono);font-size:0.85rem">
+          <span id="like-icon">♡</span> <span id="like-count">0</span>
+        </button>
+      </div>
     </div>
   </div>
 </div>
-
 <script>
 function initCyberCards(){
   document.querySelectorAll('.cyber-card').forEach(function(card){
