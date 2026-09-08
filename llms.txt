@@ -1,4 +1,7 @@
 # AETHER News - Latest Coverage
 
 ## Rogue ScreenConnect Worm Expands Attack Surface
-Cybersecurity researchers have identified a worm-like pattern of activity that leverages ConnectWise ScreenConnect to distribute a malicious Visual Basic Script payload to new systems. Three different initial access methods were used in three separate incidents, highlighting the need for enhanced security measures. 
+Cybersecurity researchers have identified a worm-like pattern of activity that leverages ConnectWise ScreenConnect to distribute a malicious Visual Basic Script payload to new systems. Three different initial access methods were used in three separate incidents, highlighting the need for enhanced security measures.
+
+## AI Promises Cancer Cure by 2050
+René Haas, the chief executive of Arm Holdings, predicts that artificial intelligence will find a cure for cancer within the next few decades. His comments were featured on BBC Business, where he stated that AI will achieve what "scientists have dreamed of for decades." 
