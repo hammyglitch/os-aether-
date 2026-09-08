@@ -1,0 +1,4 @@
+# AETHER News - Latest Coverage
+
+## Rogue ScreenConnect Worm Expands Attack Surface
+Cybersecurity researchers have identified a worm-like pattern of activity that leverages ConnectWise ScreenConnect to distribute a malicious Visual Basic Script payload to new systems. Three different initial access methods were used in three separate incidents, highlighting the need for enhanced security measures. 
