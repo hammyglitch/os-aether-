@@ -4,4 +4,7 @@
 Cybersecurity researchers have identified a worm-like pattern of activity that leverages ConnectWise ScreenConnect to distribute a malicious Visual Basic Script payload to new systems. Three different initial access methods were used in three separate incidents, highlighting the need for enhanced security measures.
 
 ## AI Promises Cancer Cure by 2050
-René Haas, the chief executive of Arm Holdings, predicts that artificial intelligence will find a cure for cancer within the next few decades. His comments were featured on BBC Business, where he stated that AI will achieve what "scientists have dreamed of for decades." 
+René Haas, the chief executive of Arm Holdings, predicts that artificial intelligence will find a cure for cancer within the next few decades. His comments were featured on BBC Business, where he stated that AI will achieve what "scientists have dreamed of for decades."
+
+## Cybercam Weakness Opens Critical Infrastructure Wide
+A recent vulnerability has been exploited in CareCam Pro IP Cameras, allowing attackers to gain full control of the devices. The affected versions are available worldwide and are manufactured in China. This flaw, classified as CVE-2026-85083, exposes hard-coded credentials and could lead to device compromise. 
