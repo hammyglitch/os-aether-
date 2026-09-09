@@ -13,4 +13,7 @@ A recent vulnerability has been exploited in CareCam Pro IP Cameras, allowing at
 A critical vulnerability in CareCam Pro IP Cameras, specifically the ANJIA AJL33PC0801 firmware, allows attackers to take full control of the device. This impact is significant as the camera is widely deployed, particularly in commercial facilities worldwide. UK SMEs must act now to secure their networks and implement defensive measures to minimize the risk of exploitation.
 
 ## US Agencies Accuse China of Distilling AI Models
-The U.S. agencies have accused Chinese AI firms of conducting systematic extraction of proprietary functionalities and capabilities from American AI models, such as Claude, GPT, Gemini, and Grok. This activity is said to be an integral part of China's AI development strategy. 
+The U.S. agencies have accused Chinese AI firms of conducting systematic extraction of proprietary functionalities and capabilities from American AI models, such as Claude, GPT, Gemini, and Grok. This activity is said to be an integral part of China's AI development strategy.
+
+## US Firm AI Hacks WeChat, Fosters Cyber Cooperation Debate
+Researchers in the US have shown how artificial intelligence can be used to hijack WeChat accounts through voice calls, drawing attention to the growing threat of AI-driven cyber threats and prompting calls for cooperation between the US and China. 
