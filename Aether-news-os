@@ -2661,9 +2661,10 @@ function initCyberCards(){
 function closeCyberModal(){
   document.getElementById('cyber-article-modal').style.display = 'none';
 }
-document.addEventListener('DOMContentLoaded', initCyberCards);
-new MutationObserver(initCyberCards).observe(document.getElementById('cyber-card-grid'), {childList:true, subtree:true});
-</script>
+document.addEventListener('DOMContentLoaded', function(){ initCyberCards(); updateCyberArrows(); });
+window.addEventListener('resize', updateCyberArrows);
+new MutationObserver(function(){ initCyberCards(); updateCyberArrows(); }).observe(document.getElementById('cyber-card-grid'), {childList:true, subtree:true});
+</script>r
 
 <!-- FOOTER -->
 
