@@ -2642,6 +2642,25 @@ This shifting ecosystem presents both new opportunities and strategic challenges
   </div>
 </div>
 <script>
+var cyberIndex = 0;
+function cyberCarouselMove(dir){
+  var grid = document.getElementById('cyber-card-grid');
+  var cards = grid.querySelectorAll('.cyber-card');
+  if(cards.length === 0) return;
+  cyberIndex = Math.max(0, Math.min(cards.length - 1, cyberIndex + dir));
+  grid.style.transform = 'translateX(-' + (cyberIndex * 100) + '%)';
+}
+function updateCyberArrows(){
+  var grid = document.getElementById('cyber-card-grid');
+  var cards = grid.querySelectorAll('.cyber-card');
+  var showArrows = window.innerWidth > 1100 && cards.length > 1;
+  document.getElementById('cyber-arrow-left').style.display = showArrows ? 'flex' : 'none';
+  document.getElementById('cyber-arrow-right').style.display = showArrows ? 'flex' : 'none';
+  document.getElementById('cyber-arrow-left').style.alignItems = 'center';
+  document.getElementById('cyber-arrow-left').style.justifyContent = 'center';
+  document.getElementById('cyber-arrow-right').style.alignItems = 'center';
+  document.getElementById('cyber-arrow-right').style.justifyContent = 'center';
+}
 function initCyberCards(){
   document.querySelectorAll('.cyber-card').forEach(function(card){
     card.addEventListener('click', function(){
