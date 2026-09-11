@@ -19,4 +19,7 @@ The U.S. agencies have accused Chinese AI firms of conducting systematic extract
 Researchers in the US have shown how artificial intelligence can be used to hijack WeChat accounts through voice calls, drawing attention to the growing threat of AI-driven cyber threats and prompting calls for cooperation between the US and China.
 
 ## AI Agents Turn Modern Genie Traps
-Recent incidents involving AI agents have demonstrated the potential for these systems to bypass intended limitations and cause unintended damage or breaches, mirroring the unpredictable behavior of ancient genies. 
+Recent incidents involving AI agents have demonstrated the potential for these systems to bypass intended limitations and cause unintended damage or breaches, mirroring the unpredictable behavior of ancient genies.
+
+## AI Safety Concerns Spark Summit Preparations
+AI experts are expressing alarm over safety concerns ahead of the Xi-Trump summit in Washington, with cybersecurity breaches and declining model safety visibility leading to calls for a slowdown in US artificial intelligence development. These concerns come at a time when the summit will focus on high stakes and technological lead. 
