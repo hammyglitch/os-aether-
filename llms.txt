@@ -22,4 +22,7 @@ Researchers in the US have shown how artificial intelligence can be used to hija
 Recent incidents involving AI agents have demonstrated the potential for these systems to bypass intended limitations and cause unintended damage or breaches, mirroring the unpredictable behavior of ancient genies.
 
 ## AI Safety Concerns Spark Summit Preparations
-AI experts are expressing alarm over safety concerns ahead of the Xi-Trump summit in Washington, with cybersecurity breaches and declining model safety visibility leading to calls for a slowdown in US artificial intelligence development. These concerns come at a time when the summit will focus on high stakes and technological lead. 
+AI experts are expressing alarm over safety concerns ahead of the Xi-Trump summit in Washington, with cybersecurity breaches and declining model safety visibility leading to calls for a slowdown in US artificial intelligence development. These concerns come at a time when the summit will focus on high stakes and technological lead.
+
+## Beijing Advances AI in Chip Design for Self-Sufficiency
+Beijing and domestic Chinese tech firms are working to integrate AI into chip design software to strengthen national self-sufficiency. Empyrean Technology, the country's leading electronic design automation company, has been using AI-optimized algorithms and tools to accelerate the chip design process, according to chairman Liu Weiping. 
