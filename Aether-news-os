@@ -2162,8 +2162,8 @@ This shifting ecosystem presents both new opportunities and strategic challenges
 <div class="col-header">Aether P.A. — Local News</div>
 <div class="scraper-content">
     <!-- LOCAL-NEWS-START -->
-    <p style="margin:0;color:var(--muted);padding:14px 18px">Loading local news...</p>
-    <!-- LOCAL-NEWS-END -->
+<div style="padding:14px 18px;border-bottom:1px solid var(--border)"><img src="https://raw.githubusercontent.com/hammyglitch/os-aether-/main/images/pa-generated/pa_card_33804.png" style="width:100%;height:120px;object-fit:cover;border-radius:6px;margin-bottom:8px" onerror="this.src='https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=600&h=300&fit=crop'"><p style="margin:0 0 4px;font-size:0.65rem;color:var(--gold);font-family:var(--mono);text-transform:uppercase;letter-spacing:0.05em">14 September 2026 - Aether P.A.</p><h4 style="margin:0 0 6px;font-size:0.92rem;color:var(--ink)">Prince Will Invest in Dartmoor's Isolated Gem</h4><p style="margin:0 0 6px;font-size:0.8rem;color:var(--ink2);line-height:1.5">Prince William is set to launch the Princetown Community Fund, aiming to rejuvenate life in the remote village of Princetown on Dartmoor. </p><p style="margin:0;font-size:0.75rem;color:var(--muted);font-style:italic">This investment could breathe new life into Dartmoor's isolated community, boosting local economies and fostering community pride.</p></div>
+<!-- LOCAL-NEWS-END -->
 </div>
 </div>
 </div>
