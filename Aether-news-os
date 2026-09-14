@@ -2934,6 +2934,7 @@ document.addEventListener('DOMContentLoaded', function(){
   <a href="#scraper-section-6" style="flex:1;text-align:center;padding:4px;color:#fff;text-decoration:none;font-family:var(--mono);font-size:0.52rem;text-transform:uppercase;letter-spacing:0.02em;display:flex;flex-direction:column;justify-content:center;line-height:1.25">Aether AIOS<br>Top Picks</a>
   <a href="#command-centre-anchor" style="flex:1;text-align:center;padding:4px;color:#fff;text-decoration:none;font-family:var(--mono);font-size:0.52rem;text-transform:uppercase;letter-spacing:0.02em;display:flex;flex-direction:column;justify-content:center;line-height:1.25;border-left:1px solid rgba(255,255,255,0.1);border-right:1px solid rgba(255,255,255,0.1);">AETHER Intelligence<br>Command Centre</a>
   <a href="#cyber-intel-section" style="flex:1;text-align:center;padding:4px;color:#fff;text-decoration:none;font-family:var(--mono);font-size:0.52rem;text-transform:uppercase;letter-spacing:0.02em;display:flex;flex-direction:column;justify-content:center;line-height:1.25;border-right:1px solid rgba(255,255,255,0.1);">Aether AIOS<br>Articles</a>
-  <a href="#loc
+  <a href="#local-news-anchor" style="flex:1;text-align:center;padding:4px;color:#fff;text-decoration:none;font-family:var(--mono);font-size:0.52rem;text-transform:uppercase;letter-spacing:0.02em;display:flex;flex-direction:column;justify-content:center;line-height:1.25">Aether P.A.<br>Local News</a>
+</div>
 </body>
 </html>
