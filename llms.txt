@@ -28,4 +28,7 @@ AI experts are expressing alarm over safety concerns ahead of the Xi-Trump summi
 Beijing and domestic Chinese tech firms are working to integrate AI into chip design software to strengthen national self-sufficiency. Empyrean Technology, the country's leading electronic design automation company, has been using AI-optimized algorithms and tools to accelerate the chip design process, according to chairman Liu Weiping.
 
 ## Local Election Candidates Face Rampant Abuse
-In 2026, nearly two-thirds of local election candidates reported encountering intimidation and abuse during their campaigns, highlighting a concerning trend in democratic discourse. 
+In 2026, nearly two-thirds of local election candidates reported encountering intimidation and abuse during their campaigns, highlighting a concerning trend in democratic discourse.
+
+## Chinese Researchers Boost Semiconductor Future Memory Endurance
+Chinese researchers have improved the endurance of a type of future memory chip, which can switch between two electric states to store data. This development could significantly enhance the reliability of these chips, which are crucial for high-performance computing and advanced AI systems. 
