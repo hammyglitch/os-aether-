@@ -2151,52 +2151,11 @@ This shifting ecosystem presents both new opportunities and strategic challenges
         </div>
 
     </div>
-
-    <!-- RIGHT: MOST READ -->
-    <div class="right-column">
-        <div class="col-header">Most Read</div>
-        <div class="most-read-item">
-            <span class="most-read-num">1</span>
-            <img src="https://images.unsplash.com/photo-1563986768609-322da13575f2?w=80&h=80&fit=crop" alt="" style="width:60px;height:60px;object-fit:cover;border-radius:6px;flex-shrink:0;" onerror="this.style.display='none'">
-            <span class="most-read-title">Phone Ban for Under-16s: What It Means for Your Business</span>
-        </div>
-        <div class="most-read-item">
-            <span class="most-read-num">2</span>
-            <img src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=80&h=80&fit=crop" alt="" style="width:60px;height:60px;object-fit:cover;border-radius:6px;flex-shrink:0;" onerror="this.style.display='none'">
-            <span class="most-read-title">7 Prime Ministers in 10 Years: The Impact on SME Policy</span>
-        </div>
-        <div class="most-read-item">
-            <span class="most-read-num">3</span>
-            <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=80&h=80&fit=crop" alt="" style="width:60px;height:60px;object-fit:cover;border-radius:6px;flex-shrink:0;" onerror="this.style.display='none'">
-            <span class="most-read-title">Kexit: How Political Instability Affects Cyber Security</span>
-        </div>
-        <div class="most-read-item">
-            <span class="most-read-num">4</span>
-            <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=80&h=80&fit=crop" alt="" style="width:60px;height:60px;object-fit:cover;border-radius:6px;flex-shrink:0;" onerror="this.style.display='none'">
-            <span class="most-read-title">NHS Cyber Attack: 5 Lessons Every SME Should Learn</span>
-        </div>
-        <div class="most-read-item">
-            <span class="most-read-num">5</span>
-            <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=80&h=80&fit=crop" alt="" style="width:60px;height:60px;object-fit:cover;border-radius:6px;flex-shrink:0;" onerror="this.style.display='none'">
-            <span class="most-read-title">Big Tech Stock Dip: Buying Opportunity for Smaller Firms?</span>
-        </div>
-        <div class="most-read-item">
-            <span class="most-read-num">6</span>
-            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=80&h=80&fit=crop" alt="" style="width:60px;height:60px;object-fit:cover;border-radius:6px;flex-shrink:0;" onerror="this.style.display='none'">
-            <span class="most-read-title">AI Regulation Bill: SME Exemptions Explained</span>
-        </div>
-        <div class="most-read-item">
-            <span class="most-read-num">7</span>
-            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=80&h=80&fit=crop" alt="" style="width:60px;height:60px;object-fit:cover;border-radius:6px;flex-shrink:0;" onerror="this.style.display='none'">
-            <span class="most-read-title">Tech Investment Zones: Where to Set Up in 2026</span>
-        </div>
-        <div class="most-read-item">
-            <span class="most-read-num">8</span>
-            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=80&h=80&fit=crop" alt="" style="width:60px;height:60px;object-fit:cover;border-radius:6px;flex-shrink:0;" onerror="this.style.display='none'">
-            <span class="most-read-title">Post-Quantum Cryptography: Is Your Business Ready?</span>
-        </div>
-    </div>
-
+<div class="col-header">Aether P.A. — Local News</div>
+<div class="scraper-content">
+    <!-- LOCAL-NEWS-START -->
+    <p style="margin:0;color:var(--muted);padding:14px 18px">Loading local news...</p>
+    <!-- LOCAL-NEWS-END -->
 </div>
 
 <!-- TESTIMONIAL -->
