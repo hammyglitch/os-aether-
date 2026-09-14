@@ -31,4 +31,7 @@ Beijing and domestic Chinese tech firms are working to integrate AI into chip de
 In 2026, nearly two-thirds of local election candidates reported encountering intimidation and abuse during their campaigns, highlighting a concerning trend in democratic discourse.
 
 ## Chinese Researchers Boost Semiconductor Future Memory Endurance
-Chinese researchers have improved the endurance of a type of future memory chip, which can switch between two electric states to store data. This development could significantly enhance the reliability of these chips, which are crucial for high-performance computing and advanced AI systems. 
+Chinese researchers have improved the endurance of a type of future memory chip, which can switch between two electric states to store data. This development could significantly enhance the reliability of these chips, which are crucial for high-performance computing and advanced AI systems.
+
+## CyberAgents Exchange: The Future of AI Agent Security
+Tenable, a UK cybersecurity consultancy, has introduced the CyberAgents Exchange AI Inspector to rigorously review and vet AI agents submitted by the community. This inspection process ensures that AI agents are secure and free from malicious intent, enhancing the security of AI usage by organizations. 
