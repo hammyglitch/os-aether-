@@ -34,4 +34,7 @@ In 2026, nearly two-thirds of local election candidates reported encountering in
 Chinese researchers have improved the endurance of a type of future memory chip, which can switch between two electric states to store data. This development could significantly enhance the reliability of these chips, which are crucial for high-performance computing and advanced AI systems.
 
 ## CyberAgents Exchange: The Future of AI Agent Security
-Tenable, a UK cybersecurity consultancy, has introduced the CyberAgents Exchange AI Inspector to rigorously review and vet AI agents submitted by the community. This inspection process ensures that AI agents are secure and free from malicious intent, enhancing the security of AI usage by organizations. 
+Tenable, a UK cybersecurity consultancy, has introduced the CyberAgents Exchange AI Inspector to rigorously review and vet AI agents submitted by the community. This inspection process ensures that AI agents are secure and free from malicious intent, enhancing the security of AI usage by organizations.
+
+## Reform UK Welsh Leader Arrested on Assult Charges
+Dan Thomas, elected leader of Reform UK in Wales, has been arrested and bailed on suspicion of assault and controlling behavior. His resignation follows rapidly, as he seeks to avoid being a distraction for Reform UK's May election.
