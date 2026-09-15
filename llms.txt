@@ -40,4 +40,7 @@ Tenable, a UK cybersecurity consultancy, has introduced the CyberAgents Exchange
 Dan Thomas, elected leader of Reform UK in Wales, has been arrested and bailed on suspicion of assault and controlling behavior. His resignation follows rapidly, as he seeks to avoid being a distraction for Reform UK's May election.
 
 ## Iranian Hackers Target Dissidents with Telegram-Controlled Malware
-Cybersecurity agencies in the US, UK, and the Netherlands have exposed a Windows malware developed by Iran's intelligence service. This malware can copy emails and chat messages, take screenshots, and activate microphones to record conversations, all controlled via Telegram. 
+Cybersecurity agencies in the US, UK, and the Netherlands have exposed a Windows malware developed by Iran's intelligence service. This malware can copy emails and chat messages, take screenshots, and activate microphones to record conversations, all controlled via Telegram.
+
+## Aether Explores MySCADA MyPRO Manager Vulnerabilities
+Two critical vulnerabilities have been identified in mySCADA myPRO Manager, affecting versions less than 2.1. These vulnerabilities could allow unauthorized access to privileged management functions or send SMS messages through the connected GSM modem. 
