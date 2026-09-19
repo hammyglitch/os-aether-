@@ -49,4 +49,7 @@ Two critical vulnerabilities have been identified in mySCADA myPRO Manager, affe
 Gyazo, an image-sharing platform, experienced a data breach following a server vulnerability that exposed 23.6 million user records. This breach highlights a critical weakness in the platform's security measures.
 
 ## Chip Foundries Less Vulnerable to AI Slowdown
-S&P Global Ratings suggests Asia-Pacific chip foundries are better prepared to weather a potential slowdown in artificial intelligence investment than other tech hardware firms in the region. The rating agency has stressed-tested four key sectors, finding foundries to be more insulated. 
+S&P Global Ratings suggests Asia-Pacific chip foundries are better prepared to weather a potential slowdown in artificial intelligence investment than other tech hardware firms in the region. The rating agency has stressed-tested four key sectors, finding foundries to be more insulated.
+
+## AI Patching Dilemma Threatens SME Security
+The article highlights the patch status of AI agent code versions from Anthropic, OpenAI, and GitHub Copilot. The research from the OpenAI-HuggingFace incident suggests that code supplied with datasets can pose significant risks. While Anthropic and OpenAI have patched their systems, GitHub Copilot remains unpatched, indicating a critical vulnerability. This raises concerns for SMEs that rely on AI agents for critical operations, as they may not have the resources to update or mitigate risks associated with unpatched systems.
