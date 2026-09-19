@@ -120,16 +120,33 @@ header {
 .logo-block { display: flex; align-items: center; gap: 3px; }
 .logo-word { display: inline-flex; align-items: center; justify-content: center; font-size: 24px; font-weight: 900; letter-spacing: 1px; padding: 7px 10px; line-height: 1; text-transform: uppercase; border-radius: 4px; opacity: 0; }
 .logo-aether {
-    background: var(--ink); color: #fff;
+    background: var(--ink);
+    color: #fff;
+    text-shadow:
+        0 0 1px var(--cyan),
+        0 0 2px var(--cyan);
+
     animation: slideInLeft 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.15s forwards;
 }
+
 .logo-os {
-    background: var(--gold); color: var(--ink);
+    background: var(--gold);
+    color: var(--ink);
+    text-shadow:
+        0 0 1px rgba(255, 255, 255, 0.95),
+        0 0 2px rgba(255, 255, 255, 0.55);
+
     animation: dropInTop 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.55s forwards,
                pulseGlow 2.4s ease-in-out 1.3s 2;
 }
+
 .logo-news {
-    background: linear-gradient(135deg, var(--cyan) 0%, var(--violet) 100%); color: #fff;
+    background: linear-gradient(135deg, var(--cyan) 0%, var(--violet) 100%);
+    color: #fff;
+    text-shadow:
+        1px 1px 1px rgba(0, 0, 0, 0.75),
+        0 0 2px rgba(0, 0, 0, 0.45);
+
     animation: slideInRight 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.15s forwards;
 }
 @keyframes slideInLeft {
