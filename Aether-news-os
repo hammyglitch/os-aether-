@@ -122,9 +122,15 @@ header {
 .logo-aether {
     background: var(--ink);
     color: #fff;
+
+    /* Strong blue shadow around white AETHER text */
     text-shadow:
-        0 0 1px var(--cyan),
-        0 0 2px var(--cyan);
+        1px 1px 0 var(--cyan),
+        -1px -1px 0 var(--cyan),
+        1px -1px 0 var(--cyan),
+        -1px 1px 0 var(--cyan),
+        0 0 5px var(--cyan),
+        0 0 9px var(--cyan);
 
     animation: slideInLeft 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.15s forwards;
 }
@@ -132,9 +138,14 @@ header {
 .logo-os {
     background: var(--gold);
     color: var(--ink);
+
+    /* Strong thin white shadow around black OS text */
     text-shadow:
-        0 0 1px rgba(255, 255, 255, 0.95),
-        0 0 2px rgba(255, 255, 255, 0.55);
+        1px 0 0 #fff,
+        -1px 0 0 #fff,
+        0 1px 0 #fff,
+        0 -1px 0 #fff,
+        0 0 3px rgba(255,255,255,0.9);
 
     animation: dropInTop 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.55s forwards,
                pulseGlow 2.4s ease-in-out 1.3s 2;
@@ -143,9 +154,15 @@ header {
 .logo-news {
     background: linear-gradient(135deg, var(--cyan) 0%, var(--violet) 100%);
     color: #fff;
+
+    /* Strong black shadow around NEWS text */
     text-shadow:
-        1px 1px 1px rgba(0, 0, 0, 0.75),
-        0 0 2px rgba(0, 0, 0, 0.45);
+        1px 1px 0 #000,
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        0 2px 4px rgba(0,0,0,0.9),
+        0 0 7px rgba(0,0,0,0.7);
 
     animation: slideInRight 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.15s forwards;
 }
