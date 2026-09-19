@@ -43,4 +43,7 @@ Dan Thomas, elected leader of Reform UK in Wales, has been arrested and bailed o
 Cybersecurity agencies in the US, UK, and the Netherlands have exposed a Windows malware developed by Iran's intelligence service. This malware can copy emails and chat messages, take screenshots, and activate microphones to record conversations, all controlled via Telegram.
 
 ## Aether Explores MySCADA MyPRO Manager Vulnerabilities
-Two critical vulnerabilities have been identified in mySCADA myPRO Manager, affecting versions less than 2.1. These vulnerabilities could allow unauthorized access to privileged management functions or send SMS messages through the connected GSM modem. 
+Two critical vulnerabilities have been identified in mySCADA myPRO Manager, affecting versions less than 2.1. These vulnerabilities could allow unauthorized access to privileged management functions or send SMS messages through the connected GSM modem.
+
+## Gyazo Breach Exposes 23.6M User Records
+Gyazo, an image-sharing platform, experienced a data breach following a server vulnerability that exposed 23.6 million user records. This breach highlights a critical weakness in the platform's security measures. 
