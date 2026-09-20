@@ -2361,10 +2361,51 @@ This shifting ecosystem presents both new opportunities and strategic challenges
 function playAnalogVideo(){
     var video = document.getElementById('analog-video');
     var overlay = document.getElementById('analog-play-overlay');
+    var closeBtn = document.getElementById('analog-close-btn');
     overlay.style.display = 'none';
     video.controls = true;
     video.play();
+
+    if (video.requestFullscreen) {
+        video.requestFullscreen();
+    } else if (video.webkitRequestFullscreen) {
+        video.webkitRequestFullscreen();
+    } else if (video.webkitEnterFullscreen) {
+        video.webkitEnterFullscreen();
+    }
+
+    closeBtn.style.display = 'flex';
 }
+
+function closeAnalogVideo(){
+    var video = document.getElementById('analog-video');
+    var overlay = document.getElementById('analog-play-overlay');
+    var closeBtn = document.getElementById('analog-close-btn');
+
+    video.pause();
+    video.currentTime = 0;
+    video.controls = false;
+
+    if (document.fullscreenElement) {
+        document.exitFullscreen();
+    } else if (document.webkitFullscreenElement) {
+        document.webkitExitFullscreen();
+    }
+
+    overlay.style.display = 'flex';
+    closeBtn.style.display = 'none';
+}
+
+document.addEventListener('fullscreenchange', function(){
+    if (!document.fullscreenElement) {
+        var overlay = document.getElementById('analog-play-overlay');
+        var closeBtn = document.getElementById('analog-close-btn');
+        var video = document.getElementById('analog-video');
+        video.pause();
+        overlay.style.display = 'flex';
+        closeBtn.style.display = 'none';
+    }
+});
 </script>
 </section>
 <section class="community-section" aria-labelledby="community-heading">
