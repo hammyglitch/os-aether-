@@ -2297,22 +2297,20 @@ This shifting ecosystem presents both new opportunities and strategic challenges
             </div>
 
             </div>
-      <div id="analog-section-grid" style="width:100vw;position:relative;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw;display:grid;grid-template-columns:1fr 1.3fr;background:linear-gradient(160deg, #0B0E17 0%, #1a1230 50%, #0B0E17 100%);overflow:hidden">
+     <div id="analog-section-grid" style="width:100vw;position:relative;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw;display:grid;grid-template-columns:1fr 1.3fr;background:linear-gradient(160deg, #0B0E17 0%, #1a1230 50%, #0B0E17 100%);overflow:hidden">
 
-   <div style="position:relative;display:flex;align-items:center;justify-content:center;min-height:600px;background:#000;border:6px solid #ffffff;box-sizing:border-box">
-    <h1 style="position:absolute;top:24px;left:0;right:0;text-align:center;z-index:3;margin:0;font-family:var(--serif);font-style:italic;font-size:clamp(2.2rem,6vw,3.5rem);color:#fff;text-shadow:0 0 20px rgba(0,229,255,0.6), 0 0 40px rgba(200,169,110,0.4);pointer-events:none">
-        AETHER <span style="color:var(--gold)">Analog</span>
-    </h1>
-    <video id="analog-video" playsinline preload="metadata" style="width:100%;height:100%;object-fit:cover;cursor:pointer" onclick="playAnalogVideo()">
-        <source src="https://raw.githubusercontent.com/hammyglitch/os-aether-/main/aether_analog_video_compressed%20(1).mp4" type="video/mp4">
-    </video>
-    <div id="analog-play-overlay" onclick="playAnalogVideo()" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(11,14,23,0.35);cursor:pointer;transition:background .3s">
-        <div style="width:84px;height:84px;border-radius:50%;background:rgba(255,255,255,0.15);backdrop-filter:blur(6px);border:2px solid #fff;display:flex;align-items:center;justify-content:center;animation:analogPlayPulse 2s ease-in-out infinite">
-            <div style="width:0;height:0;border-left:26px solid #fff;border-top:16px solid transparent;border-bottom:16px solid transparent;margin-left:7px"></div>
+    <div style="position:relative;display:flex;align-items:center;justify-content:center;min-height:600px;background:#000;border:6px solid #ffffff;box-sizing:border-box">
+        <video id="analog-video" playsinline preload="metadata" style="width:100%;height:100%;object-fit:cover;cursor:pointer" onclick="playAnalogVideo()">
+            <source src="https://raw.githubusercontent.com/hammyglitch/os-aether-/main/aether_analog_video_compressed%20(1).mp4" type="video/mp4">
+        </video>
+        <div id="analog-play-overlay" onclick="playAnalogVideo()" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(11,14,23,0.35);cursor:pointer;transition:background .3s">
+            <div style="width:84px;height:84px;border-radius:50%;background:rgba(255,255,255,0.15);backdrop-filter:blur(6px);border:2px solid #fff;display:flex;align-items:center;justify-content:center;animation:analogPlayPulse 2s ease-in-out infinite">
+                <div style="width:0;height:0;border-left:26px solid #fff;border-top:16px solid transparent;border-bottom:16px solid transparent;margin-left:7px"></div>
+            </div>
         </div>
+        <button id="analog-close-btn" onclick="closeAnalogVideo()" style="display:none;position:fixed;top:20px;right:20px;z-index:100000;background:rgba(0,0,0,0.6);color:#fff;border:2px solid #fff;width:48px;height:48px;border-radius:50%;font-size:1.5rem;cursor:pointer;align-items:center;justify-content:center">←</button>
     </div>
-    <button id="analog-close-btn" onclick="closeAnalogVideo()" style="display:none;position:fixed;top:20px;right:20px;z-index:100000;background:rgba(0,0,0,0.6);color:#fff;border:2px solid #fff;width:48px;height:48px;border-radius:50%;font-size:1.5rem;cursor:pointer;align-items:center;justify-content:center">←</button>
-</div>
+
     <div style="position:relative;padding:64px 40px;overflow:hidden">
         <div style="position:absolute;top:-20%;right:-10%;width:400px;height:400px;background:radial-gradient(circle, rgba(139,92,246,0.25), transparent 70%);filter:blur(40px);animation:analogFloat1 8s ease-in-out infinite"></div>
         <div style="position:absolute;bottom:-20%;left:-10%;width:350px;height:350px;background:radial-gradient(circle, rgba(0,229,255,0.18), transparent 70%);filter:blur(40px);animation:analogFloat2 10s ease-in-out infinite"></div>
@@ -2322,48 +2320,72 @@ This shifting ecosystem presents both new opportunities and strategic challenges
                 <span style="width:8px;height:8px;background:var(--cyan-bright);border-radius:50%;display:inline-block;animation:analogDot 1.4s ease-in-out infinite"></span>
                 AI Forecast Engine
             </span>
-       <h1 style="font-family:var(--serif);font-style:italic;font-size:clamp(2.6rem,6vw,4rem);font-weight:800;color:#fff;margin:0 0 12px;line-height:1.15;text-align:center;text-shadow:0 0 18px rgba(0,229,255,0.65), 0 0 40px rgba(0,229,255,0.35);animation:analogTitleFloat 4s ease-in-out infinite">
-    AETHER <span class="strobe-violet">Analog</span>
-</h1>
+            <h1 style="font-family:var(--serif);font-style:italic;font-size:clamp(2.6rem,6vw,4rem);font-weight:800;color:#fff;margin:0 0 12px;line-height:1.15;text-align:center;text-shadow:0 0 18px rgba(0,229,255,0.65), 0 0 40px rgba(0,229,255,0.35);animation:analogTitleFloat 4s ease-in-out infinite">
+                AETHER <span class="strobe-violet">Analog</span>
+            </h1>
             <p style="font-size:1.15rem;color:#ffffff;margin:0 0 40px;font-family:var(--mono);letter-spacing:0.02em;font-weight:600">
                 Every claim tested. Every forecast original.
             </p>
-          <div class="scraper-content" style="text-align:left;display:flex;flex-direction:column;gap:24px;height:700px;max-height:700px;overflow-y:scroll;-webkit-overflow-scrolling:touch;padding-right:8px;scrollbar-width:thin;scrollbar-color:var(--violet) rgba(255,255,255,0.1)">
+            <div class="scraper-content" style="text-align:left;display:flex;flex-direction:column;gap:24px;height:700px;max-height:700px;overflow-y:scroll;-webkit-overflow-scrolling:touch;padding-right:8px">
                 <!-- ANALOG-START -->
-<div style="background:rgba(255,255,255,0.03);border:1px solid rgba(139,92,246,0.25);border-radius:18px;overflow:hidden"><img src="https://raw.githubusercontent.com/hammyglitch/os-aether-/main/images/pa-generated/analog_card_15909.png" style="width:100%;height:280px;object-fit:cover" onerror="this.src='https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=800&h=400&fit=crop'"><div style="padding:32px"><p style="margin:0 0 10px;font-size:0.7rem;color:var(--cyan-bright);font-family:var(--mono);text-transform:uppercase;letter-spacing:0.1em">20 September 2026</p><h4 style="margin:0 0 16px;font-size:1.7rem;color:#fff;font-family:var(--serif);line-height:1.25">AI Oversight in UK Elections: A Tough Call</h4><p style="margin:0 0 18px;font-size:1.05rem;color:#1a1a1a;font-style:italic;line-height:1.5;background:linear-gradient(120deg, #d4d4d4, var(--gold));padding:14px 18px;border-radius:10px">The article outlines a proposed rule in the UK aimed at requiring mandatory AI impact assessments for political campaign materials, with the aim of ensuring transparency for voters. However, the feasibility of this rule is questioned due to the pervasive integration of AI in political workflows. Critics argue enforcement would be challenging, while supporters emphasize the need for transparency in AI-generated political content. Research shows the increasing sophistication and use of AI in political campaigning, highlighting the potential for misleading voters. Related studies suggest that AI can be used to create deepfake content, which can be indistinguishable from real content and thus pose significant ethical and democratic concerns. </p><p style="margin:0;font-size:1rem;color:#ffffff;line-height:1.85">The UK's introduction of mandatory AI impact assessments for political campaign materials is a step in the right direction towards enhancing transparency and ethical standards in the political sphere. However, the practicality and enforcement of this rule will be a significant challenge. AI is now deeply embedded in the workflow of political campaigns, from drafting speeches to targeting advertisements. The proposed rule aims to ensure that voters are aware when they are interacting with AI-generated content, which is especially crucial given the potential for deepfake technology to become more convincing and harder to detect.  While supporters argue that voters have a right to know when they are engaging with AI-generated political messaging, critics point out that enforcement would be difficult due to the widespread use of AI. The political parties and candidates would need to be transparent about the use of AI, but without clear guidelines or enforcement mechanisms, it might be challenging to ensure that all parties comply. Additionally, the increasing sophistication of AI tools raises ethical concerns about the potential for misleading voters, and the proposed rule may not be sufficient to address these concerns.  Given these challenges, it is likely that the UK government will need to refine and enforce the rule more effectively. This might involve clearer guidelines, more robust enforcement mechanisms, and possibly additional oversight to ensure compliance. The long-term impact on UK SMEs will depend on how effectively the rule is implemented and how it influences political campaigning practices. If the rule is well-enforced, it could lead to more transparent and ethical political campaigns, potentially benefiting the reputation of political parties and SMEs associated with them. However, if the rule is poorly enforced, it could lead to confusion and mistrust among voters, potentially harming the credibility of political campaigns and SMEs associated with them. Overall, while the proposed rule is a step in the right direction, its success will hinge on its practical implementation and the broader ethical considerations surrounding AI in political campaigns.</p></div></div>
-<hr style='margin:16px 0;border:none;border-top:1px solid var(--border)'>
-<div style="background:rgba(255,255,255,0.03);border:1px solid rgba(139,92,246,0.25);border-radius:18px;overflow:hidden"><img src="https://raw.githubusercontent.com/hammyglitch/os-aether-/main/images/pa-generated/analog_card_29371.png" style="width:100%;height:280px;object-fit:cover" onerror="this.src='https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=800&h=400&fit=crop'"><div style="padding:32px"><p style="margin:0 0 10px;font-size:0.7rem;color:var(--cyan-bright);font-family:var(--mono);text-transform:uppercase;letter-spacing:0.1em">20 September 2026</p><h4 style="margin:0 0 16px;font-size:1.7rem;color:#fff;font-family:var(--serif);line-height:1.25">AI Oversight Ahead of Elections</h4><p style="margin:0 0 18px;font-size:1.05rem;color:#1a1a1a;font-style:italic;line-height:1.5;background:linear-gradient(120deg, #d4d4d4, var(--gold));padding:14px 18px;border-radius:10px">The article highlights a new initiative by the UK government to introduce mandatory AI impact assessments for political campaign materials, which could have significant implications for the future of electoral communication. While supporters argue that voters have a right to know when they are interacting with AI-generated content, critics fear these rules may be hard to enforce due to the pervasive use of AI in political workflows. The related research, particularly the case of Reform UK, suggests that political parties may not always disclose the use of AI, which could undermine public trust. Moreover, the development of deepfake technology raises additional ethical concerns about the authenticity and transparency of AI-generated content.</p><p style="margin:0;font-size:1rem;color:#ffffff;line-height:1.85">The mandatory AI impact assessments proposed by the UK government are likely to become a norm in electoral campaigns, as political parties and candidates seek to address the growing concerns over the use of AI. This trend will have far-reaching consequences for UK SMEs, as they will need to adapt their strategies to include AI transparency and ethical considerations. SMEs will need to invest in AI compliance frameworks, ensuring that their digital communications are transparent and trustworthy. As AI technologies evolve, SMEs may also need to invest in training for their teams to recognize AI-generated content and maintain public trust. The development of these frameworks will lead to a new standard in electoral communication, one that prioritizes transparency and ethical standards over the efficiency and cost-effectiveness of AI applications. SMEs must prepare for this shift by integrating AI ethics into their operations and ensuring they can prove the origin of their digital content.</p></div></div>
-<hr style='margin:16px 0;border:none;border-top:1px solid var(--border)'>
-<div style="flex:0 0 480px;scroll-snap-align:start;background:rgba(255,255,255,0.03);border:1px solid rgba(139,92,246,0.25);border-radius:18px;overflow:hidden"><img src="https://raw.githubusercontent.com/hammyglitch/os-aether-/main/images/pa-generated/analog_card_82198.png" style="width:100%;height:280px;object-fit:cover" onerror="this.src='https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=800&h=400&fit=crop'"><div style="padding:32px"><p style="margin:0 0 10px;font-size:0.7rem;color:var(--cyan-bright);font-family:var(--mono);text-transform:uppercase;letter-spacing:0.1em">20 September 2026</p><h4 style="margin:0 0 16px;font-size:1.7rem;color:#fff;font-family:var(--serif);line-height:1.25">Cyber Bill Heads Towards Tighter Controls</h4><p style="margin:0 0 18px;font-size:1.05rem;color:#1a1a1a;font-style:italic;line-height:1.5;background:linear-gradient(120deg, #d4d4d4, var(--gold));padding:14px 18px;border-radius:10px">The UK Cyber Security and Resilience Bill aims to extend mandatory incident reporting requirements to thousands of managed service providers, potentially increasing compliance costs. While supporters argue this regulation closes a gap and protects critical infrastructure, critics warn it could disproportionately affect smaller MSPs. The related research suggests that smaller enterprises often face higher risks from cyber threats, which could indeed exacerbate the challenges they face in securing their systems. However, the research on mandatory incident reporting also highlights the importance of robust regulatory frameworks to ensure timely incident reporting, which is crucial for effective cybersecurity.</p><p style="margin:0;font-size:1rem;color:#ffffff;line-height:1.85">The UK Cyber Security and Resilience Bill, if passed, will likely result in a more uniform approach to cyber incident reporting across the sector, with significant implications for UK SMEs. The mandatory reporting requirements, especially for critical national infrastructure, will push smaller MSPs to improve their security protocols and compliance efforts. While the fines and penalties (up to 4% of global turnover) may seem severe, they are a necessary deterrent against non-compliance, which has become a common route for cyber attackers. As a result, the bill could lead to a consolidation in the managed service provider (MSP) sector, where larger, better-funded companies may emerge as the dominant players. This consolidation, however, might also create a new landscape of cybersecurity services, potentially offering SMEs a wider range of options and better support for their compliance needs. The bill will also likely increase cybersecurity investments across the sector, pushing SMEs to upgrade their cybersecurity infrastructure and incident response teams. Overall, while the immediate compliance burden could be challenging for smaller MSPs, the long-term benefits for cybersecurity in the UK may outweigh these short-term costs, particularly as it enhances national resilience to cyber threats.</p></div></div>
-<hr style='margin:16px 0;border:none;border-top:1px solid var(--border)'>
-<div style="background:rgba(255,255,255,0.03);border:1px solid rgba(139,92,246,0.25);border-radius:18px;overflow:hidden">
-                    <img src="https://raw.githubusercontent.com/hammyglitch/os-aether-/main/images/pa-generated/analog_card_37194.png" style="width:100%;height:280px;object-fit:cover" onerror="this.src='https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=400&fit=crop'">
-                    <div style="padding:32px">
-                        <p style="margin:0 0 10px;font-size:0.7rem;color:var(--cyan-bright);font-family:var(--mono);text-transform:uppercase;letter-spacing:0.1em">19 September 2026</p>
-                        <h4 style="margin:0 0 16px;font-size:1.7rem;color:#fff;font-family:var(--serif);line-height:1.25">AI Patching Dilemma Threatens SME Security</h4>
-                        <p style="margin:0 0 18px;font-size:1.05rem;color:#1a1a1a;font-style:italic;line-height:1.5;background:linear-gradient(120deg, #d4d4d4, var(--gold));padding:14px 18px;border-radius:10px">The article highlights the patch status of AI agent code versions from Anthropic, OpenAI, and GitHub Copilot. The research from the OpenAI-HuggingFace incident suggests that code supplied with datasets can pose significant risks. While Anthropic and OpenAI have patched their systems, GitHub Copilot remains unpatched, indicating a critical vulnerability. This raises concerns for SMEs that rely on AI agents for critical operations, as they may not have the resources to update or mitigate risks associated with unpatched systems.</p>
-                        <p style="margin:0;font-size:1rem;color:#ffffff;line-height:1.85">The patching status of AI agents poses a severe threat to UK SMEs, particularly those utilizing unpatched or outdated versions of AI code. While Anthropic and OpenAI have addressed their vulnerabilities, the unpatched state of GitHub Copilot represents a significant risk that SMEs must vigilantly address. The situation underscores the importance of keeping AI code up to date and implementing robust security measures. SMEs should consider seeking alternative solutions or engaging with cybersecurity professionals to assess and mitigate their risks. Failure to do so could expose their operations to potential exploitation, leading to data breaches, financial losses, and reputational damage. As AI continues to integrate into various sectors, SMEs must prioritize the patching and updating of their AI systems to protect against emerging cyber threats.</p>
-                    </div>
-                </div>
-<!-- ANALOG-END -->
+                ...(paste your two existing article cards back in here, unchanged)...
+                <!-- ANALOG-END -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="analog-section-grid" style="width:100vw;position:relative;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw;display:grid;grid-template-columns:1fr 1.3fr;background:linear-gradient(160deg, #0B0E17 0%, #1a1230 50%, #0B0E17 100%);overflow:hidden">
+
+    <div style="position:relative;display:flex;align-items:center;justify-content:center;min-height:600px;background:#000;border:6px solid #ffffff;box-sizing:border-box">
+        <video id="analog-video" playsinline preload="metadata" style="width:100%;height:100%;object-fit:cover;cursor:pointer" onclick="playAnalogVideo()">
+            <source src="https://raw.githubusercontent.com/hammyglitch/os-aether-/main/aether_analog_video_compressed%20(1).mp4" type="video/mp4">
+        </video>
+        <div id="analog-play-overlay" onclick="playAnalogVideo()" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(11,14,23,0.35);cursor:pointer;transition:background .3s">
+            <div style="width:84px;height:84px;border-radius:50%;background:rgba(255,255,255,0.15);backdrop-filter:blur(6px);border:2px solid #fff;display:flex;align-items:center;justify-content:center;animation:analogPlayPulse 2s ease-in-out infinite">
+                <div style="width:0;height:0;border-left:26px solid #fff;border-top:16px solid transparent;border-bottom:16px solid transparent;margin-left:7px"></div>
+            </div>
+        </div>
+        <button id="analog-close-btn" onclick="closeAnalogVideo()" style="display:none;position:fixed;top:20px;right:20px;z-index:100000;background:rgba(0,0,0,0.6);color:#fff;border:2px solid #fff;width:48px;height:48px;border-radius:50%;font-size:1.5rem;cursor:pointer;align-items:center;justify-content:center">←</button>
+    </div>
+
+    <div style="position:relative;padding:64px 40px;overflow:hidden">
+        <div style="position:absolute;top:-20%;right:-10%;width:400px;height:400px;background:radial-gradient(circle, rgba(139,92,246,0.25), transparent 70%);filter:blur(40px);animation:analogFloat1 8s ease-in-out infinite"></div>
+        <div style="position:absolute;bottom:-20%;left:-10%;width:350px;height:350px;background:radial-gradient(circle, rgba(0,229,255,0.18), transparent 70%);filter:blur(40px);animation:analogFloat2 10s ease-in-out infinite"></div>
+
+        <div style="position:relative;z-index:2">
+            <span style="display:inline-flex;align-items:center;gap:8px;background:rgba(139,92,246,0.15);border:1px solid var(--violet);color:#fff;font-family:var(--mono);font-size:0.72rem;padding:8px 20px;border-radius:30px;text-transform:uppercase;letter-spacing:0.15em;margin-bottom:24px;animation:analogPulse 2.4s ease-in-out infinite">
+                <span style="width:8px;height:8px;background:var(--cyan-bright);border-radius:50%;display:inline-block;animation:analogDot 1.4s ease-in-out infinite"></span>
+                AI Forecast Engine
+            </span>
+            <h1 style="font-family:var(--serif);font-style:italic;font-size:clamp(2.6rem,6vw,4rem);font-weight:800;color:#fff;margin:0 0 12px;line-height:1.15;text-align:center;text-shadow:0 0 18px rgba(0,229,255,0.65), 0 0 40px rgba(0,229,255,0.35);animation:analogTitleFloat 4s ease-in-out infinite">
+                AETHER <span class="strobe-violet">Analog</span>
+            </h1>
+            <p style="font-size:1.15rem;color:#ffffff;margin:0 0 40px;font-family:var(--mono);letter-spacing:0.02em;font-weight:600">
+                Every claim tested. Every forecast original.
+            </p>
+            <div class="scraper-content" style="text-align:left;display:flex;flex-direction:column;gap:24px;height:700px;max-height:700px;overflow-y:scroll;-webkit-overflow-scrolling:touch;padding-right:8px">
+                <!-- ANALOG-START -->
+                ...(paste your two existing article cards back in here, unchanged)...
+                <!-- ANALOG-END -->
             </div>
         </div>
     </div>
 </div>
 
 <style>
-.scraper-content::-webkit-scrollbar { width: 8px; }
-.scraper-content::-webkit-scrollbar-track { background: rgba(255,255,255,0.05); border-radius: 10px; }
-.scraper-content::-webkit-scrollbar-thumb { background: var(--violet); border-radius: 10px; }
-@keyframes analogTitleFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
 @keyframes analogFloat1{0%,100%{transform:translate(0,0)}50%{transform:translate(30px,40px)}}
 @keyframes analogFloat2{0%,100%{transform:translate(0,0)}50%{transform:translate(-30px,-30px)}}
 @keyframes analogPulse{0%,100%{box-shadow:0 0 0 rgba(139,92,246,0)}50%{box-shadow:0 0 24px rgba(139,92,246,.5)}}
 @keyframes analogDot{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(1.4)}}
 @keyframes analogPlayPulse{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.08);opacity:.85}}
+@keyframes analogTitleFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
 @media(max-width:900px){
   #analog-section-grid{grid-template-columns:1fr!important}
 }
+.scraper-content::-webkit-scrollbar { width: 8px; }
+.scraper-content::-webkit-scrollbar-track { background: rgba(255,255,255,0.05); border-radius: 10px; }
+.scraper-content::-webkit-scrollbar-thumb { background: var(--violet); border-radius: 10px; }
 </style>
 
 <script>
