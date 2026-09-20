@@ -2322,7 +2322,7 @@ This shifting ecosystem presents both new opportunities and strategic challenges
                 <span style="width:8px;height:8px;background:var(--cyan-bright);border-radius:50%;display:inline-block;animation:analogDot 1.4s ease-in-out infinite"></span>
                 AI Forecast Engine
             </span>
-         <h1 style="font-family:var(--serif);font-style:italic;font-size:clamp(2rem,4vw,2.8rem);color:#fff;margin:0 0 12px;line-height:1.15;text-align:center">
+       <h1 style="font-family:var(--serif);font-style:italic;font-size:clamp(2.6rem,6vw,4rem);font-weight:800;color:#fff;margin:0 0 12px;line-height:1.15;text-align:center;text-shadow:0 0 18px rgba(0,229,255,0.65), 0 0 40px rgba(0,229,255,0.35);animation:analogTitleFloat 4s ease-in-out infinite">
     AETHER <span class="strobe-violet">Analog</span>
 </h1>
             <p style="font-size:1.15rem;color:#ffffff;margin:0 0 40px;font-family:var(--mono);letter-spacing:0.02em;font-weight:600">
