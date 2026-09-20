@@ -2348,6 +2348,7 @@ This shifting ecosystem presents both new opportunities and strategic challenges
 </div>
 
 <style>
+@keyframes analogTitleFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
 @keyframes analogFloat1{0%,100%{transform:translate(0,0)}50%{transform:translate(30px,40px)}}
 @keyframes analogFloat2{0%,100%{transform:translate(0,0)}50%{transform:translate(-30px,-30px)}}
 @keyframes analogPulse{0%,100%{box-shadow:0 0 0 rgba(139,92,246,0)}50%{box-shadow:0 0 24px rgba(139,92,246,.5)}}
