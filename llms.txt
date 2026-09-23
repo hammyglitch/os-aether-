@@ -76,4 +76,7 @@ The proposed mandatory AI impact assessments for political campaigns, while aimi
 The article correctly identifies a significant change in the cyber kill chain timeline, where AI has reduced the time from weeks to just hours. The related research supports this by highlighting deep learning and differentiable programming, which are technologies that can automate and accelerate the process of identifying and exploiting vulnerabilities. While the article emphasizes the speed and automation, it underestimates the complexity and nuance of cybersecurity, where human oversight and expertise are still crucial for detecting and responding to sophisticated attacks.
 
 ## Check Point Warns of Critical Security Gateway Flaw
-Cybersecurity firm Check Point has disclosed that its Security Gateway product is vulnerable to a remote code execution (RCE) flaw, which has been exploited by hackers. This flaw allows unauthorized access to certificate-handling features, posing a significant risk to UK SMEs. 
+Cybersecurity firm Check Point has disclosed that its Security Gateway product is vulnerable to a remote code execution (RCE) flaw, which has been exploited by hackers. This flaw allows unauthorized access to certificate-handling features, posing a significant risk to UK SMEs.
+
+## West Midlands Police Investigating Reform Conference Assaults
+West Midlands Police is currently investigating multiple incidents of assault that occurred during protests against the Reform UK conference in the West Midlands. 
