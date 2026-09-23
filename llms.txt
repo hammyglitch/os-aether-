@@ -79,4 +79,7 @@ The article correctly identifies a significant change in the cyber kill chain ti
 Cybersecurity firm Check Point has disclosed that its Security Gateway product is vulnerable to a remote code execution (RCE) flaw, which has been exploited by hackers. This flaw allows unauthorized access to certificate-handling features, posing a significant risk to UK SMEs.
 
 ## West Midlands Police Investigating Reform Conference Assaults
-West Midlands Police is currently investigating multiple incidents of assault that occurred during protests against the Reform UK conference in the West Midlands. 
+West Midlands Police is currently investigating multiple incidents of assault that occurred during protests against the Reform UK conference in the West Midlands.
+
+## UK Scraps Chagos Islands Deal Amid US Concerns
+Defence Secretary Wes Streeting confirms a review of the Chagos Islands deal following President Trump's criticism of Andy Burnham.
