@@ -83,3 +83,6 @@ West Midlands Police is currently investigating multiple incidents of assault th
 
 ## UK Scraps Chagos Islands Deal Amid US Concerns
 Defence Secretary Wes Streeting confirms a review of the Chagos Islands deal following President Trump's criticism of Andy Burnham.
+
+## Hackers Target Roundcube Webmail Flaw
+Hackers are taking advantage of a critical vulnerability in Roundcube Webmail that was patched in May. This flaw allows for code injection attacks, a new threat that the Canadian Centre for Cyber Security is tracking. 
