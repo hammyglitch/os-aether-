@@ -122,8 +122,14 @@ header {
 .logo-slot { height: 56px; display: flex; align-items: center; justify-content: center; margin-right: 16px; }
 .logo-slot img { max-height: 56px; max-width: 100%; }
 .masthead { display: flex; align-items: center; justify-content: center; overflow: hidden; position: sticky;top50 }
-.logo-block { display: flex; align-items: center; gap: 3px; }
-.nav-brand-text { font-size: 0.85rem; }
+.logo-block {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
 .logo-word { display: inline-flex; align-items: center; justify-content: center; font-size: 24px; font-weight: 900; letter-spacing: 1px; padding: 7px 10px; line-height: 1; text-transform: uppercase; border-radius: 4px; opacity: 0; }
 .logo-aether {
     background: var(--ink);
