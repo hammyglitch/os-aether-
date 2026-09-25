@@ -101,6 +101,7 @@ a { text-decoration: none; color: inherit; }
     background-clip: text;
     animation: strobeLeft 2.6s linear infinite;
 }
+/* ═══ HEADER ═══ */
 header {
     background: linear-gradient(90deg, #ffffff 0%, rgba(0,229,255,0.1) 50%, #ffffff 100%);
     background-size: 300% 100%;
@@ -111,34 +112,85 @@ header {
     align-items: center;
     justify-content: flex-start;
     position: relative;
-    top: 0px;
-    z-index: 999;
+    top: 0px; /* Adjust this to 0 if the header is above the ticker */
+    z-index: 999; /* Keeps it above the scrolling content */
 }
 @keyframes headerStrobe {
     0%, 100% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
 }
+.logo-slot { height: 56px; display: flex; align-items: center; justify-content: center; margin-right: 16px; }
+.logo-slot img { max-height: 56px; max-width: 100%; }
+.masthead { display: flex; align-items: center; justify-content: center; overflow: hidden; position: sticky;top50 }
+.logo-block { display: flex; align-items: center; gap: 3px; }
+.nav-brand-text { font-size: 0.85rem; }
+.logo-word { display: inline-flex; align-items: center; justify-content: center; font-size: 24px; font-weight: 900; letter-spacing: 1px; padding: 7px 10px; line-height: 1; text-transform: uppercase; border-radius: 4px; opacity: 0; }
+.logo-aether {
+    background: var(--ink);
+    color: #fff;
 
-.nav-brand-text {
-    font-size: 0.7rem;
-    color: var(--cyan-bright);
-    text-shadow: 0 0 6px var(--cyan-bright), 0 0 14px var(--cyan-bright), 0 0 22px rgba(0,229,255,0.6);
-    animation: neonFlicker 3s ease-in-out infinite;
-}
-@keyframes neonFlicker {
-    0%, 19%, 21%, 23%, 54%, 56%, 100% { opacity: 1; text-shadow: 0 0 6px var(--cyan-bright), 0 0 14px var(--cyan-bright), 0 0 22px rgba(0,229,255,0.6); }
-    20%, 22%, 55% { opacity: 0.4; text-shadow: none; }
+    /* Strong blue shadow around white AETHER text */
+    text-shadow:
+        1px 1px 0 var(--cyan),
+        -1px -1px 0 var(--cyan),
+        1px -1px 0 var(--cyan),
+        -1px 1px 0 var(--cyan),
+        0 0 5px var(--cyan),
+        0 0 9px var(--cyan);
+
+    animation: slideInLeft 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.15s forwards;
 }
 
-.logo-block {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    align-items: center;
-    gap: 3px;
+.logo-os {
+    background: var(--gold);
+    color: var(--ink);
+
+    /* Strong thin white shadow around black OS text */
+    text-shadow:
+        1px 0 0 #fff,
+        -1px 0 0 #fff,
+        0 1px 0 #fff,
+        0 -1px 0 #fff,
+        0 0 3px rgba(255,255,255,0.9);
+
+    animation: dropInTop 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.55s forwards,
+               pulseGlow 2.4s ease-in-out 1.3s 2;
 }
 
+.logo-news {
+    background: linear-gradient(135deg, var(--cyan) 0%, var(--violet) 100%);
+    color: #fff;
+
+    /* Strong black shadow around NEWS text */
+    text-shadow:
+        1px 1px 0 #000,
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        0 2px 4px rgba(0,0,0,0.9),
+        0 0 7px rgba(0,0,0,0.7);
+
+    animation: slideInRight 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.15s forwards;
+}
+@keyframes slideInLeft {
+    0%   { opacity: 0; transform: translateX(-160px) rotate(-4deg); }
+    70%  { opacity: 1; }
+    100% { opacity: 1; transform: translateX(0) rotate(0deg); }
+}
+@keyframes slideInRight {
+    0%   { opacity: 0; transform: translateX(160px) rotate(4deg); }
+    70%  { opacity: 1; }
+    100% { opacity: 1; transform: translateX(0) rotate(0deg); }
+}
+@keyframes dropInTop {
+    0%   { opacity: 0; transform: translateY(-40px) scale(0.6); }
+    60%  { opacity: 1; transform: translateY(6px) scale(1.08); }
+    100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+@keyframes pulseGlow {
+    0%, 100% { box-shadow: 0 0 0 rgba(200,169,110,0); }
+    50%      { box-shadow: 0 0 18px 4px rgba(200,169,110,0.55); }
+}
 /* ═══ NAV ═══ */
 nav {
 
