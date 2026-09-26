@@ -1695,8 +1695,8 @@ html,body{overflow-x:hidden;max-width:100vw}
    <li>
    
 </li>
-<li style="position: relative; top: -10px;"><a href="/aether-aios-Pricing">Pricing</a></li>
-    <li><a href="/index.html">Home</a></li>
+<li><a href="/index.html">Home</a></li>
+
     <li class="dropdown">
       <a href="/community-v1">Community ▾</a>
       <div class="dropdown-content">
@@ -1706,6 +1706,8 @@ html,body{overflow-x:hidden;max-width:100vw}
         <a href="/community-v1">Arts</a>
         <a href="/community-v1">Business Community</a>
       </div>
+<li style="position: relative; top: -10px;"><a href="/aether-aios-Pricing">Pricing</a></li>
+   
     </li>
     <li><a href="/gold button.html" style="color:var(--gold)">Gold</a></li>
   </ul>
