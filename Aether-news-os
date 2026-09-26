@@ -1710,7 +1710,7 @@ html,body{overflow-x:hidden;max-width:100vw}
 <!-- NAV -->
 <nav id="nav" class="nav">
     <ul class="nav-links">
-        <li><a href="/index.html">Home</a></li>
+      <li style="position: relative; top: -10px;"><a href="/index.html">Home</a></li>
         <li><a href="/aether-aios-Pricing">Pricing</a></li>
         <li class="dropdown">
             <a href="/community-v1">Community ▾</a>
