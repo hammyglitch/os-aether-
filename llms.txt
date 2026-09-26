@@ -85,4 +85,7 @@ West Midlands Police is currently investigating multiple incidents of assault th
 Defence Secretary Wes Streeting confirms a review of the Chagos Islands deal following President Trump's criticism of Andy Burnham.
 
 ## Hackers Target Roundcube Webmail Flaw
-Hackers are taking advantage of a critical vulnerability in Roundcube Webmail that was patched in May. This flaw allows for code injection attacks, a new threat that the Canadian Centre for Cyber Security is tracking. 
+Hackers are taking advantage of a critical vulnerability in Roundcube Webmail that was patched in May. This flaw allows for code injection attacks, a new threat that the Canadian Centre for Cyber Security is tracking.
+
+## Cyber Threats Targeting Law Enforcement
+The article suggests that a cybercriminal gang is responsible for an FBI breach, targeting internal law enforcement data and communications. Related research, such as Royal and LockBit, indicates that law enforcement agencies are indeed high-value targets due to the sensitivity of the data they hold. However, the verification of the breach's authenticity is unclear, raising concerns about reputational and operational disruption. The research also suggests that these organizations use various tactics such as phishing and supply-chain compromise to gain access, indicating the complexity and sophistication of the threats. 
