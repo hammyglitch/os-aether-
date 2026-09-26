@@ -103,7 +103,7 @@ a { text-decoration: none; color: inherit; }
 }
 /* ═══ HEADER ═══ */
 header {
-    background: linear-gradient(90deg, #ffffff 0%, rgba(255,0,60,0.28) 50%, #ffffff 100%);
+    background: linear-gradient(90deg, #ffffff 0%, rgba(0,255,255,0.32) 25%, rgba(0,60,255,0.32) 55%, #ffffff 100%);
     background-size: 300% 100%;
     animation: headerStrobe 6s linear infinite;
     padding: 14px 24px;
