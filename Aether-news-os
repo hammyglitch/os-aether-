@@ -100,7 +100,9 @@ a { text-decoration: none; color: inherit; }
     -webkit-text-fill-color: transparent;
     background-clip: text;
     animation: strobeLeft 2.6s linear infinite;
-}/* ═══ HEADER ═══ */
+}
+
+/* ═══ HEADER ═══ */
 header {
     background: #ffffff;
     position: relative;
@@ -125,7 +127,7 @@ header::before {
     pointer-events: none;
     z-index: 0;
 }
-.masthead, .logo-block, .nav-brand {
+header > * {
     position: relative;
     z-index: 1;
 }
