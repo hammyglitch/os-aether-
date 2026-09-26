@@ -91,4 +91,7 @@ Hackers are taking advantage of a critical vulnerability in Roundcube Webmail th
 The article suggests that a cybercriminal gang is responsible for an FBI breach, targeting internal law enforcement data and communications. Related research, such as Royal and LockBit, indicates that law enforcement agencies are indeed high-value targets due to the sensitivity of the data they hold. However, the verification of the breach's authenticity is unclear, raising concerns about reputational and operational disruption. The research also suggests that these organizations use various tactics such as phishing and supply-chain compromise to gain access, indicating the complexity and sophistication of the threats.
 
 ## UK Laws Tighten to Ban Ticket Touts
-UK lawmakers are intensifying efforts to ban profit-driven ticket resellers, following high-profile requests from artists like Tinie Tempah and Mike Joyce of The Smiths. Prime Minister Keir Starmer promised to crack down on fans being fleeced by sites like Viagogo and StubHub. 
+UK lawmakers are intensifying efforts to ban profit-driven ticket resellers, following high-profile requests from artists like Tinie Tempah and Mike Joyce of The Smiths. Prime Minister Keir Starmer promised to crack down on fans being fleeced by sites like Viagogo and StubHub.
+
+## Rayner Stands Firm on Care Worker Visa Reforms
+Housing Secretary Angela Rayner defended the Labour Party's position on new visa rules that would make it harder for foreign care workers to get permanent residence in the UK.
