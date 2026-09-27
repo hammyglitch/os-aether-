@@ -97,4 +97,7 @@ UK lawmakers are intensifying efforts to ban profit-driven ticket resellers, fol
 Housing Secretary Angela Rayner defended the Labour Party's position on new visa rules that would make it harder for foreign care workers to get permanent residence in the UK.
 
 ## Hack Unmasked: ShinyHunters Exploit Clop's Path
-Hackers ShinyHunters exploited a path traversal vulnerability in the Grav CMS of Clop's leak site to gain unauthorized access and move the site to a new Tor address. This breach exposed sensitive information, demonstrating the importance of regular security patches and updates. 
+Hackers ShinyHunters exploited a path traversal vulnerability in the Grav CMS of Clop's leak site to gain unauthorized access and move the site to a new Tor address. This breach exposed sensitive information, demonstrating the importance of regular security patches and updates.
+
+## Cyber Threats to UK SMEs Surge
+The article highlights a cyberattack on Australian healthcare provider Medicare, where patient records and claims data were stolen, potentially leading to identity theft and insurance fraud. Related research on healthcare in Australia reveals that this sector is often targeted due to the high value of medical records, which are traded on the dark web. The double-extortion tactic employed by ransomware groups further increases the risk and pressure on victims to pay. This research supports the article's claims and underscores the vulnerability of healthcare systems, including those in the UK, to such cyberattacks.
