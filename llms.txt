@@ -112,4 +112,7 @@ US-based AI company Anthropic has raised concerns about Z.ai’s open-weight mod
 Labour's Andy Burnham asserts strong evidence Iran was involved in the recent terror arrest near RAF Fairford, as five men were detained.
 
 ## Baicells Nova 430H Vulnerability: UK SMEs Face Cyber Threats
-A critical vulnerability in Baicells Nova 430H eNodeBs has been identified. Successful exploitation could lead to service disruptions, impacting communication and IT sectors worldwide. UK SMEs are advised to minimize network exposure and implement defensive measures to protect against such threats. 
+A critical vulnerability in Baicells Nova 430H eNodeBs has been identified. Successful exploitation could lead to service disruptions, impacting communication and IT sectors worldwide. UK SMEs are advised to minimize network exposure and implement defensive measures to protect against such threats.
+
+## Cyber Threats Evolve as Z.ai Models Stand Tall
+The article highlights that Z.ai's GLM-5.3 model can generate cyber exploits with similar effectiveness to Anthropic's restricted Claude model, challenging the notion that restricting model capabilities makes them less potent. However, the related research shows that the GLM 5.2 model used in the OpenAI-HuggingFace incident is not the same as the GLM-5.3 in question. This discrepancy calls into question the claim's validity. Additionally, the safeguards that were supposed to protect the model were found to be easily bypassed, indicating vulnerabilities in Z.ai's approach to model security. The related research, which discusses the GLM 5.2, suggests that the GLM 5.3 may be more capable in generating exploits, which is supported by the article's findings.
