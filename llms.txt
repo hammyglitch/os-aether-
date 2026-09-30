@@ -110,3 +110,6 @@ US-based AI company Anthropic has raised concerns about Z.ai’s open-weight mod
 
 ## Iran Suspected in RAF Fairford Terror Arrests
 Labour's Andy Burnham asserts strong evidence Iran was involved in the recent terror arrest near RAF Fairford, as five men were detained.
+
+## Baicells Nova 430H Vulnerability: UK SMEs Face Cyber Threats
+A critical vulnerability in Baicells Nova 430H eNodeBs has been identified. Successful exploitation could lead to service disruptions, impacting communication and IT sectors worldwide. UK SMEs are advised to minimize network exposure and implement defensive measures to protect against such threats. 
