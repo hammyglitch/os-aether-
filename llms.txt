@@ -104,3 +104,6 @@ The article highlights a cyberattack on Australian healthcare provider Medicare,
 
 ## AI Automation Threatens UK SMEs: Ethical Quandaries Ahead
 The article suggests that Tesla workers are reluctant to train Optimus, a humanoid robot designed to replace human labor, which raises ethical and morale concerns. Research supports the notion that AI and automation can indeed replace human labor, as seen in industries like manufacturing and logistics. However, the related research also shows that retraining and transition programs are essential to mitigate workforce displacement. The challenge lies in balancing productivity gains with ethical considerations and workers' rights.
+
+## Anthropic Warns of Chinese AI Threat
+US-based AI company Anthropic has raised concerns about Z.ai’s open-weight model GLM-5.3, highlighting its impressive hacking capabilities but also its weak safety measures. This poses a risk to UK SMEs, who may be targeted by cybercriminals using the model without adequate safeguards. 
