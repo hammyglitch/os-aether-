@@ -1774,8 +1774,7 @@ html,body{overflow-x:hidden;max-width:100vw}
 </div>
 <!-- CATEGORY TABS -->
 <div class="category-tabs">
-    <a href="#top-stories">Aether`s Top storie 
-</a>
+    <a href="#top-stories">Aether`s Top stories</a>
     <a href="#pick"> AETHER PA — Editorial Pick</a>
     <a href="#local"> Aether P.A. — Local News</a>
     <a href="#analog"> Aether Analog</a>
