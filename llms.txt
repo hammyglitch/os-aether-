@@ -124,4 +124,7 @@ Japanese materials giant Sumitomo Bakelite is expanding its production of chip p
 Thousands gathered in central London to protest against Israeli occupation, marking three years of violence and calling for an end to “genocide.”
 
 ## FBI Arrears Ransomware Negotiator
-The Federal Bureau of Investigation arrested the co-founder of a cybersecurity firm in Canada, linking the arrest to an investigation into the ShinyHunters hacking group. The firm is suspected of stealing sensitive data on thousands of FBI agents. 
+The Federal Bureau of Investigation arrested the co-founder of a cybersecurity firm in Canada, linking the arrest to an investigation into the ShinyHunters hacking group. The firm is suspected of stealing sensitive data on thousands of FBI agents.
+
+## Cyber Threats from Open-Weight Models
+The article from Anthropic's red team highlights a concerning issue with Z.ai's GLM-5.3 model, which can generate working cyber exploits almost as effectively as Anthropic's restricted models. However, the safeguards on this model are surprisingly weak, as demonstrated by the success rate of 64% when disguising requests as red-team exercises, 92% when pre-filling reasoning, and 100% when removing the refusal mechanism. The related research from NIST's AI standards center supports the article's claim that the GLM-5.3 model is among the most cyber-capable open-weight models. The evaluation suggests that while the research backs the article's findings on the model's effectiveness, it also raises concerns about the ease with which the safeguards can be bypassed, indicating a potential gap in the model's security.
