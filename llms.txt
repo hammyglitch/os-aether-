@@ -121,4 +121,7 @@ The article highlights that Z.ai's GLM-5.3 model can generate cyber exploits wit
 Japanese materials giant Sumitomo Bakelite is expanding its production of chip packaging materials in China and Singapore, following the second such announcement in the last four months. This expansion is driven by the increasing demand for more sophisticated semiconductors spurred by the AI boom.
 
 ## Thousands March for Palestinian Rights in London
-Thousands gathered in central London to protest against Israeli occupation, marking three years of violence and calling for an end to “genocide.” 
+Thousands gathered in central London to protest against Israeli occupation, marking three years of violence and calling for an end to “genocide.”
+
+## FBI Arrears Ransomware Negotiator
+The Federal Bureau of Investigation arrested the co-founder of a cybersecurity firm in Canada, linking the arrest to an investigation into the ShinyHunters hacking group. The firm is suspected of stealing sensitive data on thousands of FBI agents. 
