@@ -142,4 +142,7 @@ The University of Copenhagen in Denmark revealed a data breach affecting persona
 A former pentester used the ARTEX AI pentesting framework to steal 8.2 million data records from various South Korean organizations. This operation involved seven suspects, and the stolen data included sensitive information that could be used for identity theft, financial fraud, and other malicious activities.
 
 ## Homeless Summit Highlights Urgent Need for Support
-Andy Burnham's summit on rough sleepers highlights frustration with bureaucratic barriers and a critical need for immediate support. Martin Fletcher's success shows that a supportive approach is key, moving beyond forms and judgments. 
+Andy Burnham's summit on rough sleepers highlights frustration with bureaucratic barriers and a critical need for immediate support. Martin Fletcher's success shows that a supportive approach is key, moving beyond forms and judgments.
+
+## Labour Boosts Local Power with £285M
+Labour Party has unveiled a £285 million funding boost to support local communities, empowering mayors to make decisions closer to home and reducing reliance on Westminster. 
