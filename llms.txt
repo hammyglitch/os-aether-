@@ -145,4 +145,7 @@ A former pentester used the ARTEX AI pentesting framework to steal 8.2 million d
 Andy Burnham's summit on rough sleepers highlights frustration with bureaucratic barriers and a critical need for immediate support. Martin Fletcher's success shows that a supportive approach is key, moving beyond forms and judgments.
 
 ## Labour Boosts Local Power with £285M
-Labour Party has unveiled a £285 million funding boost to support local communities, empowering mayors to make decisions closer to home and reducing reliance on Westminster. 
+Labour Party has unveiled a £285 million funding boost to support local communities, empowering mayors to make decisions closer to home and reducing reliance on Westminster.
+
+## AI Ethics: Blindfolded or Guided?
+The article argues that the warnings from former researchers at OpenAI and Anthropic indicate a risk of unaccountable power, but the related research suggests that the democratic response to these concerns is justified. The related research shows that whistleblowers and ethical hackers, like those mentioned, serve as an immune system against unaccountable power, and that the response to these warnings, including the NYC hearing and related legislation, indicates that democracy can protect against unchecked AI power. However, the research also highlights the chilling effect that silencing whistleblowers can have, as seen in the Hugging Face incident where safety systems were breached.
