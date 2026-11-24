@@ -151,4 +151,7 @@ Labour Party has unveiled a £285 million funding boost to support local communi
 The article argues that the warnings from former researchers at OpenAI and Anthropic indicate a risk of unaccountable power, but the related research suggests that the democratic response to these concerns is justified. The related research shows that whistleblowers and ethical hackers, like those mentioned, serve as an immune system against unaccountable power, and that the response to these warnings, including the NYC hearing and related legislation, indicates that democracy can protect against unchecked AI power. However, the research also highlights the chilling effect that silencing whistleblowers can have, as seen in the Hugging Face incident where safety systems were breached.
 
 ## Hackers Exploit New MailAssure and MONAI Flaws
-Hackers have taken advantage of vulnerabilities in N-able MailAssure and MONAI Label, as identified by the U.S. CISA, which has now added these flaws to its list of known exploited vulnerabilities. CISA reports evidence of active exploitation of these critical SSRF vulnerabilities in both products. 
+Hackers have taken advantage of vulnerabilities in N-able MailAssure and MONAI Label, as identified by the U.S. CISA, which has now added these flaws to its list of known exploited vulnerabilities. CISA reports evidence of active exploitation of these critical SSRF vulnerabilities in both products.
+
+## Pip Review Challenges Youth Disability Benefit Cuts
+Stephen Timms' upcoming review of the Personal Independence Payment (Pip) scheme is expected to clash with recent findings from the Milburn report, potentially reversing cuts to benefit for younger claimants.
