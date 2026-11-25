@@ -160,4 +160,7 @@ Stephen Timms' upcoming review of the Personal Independence Payment (Pip) scheme
 Huawei, a major tech player in China, has created dedicated patent teams to focus on semiconductors and artificial intelligence. Chief IP officer Alan Fan stated that these teams are part of Huawei's strategy to establish an overseas computing ecosystem that could rival Nvidia's in the market.
 
 ## Rogacs Jailed for Deadly Police Chase Mistake
-Niks Rogacs, the driver involved in the wrong-way police chase that ended in a deadly crash, has been sentenced to four and a half years in prison at Leicester Crown Court. 
+Niks Rogacs, the driver involved in the wrong-way police chase that ended in a deadly crash, has been sentenced to four and a half years in prison at Leicester Crown Court.
+
+## AI-Driven Programming Takes Over
+The article argues that traditional programming, which involves manual line-by-line coding, is becoming obsolete due to the rise of autonomous AI agents. While the article does highlight the faster and less vulnerable nature of AI-written code, it underestimates the importance of clear and concise syntax in programming. The research on language acquisition and the importance of syntax in English and Hebrew suggests that while AI can write code more efficiently, it still relies on certain linguistic structures that are not yet fully automated. Human programmers, therefore, remain crucial for the clarity and precision required in complex software development.
