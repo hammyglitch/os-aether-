@@ -155,3 +155,6 @@ Hackers have taken advantage of vulnerabilities in N-able MailAssure and MONAI L
 
 ## Pip Review Challenges Youth Disability Benefit Cuts
 Stephen Timms' upcoming review of the Personal Independence Payment (Pip) scheme is expected to clash with recent findings from the Milburn report, potentially reversing cuts to benefit for younger claimants.
+
+## Huawei Forms Patent Teams for Chips and AI
+Huawei, a major tech player in China, has created dedicated patent teams to focus on semiconductors and artificial intelligence. Chief IP officer Alan Fan stated that these teams are part of Huawei's strategy to establish an overseas computing ecosystem that could rival Nvidia's in the market. 
